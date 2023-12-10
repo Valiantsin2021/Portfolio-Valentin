@@ -742,7 +742,9 @@ section {
 .testimonials .testimonials-slider {
   overflow: hidden;
 }
-
+.testimonial-item p {
+  min-height: 320px;
+}
 .testimonials .testimonial-item {
   box-sizing: content-box;
   text-align: center;
