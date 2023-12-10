@@ -101,7 +101,7 @@ h6 {
 
 #header .profile h1 a,
 #header .profile h1 a:hover {
-  color: #fff;
+  color: #37b3ed;
   text-decoration: none;
 }
 
@@ -750,8 +750,8 @@ section {
 }
 
 .testimonials .testimonial-item .testimonial-img {
-  width: 90px;
-  border-radius: 50%;
+  width: 250px;
+  border-radius: 10%;
   margin: 0 auto;
 }
 
