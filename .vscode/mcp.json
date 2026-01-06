@@ -1,0 +1,19 @@
+{
+	"servers": {
+		"playwright": {
+			"command": "npx",
+			"args": [
+				"@playwright/mcp@latest",
+				"--isolated",
+				"--storage-state={path/to/storage.json}"
+			]
+		},
+		"chrome-devtools": {
+			"command": "npx",
+			"args": [
+				"chrome-devtools-mcp@latest"
+			]
+		}
+	},
+	"inputs": []
+}
