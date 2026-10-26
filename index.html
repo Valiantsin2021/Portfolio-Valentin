@@ -3,1455 +3,710 @@
 
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Valentin Lutchanka Portfolio</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <title>Valentin Lutchanka — AI Quality Engineering Leader</title>
+  <meta name="description"
+    content="Agentic QA Engineering Manager. I integrate AI-empowered processes and autonomous agents across every stage of the software testing lifecycle — 3,500+ labor hours saved.">
+  <meta name="author" content="Valentin Lutchanka">
+  <meta name="theme-color" content="#0b1120" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f8fafc" media="(prefers-color-scheme: light)">
 
-  <!-- Favicons -->
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Valentin Lutchanka — AI Quality Engineering Leader">
+  <meta property="og:description"
+    content="AI-empowered QA across the full STLC: requirements refinement, defect triage, test results analysis. 3,500+ labor hours saved.">
+  <meta property="og:image" content="assets/img/profile-img.jpg">
+
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/favicon.png" rel="apple-touch-icon">
 
-  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
     rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <!-- Apply saved theme before first paint to avoid a flash -->
+  <script>
+    try {
+      var t = localStorage.getItem('theme');
+      if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+    } catch (e) { }
+  </script>
 
-  <link href="assets/css/newyear.css" rel="stylesheet">
-  <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Valentin Lutchanka",
+    "jobTitle": "Agentic QA Engineering Manager",
+    "address": { "@type": "PostalAddress", "addressLocality": "Málaga", "addressCountry": "ES" },
+    "email": "mailto:lutchenkovalentin@gmail.com",
+    "sameAs": [
+      "https://www.linkedin.com/in/valiantsin-lutchanka/",
+      "https://github.com/Valiantsin2021"
+    ],
+    "knowsAbout": ["AI quality engineering", "Agentic QA", "Test automation", "Lean Six Sigma", "Playwright"]
+  }
+  </script>
 </head>
 
 <body>
+  <!-- Icon sprite (Lucide) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-github" viewBox="0 0 24 24">
+      <path
+        d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+      <path d="M9 18c-4.51 2-5-2-7-2" />
+    </symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24">
+      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z" />
+      <rect x="2" y="9" width="4" height="12" />
+      <circle cx="4" cy="4" r="2" />
+    </symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24">
+      <rect x="2" y="4" width="20" height="16" rx="2" />
+      <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+    </symbol>
+    <symbol id="i-link" viewBox="0 0 24 24">
+      <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+      <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+    </symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24">
+      <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+      <circle cx="12" cy="10" r="3" />
+    </symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="4" />
+      <path
+        d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" />
+    </symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24">
+      <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+    </symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24">
+      <path d="M4 6h16M4 12h16M4 18h16" />
+    </symbol>
+    <symbol id="i-x" viewBox="0 0 24 24">
+      <path d="M18 6 6 18M6 6l12 12" />
+    </symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24">
+      <path d="M7 7h10v10M7 17 17 7" />
+    </symbol>
+  </svg>
 
-  <!-- New Year Garland -->
-  <div class="b-page_newyear" style="display: none;">
-    <div class="b-page__content">
-      <i class="b-head-decor" style="z-index:1000;">
-        <i class="b-head-decor__inner b-head-decor__inner_n1">
-          <div class="b-ball b-ball_n1 b-ball_bounce" data-note="0">
-            <div class="b-ball__right"></div>
-            <div class="b-ball__i"></div>
-          </div>
-          <div class="b-ball b-ball_n2 b-ball_bounce" data-note="1">
-            <div class="b-ball__right"></div>
-            <div class="b-ball__i"></div>
-          </div>
-          <div class="b-ball b-ball_n3 b-ball_bounce" data-note="2">
-            <div class="b-ball__right"></div>
-            <div class="b-ball__i"></div>
-          </div>
-          <div class="b-ball b-ball_n4 b-ball_bounce" data-note="3">
-            <div class="b-ball__right"></div>
-            <div class="b-ball__i"></div>
-          </div>
-          <div class="b-ball b-ball_n5 b-ball_bounce" data-note="4">
-            <div class="b-ball__right"></div>
-            <div class="b-ball__i"></div>
-          </div>
-          <div class="b-ball b-ball_n6 b-ball_bounce" data-note="5">
-            <div class="b-ball__right"></div>
-            <div class="b-ball__i"></div>
-          </div>
-          <div class="b-ball b-ball_n7 b-ball_bounce" data-note="6">
-            <div class="b-ball__right"></div>
-            <div class="b-ball__i"></div>
-          </div>
-          <div class="b-ball b-ball_n8 b-ball_bounce" data-note="7">
-            <div class="b-ball__right"></div>
-            <div class="b-ball__i"></div>
-          </div>
-          <div class="b-ball b-ball_n9 b-ball_bounce" data-note="8">
-            <div class="b-ball__right"></div>
-            <div class="b-ball__i"></div>
-          </div>
-          <div class="b-ball b-ball_i1">
-            <div class="b-ball__right"></div>
-            <div class="b-ball__i"></div>
-          </div>
-          <div class="b-ball b-ball_i2">
-            <div class="b-ball__right"></div>
-            <div class="b-ball__i"></div>
-          </div>
-          <div class="b-ball b-ball_i3">
-            <div class="b-ball__right"></div>
-            <div class="b-ball__i"></div>
-          </div>
-          <div class="b-ball b-ball_i4">
-            <div class="b-ball__right"></div>
-            <div class="b-ball__i"></div>
-          </div>
-          <div class="b-ball b-ball_i5">
-            <div class="b-ball__right"></div>
-            <div class="b-ball__i"></div>
-          </div>
-          <div class="b-ball b-ball_i6">
-            <div class="b-ball__right"></div>
-            <div class="b-ball__i"></div>
-          </div>
-        </i>
-        <i class="b-head-decor__inner b-head-decor__inner_n2">
-          <div class="b-ball b-ball_n1 b-ball_bounce" data-note="9">
-            <div class="b-ball__right"></div>
-            <div class="b-ball__i"></div>
-          </div>
-          <div class="b-ball b-ball_n2 b-ball_bounce" data-note="10">
-            <div class="b-ball__right"></div>
-            <div class="b-ball__i"></div>
-          </div>
-          <div class="b-ball b-ball_n3 b-ball_bounce" data-note="11">
-            <div class="b-ball__right"></div>
-            <div class="b-ball__i"></div>
-          </div>
-          <div class="b-ball b-ball_n4 b-ball_bounce" data-note="12">
-            <div class="b-ball__right"></div>
-            <div class="b-ball__i"></div>
-          </div>
-          <div class="b-ball b-ball_n5 b-ball_bounce" data-note="13">
-            <div class="b-ball__right"></div>
-            <div class="b-ball__i"></div>
-          </div>
-          <div class="b-ball b-ball_n6 b-ball_bounce" data-note="14">
-            <div class="b-ball__right"></div>
-            <div class="b-ball__i"></div>
-          </div>
-          <div class="b-ball b-ball_n7 b-ball_bounce" data-note="15">
-            <div class="b-ball__right"></div>
-            <div class="b-ball__i"></div>
-          </div>
-          <div class="b-ball b-ball_n8 b-ball_bounce" data-note="16">
-            <div class="b-ball__right"></div>
-            <div class="b-ball__i"></div>
-          </div>
-          <div class="b-ball b-ball_n9 b-ball_bounce" data-note="17">
-            <div class="b-ball__right"></div>
-            <div class="b-ball__i"></div>
-          </div>
-          <div class="b-ball b-ball_i1">
-            <div class="b-ball__right"></div>
-            <div class="b-ball__i"></div>
-          </div>
-          <div class="b-ball b-ball_i2">
-            <div class="b-ball__right"></div>
-            <div class="b-ball__i"></div>
-          </div>
-          <div class="b-ball b-ball_i3">
-            <div class="b-ball__right"></div>
-            <div class="b-ball__i"></div>
-          </div>
-          <div class="b-ball b-ball_i4">
-            <div class="b-ball__right"></div>
-            <div class="b-ball__i"></div>
-          </div>
-          <div class="b-ball b-ball_i5">
-            <div class="b-ball__right"></div>
-            <div class="b-ball__i"></div>
-          </div>
-          <div class="b-ball b-ball_i6">
-            <div class="b-ball__right"></div>
-            <div class="b-ball__i"></div>
-          </div>
-        </i>
-        <i class="b-head-decor__inner b-head-decor__inner_n3">
-          <div class="b-ball b-ball_n1 b-ball_bounce" data-note="18">
-            <div class="b-ball__right"></div>
-            <div class="b-ball__i"></div>
-          </div>
-          <div class="b-ball b-ball_n2 b-ball_bounce" data-note="19">
-            <div class="b-ball__right"></div>
-            <div class="b-ball__i"></div>
-          </div>
-          <div class="b-ball b-ball_n3 b-ball_bounce" data-note="20">
-            <div class="b-ball__right"></div>
-            <div class="b-ball__i"></div>
-          </div>
-          <div class="b-ball b-ball_n4 b-ball_bounce" data-note="21">
-            <div class="b-ball__right"></div>
-            <div class="b-ball__i"></div>
-          </div>
-          <div class="b-ball b-ball_n5 b-ball_bounce" data-note="22">
-            <div class="b-ball__right"></div>
-            <div class="b-ball__i"></div>
-          </div>
-          <div class="b-ball b-ball_n6 b-ball_bounce" data-note="23">
-            <div class="b-ball__right"></div>
-            <div class="b-ball__i"></div>
-          </div>
-          <div class="b-ball b-ball_n7 b-ball_bounce" data-note="24">
-            <div class="b-ball__right"></div>
-            <div class="b-ball__i"></div>
-          </div>
-          <div class="b-ball b-ball_n8 b-ball_bounce" data-note="25">
-            <div class="b-ball__right"></div>
-            <div class="b-ball__i"></div>
-          </div>
-          <div class="b-ball b-ball_n9 b-ball_bounce" data-note="26">
-            <div class="b-ball__right"></div>
-            <div class="b-ball__i"></div>
-          </div>
-          <div class="b-ball b-ball_i1">
-            <div class="b-ball__right"></div>
-            <div class="b-ball__i"></div>
-          </div>
-          <div class="b-ball b-ball_i2">
-            <div class="b-ball__right"></div>
-            <div class="b-ball__i"></div>
-          </div>
-          <div class="b-ball b-ball_i3">
-            <div class="b-ball__right"></div>
-            <div class="b-ball__i"></div>
-          </div>
-          <div class="b-ball b-ball_i4">
-            <div class="b-ball__right"></div>
-            <div class="b-ball__i"></div>
-          </div>
-          <div class="b-ball b-ball_i5">
-            <div class="b-ball__right"></div>
-            <div class="b-ball__i"></div>
-          </div>
-          <div class="b-ball b-ball_i6">
-            <div class="b-ball__right"></div>
-            <div class="b-ball__i"></div>
-          </div>
-        </i>
-        <i class="b-head-decor__inner b-head-decor__inner_n4">
-          <div class="b-ball b-ball_n1 b-ball_bounce" data-note="27">
-            <div class="b-ball__right"></div>
-            <div class="b-ball__i"></div>
-          </div>
-          <div class="b-ball b-ball_n2 b-ball_bounce" data-note="28">
-            <div class="b-ball__right"></div>
-            <div class="b-ball__i"></div>
-          </div>
-          <div class="b-ball b-ball_n3 b-ball_bounce" data-note="29">
-            <div class="b-ball__right"></div>
-            <div class="b-ball__i"></div>
-          </div>
-          <div class="b-ball b-ball_n4 b-ball_bounce" data-note="30">
-            <div class="b-ball__right"></div>
-            <div class="b-ball__i"></div>
-          </div>
-          <div class="b-ball b-ball_n5 b-ball_bounce" data-note="31">
-            <div class="b-ball__right"></div>
-            <div class="b-ball__i"></div>
-          </div>
-          <div class="b-ball b-ball_n6 b-ball_bounce" data-note="32">
-            <div class="b-ball__right"></div>
-            <div class="b-ball__i"></div>
-          </div>
-          <div class="b-ball b-ball_n7 b-ball_bounce" data-note="33">
-            <div class="b-ball__right"></div>
-            <div class="b-ball__i"></div>
-          </div>
-          <div class="b-ball b-ball_n8 b-ball_bounce" data-note="34">
-            <div class="b-ball__right"></div>
-            <div class="b-ball__i"></div>
-          </div>
-          <div class="b-ball b-ball_n9 b-ball_bounce" data-note="35">
-            <div class="b-ball__right"></div>
-            <div class="b-ball__i"></div>
-          </div>
-          <div class="b-ball b-ball_i1">
-            <div class="b-ball__right"></div>
-            <div class="b-ball__i"></div>
-          </div>
-          <div class="b-ball b-ball_i2">
-            <div class="b-ball__right"></div>
-            <div class="b-ball__i"></div>
-          </div>
-          <div class="b-ball b-ball_i3">
-            <div class="b-ball__right"></div>
-            <div class="b-ball__i"></div>
-          </div>
-          <div class="b-ball b-ball_i4">
-            <div class="b-ball__right"></div>
-            <div class="b-ball__i"></div>
-          </div>
-          <div class="b-ball b-ball_i5">
-            <div class="b-ball__right"></div>
-            <div class="b-ball__i"></div>
-          </div>
-          <div class="b-ball b-ball_i6">
-            <div class="b-ball__right"></div>
-            <div class="b-ball__i"></div>
-          </div>
-        </i>
-      </i>
-    </div>
-  </div>
-
-  <!-- ======= Mobile nav toggle button ======= -->
-  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+  <a class="skip-link" href="#main">Skip to content</a>
 
   <!-- ======= Header ======= -->
-  <header id="header">
-    <div class="d-flex flex-column">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="brand" aria-label="Valentin Lutchanka, back to top">
+        <span class="brand-mark" aria-hidden="true">VL</span>
+        <span class="brand-name">Valentin Lutchanka</span>
+      </a>
 
-      <div class="profile">
-        <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="index.html">Valentin Lutchanka</a></h1>
-        <div class="social-links mt-3 text-center">
-          <a href="https://github.com/Valiantsin2021" class="github"><i class="bx bxl-github"></i></a>
-          <a href="https://www.facebook.com/profile.php?id=100000433888072" class="facebook"><i
-              class="bx bxl-facebook"></i></a>
-          <a href="https://www.linkedin.com/in/valiantsin-lutchanka/" class="linkedin"><i
-              class="bx bxl-linkedin"></i></a>
-          <a href="https://bento.me/valentin-lutchanka/" class="bento"><i class="bx bx-notification"></i></a>
-        </div>
-      </div>
-
-      <nav id="navbar" class="nav-menu navbar">
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
         <ul>
-          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-          <li><a href="#facts" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Facts</span></a></li>
-          <li><a href="#skills" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Skills</span></a></li>
-          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i>
-              <span>Portfolio</span></a></li>
-          <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
-          <li><a href="#certifications" class="nav-link scrollto"><i class="bx bx-server"></i>
-              <span>Certifications</span></a></li>
-          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+          <li><a href="#impact">Impact</a></li>
+          <li><a href="#stlc">AI across STLC</a></li>
+          <li><a href="#leadership">Leadership</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#toolkit">Toolkit</a></li>
+          <li><a href="#credentials">Credentials</a></li>
+          <li><a href="#contact" class="nav-cta">Contact</a></li>
         </ul>
-      </nav><!-- .nav-menu -->
-    </div>
-  </header><!-- End Header -->
+      </nav>
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
-    <div class="hero-container" data-aos="fade-in">
-      <h1>Valentin Lutchanka</h1>
-      <p>I'm <span class="typed"
-          data-typed-items=" SDET Automation QA Engineer, QA lead, automating with JavaScript and Python"></span></p>
+      <div class="header-actions">
+        <button type="button" class="icon-btn theme-toggle" aria-label="Switch color theme">
+          <svg class="icon icon-sun" aria-hidden="true">
+            <use href="#i-sun" />
+          </svg>
+          <svg class="icon icon-moon" aria-hidden="true">
+            <use href="#i-moon" />
+          </svg>
+        </button>
+        <button type="button" class="icon-btn nav-toggle" aria-label="Open menu" aria-expanded="false"
+          aria-controls="site-nav">
+          <svg class="icon icon-open" aria-hidden="true">
+            <use href="#i-menu" />
+          </svg>
+          <svg class="icon icon-close" aria-hidden="true">
+            <use href="#i-x" />
+          </svg>
+        </button>
+      </div>
     </div>
-  </section><!-- End Hero -->
+  </header>
 
   <main id="main">
 
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container">
+    <!-- ======= Hero ======= -->
+    <section id="top" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="hero-id">
+            <img src="assets/img/profile-img.jpg" alt="Portrait of Valentin Lutchanka" class="avatar" width="56"
+              height="56">
+            <div>
+              <p class="hero-name">Valentin Lutchanka</p>
+              <p class="hero-role">Agentic QA Engineering Manager · Málaga, Spain</p>
+            </div>
+          </div>
 
-        <div class="section-title">
-          <h2>About</h2>
-          <p>I am an Agentic QA Engineering Manager, with hands on experience as a SDET QA Lead with
-            more than 5 years of experience in QA SDET teams management. Six Sigma Green Belt and ISTQB certified.
+          <h1>AI quality engineering, measured in hours given back to the team.</h1>
+          <p class="lead">
+            I integrate AI-empowered processes and autonomous agents into every stage of the software testing
+            lifecycle, from requirements refinement to defect triage. The result so far: <strong>3,500+ labor hours
+              saved</strong>, with people refocused on risk-based and exploratory work.
           </p>
-        </div>
 
-        <div class="row">
-          <div class="col-lg-4" data-aos="fade-right">
-            <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
+          <div class="hero-ctas">
+            <a href="#contact" class="btn btn-primary">Get in touch</a>
+            <a href="#impact" class="btn btn-ghost">See the impact</a>
           </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3>SDET Automation engineer &amp; QA lead.</h3>
-            <p class="fst-italic">
-              JavaScript | Cypress | WebdriverIO | Playwright | Postman | Newman | Bruno | Mocha | Supertest | K6 |
-              Jmeter | Pyton/Pytest
-            </p>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Malaga, Spain</span></li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span><a
-                        href="mailto:lutchenkovalentin@gmail.com">lutchenkovalentin@gmail.com</a></span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Languages:</strong> <span>C1+: English | Spanish |
-                      Russian </span></li>
-                </ul>
-              </div>
-            </div>
-            <p>
-              I am dedicated to
-              enhancing the processes and products quality through AI empowered
-              Automated Testing, leveraging Javascript and Python. I am combining the agentic approach with people
-              enablement through a goal-oriented and
-              open-minded methodology, backed by strong analytical skills. My expertise spans functional and
-              non-functional
-              (performance) types of testing, and I possess robust hands-on experience managing teams and leading
-              projects with prominent testing frameworks
-              such as Playwright, Cypress, Jmeter, K6, Mocha, and Postman/Newman. Additionally, I am proficient
-              in creation robust quality gates throughCI/CD pipelines using Jenkins, GitHub Actions, and Bamboo. and AWS
-              cloud services.
-            </p>
-            <p>
-              My commitment to learning extends beyond my current skill set, and I am eager to explore new
-              technical and non-technical domains using top notch approaches. I have a proven ability to establish and
-              maintain strong
-              relationships with colleagues, fostering team unity and enhancing overall productivity.
-              With a dedication to excellence and a quality-oriented approach, I am well-prepared to contribute
-              effectively to any project or team. I am excited about the prospect of furthering my professional
-              journey and embracing new challenges in the ever-evolving landscape of technology.
-            </p>
-            <p>I have developed and open sourced various Test Automation support tools.</p>
-          </div>
-        </div>
 
-      </div>
-    </section><!-- End About Section -->
-
-    <!-- ======= Facts Section ======= -->
-    <section id="facts" class="facts">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Facts</h2>
-          <h5>In my life and work I follow a 'Continuous improvement' way to enable all team members dedication to
-            excellence, and it proves itself every day.</h5>
-          <ul> <strong>My workflows include:</strong>
-            <li>Management of Data driven functional/non functional, UI and API automated testing teams</li>
-            <li>Strategy development for Performance testing and process improvements</li>
-            <li>Cross Functional Teams collaboration</li>
-            <li>Agile Development & Scrum</li>
+          <ul class="hero-social" aria-label="Profiles">
+            <li><a href="https://www.linkedin.com/in/valiantsin-lutchanka/" target="_blank" rel="noopener"
+                aria-label="LinkedIn"><svg class="icon" aria-hidden="true">
+                  <use href="#i-linkedin" />
+                </svg></a></li>
+            <li><a href="https://github.com/Valiantsin2021" target="_blank" rel="noopener" aria-label="GitHub"><svg
+                  class="icon" aria-hidden="true">
+                  <use href="#i-github" />
+                </svg></a></li>
+            <li><a href="mailto:lutchenkovalentin@gmail.com" aria-label="Email"><svg class="icon" aria-hidden="true">
+                  <use href="#i-mail" />
+                </svg></a></li>
           </ul>
         </div>
 
-        <div class="row no-gutters">
-
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
-            <div class="count-box">
-              <i class="bi bi-github"></i>
-              <span data-purecounter-start="0" data-purecounter-end="25" data-purecounter-duration="1"
-                class="purecounter"></span>
-              <p><strong>Testing showcase Repositories</strong></p>
-            </div>
+        <figure class="pipeline" aria-label="Where AI works in my testing lifecycle">
+          <div class="pipeline-bar">
+            <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span class="pipeline-title">agentic-stlc</span>
           </div>
-
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="100">
-            <div class="count-box">
-              <i class="bi bi-journal-richtext"></i>
-              <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1"
-                class="purecounter"></span>
-              <p><strong>Projects</strong> using different AI enabled frameworks</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="200">
-            <div class="count-box">
-              <i class="bi bi-clock"></i>
-              <span data-purecounter-start="0" data-purecounter-end="3500" data-purecounter-duration="1"
-                class="purecounter"></span>
-              <p><strong>Hours saved with LSS</strong> improvements last year</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="300">
-            <div class="count-box">
-              <i class="bi bi-people"></i>
-              <span data-purecounter-start="0" data-purecounter-end="24" data-purecounter-duration="1"
-                class="purecounter"></span>
-              <p><strong>QA Analysts Team leaded</strong> on the current position</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Facts Section -->
-
-    <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Hard Skills</h2>
-          <p>PROGRAMMING LANGUAGES & TOOLS</p>
-        </div>
-
-        <div class="row skills-content">
-
-          <div class="col-lg-6" data-aos="fade-up">
-
-            <div class="progress">
-              <span class="skill">JavaScript <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Playwright <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Cypress <i class="val">85%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Performance testing (Jmeter | K6) <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="progress">
-              <span class="skill">CI/CD tools (GHA | Bamboo | Gitlab | Jenkins) <i class="val">95%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">API testing (Postman | Newman | Bruno | Supretest) <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Python/Pytest <i class="val">65%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Docker/Containerization <i class="val">85%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Other testing frameworks (Mocha | Vitest | Jest) <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Skills Section -->
-    <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Soft Skills</h2>
-          <p></p>
-        </div>
-
-        <div class="row skills-content">
-
-          <div class="col-lg-6" data-aos="fade-up">
-
-            <div class="progress">
-              <span class="skill">Agentic QA team management<i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Complex Analitical process improvement<i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">QA team enablement and empowerment<i class="val">95%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Risk management and prioritization<i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Complex Problem resolution <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="progress">
-              <span class="skill">Conflicts resolution <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Decision making <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Fast learning <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-      </div>
-    </section><!-- End Skills Section -->
-
-    <!-- ======= Resume Section ======= -->
-    <section id="resume" class="resume">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Resume</h2>
-          <p>An open minded and goal oriented SDET Automation manager, QA Lead, proficient in Frontend and Backend
-            functional/non functional test automation management. Lead a team of SDET and UAT QA analysts in API, UI and
-            performance testing for Acceptance and UAT environments. Creation and maintenance of Automation testing
-            frameworks - Playwright/Cypress and K6.</p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-6" data-aos="fade-up">
-            <h3 class="resume-title">Sumary</h3>
-            <div class="resume-item pb-0">
-              <h4>Valentin Lutchanka</h4>
-              <p><em></em></p>
-              <ul>
-                <li>Benalmadena, Malaga, 29630, Spain</li>
-                <li>+34 662250565</li>
-                <li>lutchenkovalentin@gmail.com</li>
-              </ul>
-            </div>
-
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>DevOps with Docker/ Full stack CICD and Containers</h4>
-              <h5>2023</h5>
-              <p><em>University of Helsinki, Finland</em></p>
-              <p>University courses to leverage best DevOps practices in CICD, Docker and containerisation of the
-                automated test suites.</p>
-            </div>
-            <div class="resume-item">
-              <h4>EPAM University - Test Automation</h4>
-              <h5>2022 - 2023</h5>
-              <p><em>EPAM, Malaga, Spain</em></p>
-              <p>Practical internship course of automation testing with JavaScript using WebdriverIO, Cypress, Mocha
-                frameworks, Postman API platform. Participation in various E2E and API automation testing projects.</p>
-            </div>
-            <div class="resume-item">
-              <h4>Bachelor of Business administration</h4>
-              <h5>2004 - 2006</h5>
-              <p><em>Dutch Delta University, Netherlands</em></p>
-              <p>Three-year professional undergraduate course in Business Management.</p>
-            </div>
-          </div>
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Professional Experience</h3>
-            <div class="resume-item">
-              <h4>LEAD QA AUTOMATION ENGINEER</h4>
-              <h5>2023 - Present</h5>
-              <p><em>Verisk Underwriting Solutions </em></p>
-              <ul>
-                <li>Led the mixed team of 10 QA analysts in API, UI, and performance testing in an Agile environment.
-                </li>
-                <li>I created a whole team-level Test Automation Framework from scratch leveraging Playwright, K6, and
-                  Newman and integrated into it 4 different insurance and underwriting-related projects to eliminate the
-                  spread in tools and technical stack.</li>
-                <li>Developed an automated API test code generator application that led to an increase of 70% in
-                  efficiency in testing through automation for 2 DEV QA functional testing projects, leveraging Six
-                  Sigma principles that banked more than 700 hours of yearly labor savings, eliminating manual
-                  activities and freeing time for exploratory and risk-based testing. </li>
-                <li>Developed 2 test support npm packages to assist in the establishment of a robust CI/CD pipeline
-                  using Bamboo and Jenkins, incorporating smoke and regression data-driven API, UI, and performance test
-                  suites. These improvements ensured seamless code deployment up to best testing standards and reduced
-                  deployment time by 2x times.</li>
-                <li>Conducted more than 10 team training during a year to adopt the latest test automation tendencies.
-                  Motivated 4 team members to obtain Playwright certification to become confident automated test
-                  developers. Mentored one QA analyst in test automation.</li>
-                <li>Created the comprehensive testing documentation and delegated its maintenance to responsible team
-                  members.</li>
-                <li>Strong practical experience in requirements analysis, test effort estimating, test design, test
-                  development, test review, test execution, test result evaluating and test reporting. Work in close
-                  communication with developement team under the discovered issues. Organizing and test running in
-                  manual and automation functional testing, API, performance, installation, regression testing.
-                  Proficient in test design techniques such as equivalent partitioning, boundary values analysis,
-                  pairwise method.</li>
-                <li>Established a unified automated reporting system within the test automation framework for real-time
-                  stakeholder notification and shortening of the feedback loop that provides immediate test results
-                  visibility.</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>QA AUTOMATION ENGINEER</h4>
-              <h5>2022</h5>
-              <p><em>EPAM, Malaga, Spain</em></p>
-              <ul>
-                <li>Developed complete UI and API test automation regression suites with Cypress, migrated from
-                  WebdriverIO and Mocha/Postman frameworks, that allowed to unify the technical stack of the
-                  software project.</li>
-                <li>Analyzed test suites, and developed test plan improvements based on existing risk analysis that
-                  shortened the test execution by 20%, and eased the test automation candidates' evaluation.</li>
-                <li>Gained valuable experience in test automation and integration into CICD pipeline leveraging Docker,
-                  GitHub Actions, and Jenkins produced a consistent test environment reducing the test maintenance time
-                  by 20%.</li>
-                <li>Performed proficient API automation testing using Postman, validating the functionality and
-                  performance of APIs.</li>
-                <li>Led test planning initiatives and conducted thorough requirements testing, ensuring alignment with
-                  project objectives to cover main risk areas.</li>
-                <li>Managed test results reporting and test results evaluation via automation.</li>
-                <li>Worked in close communication with development team under the discovered issues.</li>
-                <li>Embraced Agile, Scrum, and Kanban methodologies, gaining proficiency in project management
-                  tools to enhance collaborative and streamlined workflows.</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>MANUAL/AUTOMATION QA ANALYST</h4>
-              <h5>2018 - 2022</h5>
-              <p><em>Virona IT, Minsk, Belarus</em></p>
-              <ul>
-                <li>Gained extensive experience in remote working with a development team on sports domain software
-                  products and performed both functional and non-functional testing, covering smoke, regression, sanity,
-                  retest, UI/UX, usability, and localization throughout the testing life cycle.</li>
-                <li>Obtained strong practical experience in static and dynamic testing of the Application Under Test,
-                  requirements analysis, test effort estimating, and test design techniques.</li>
-                <li>Handled positive and negative testing scenarios for UI, API, and functionality using WebdriverIO,
-                  Postman/Newman, and Mocha/Supertest.</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>MANAGER</h4>
-              <h5>2009 - 2018</h5>
-              <p><em>Club de Hockey, Benalmadena, Spain</em></p>
-              <ul>
-                <li>I have gained valuable managerial experience including customers relationship management, conflicts
-                  resolution, sales/service and office management in Sport industry.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Resume Section -->
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Portfolio</h2>
-          <h4>I have developed and open sourced various Test Automation support tools.</h4>
-        </div>
-
-        <div class="row" data-aos="fade-up">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-web">NPM</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
-          <div class="portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <h5><strong>Automated API tests Assertions generator</strong></h5>
-              <ul>
-                <li>Single page web application to automatically generate API tests assertions for Postman, Insomnia,
-                  Mocha/Cypress,
-                  Playwright and PyTest frameworks with 100% response body, headers and schema test coverage.
-                </li>
-              </ul>
-              <img src="assets/img/portfolio/portfolio-1.png" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-1.png" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="Assertions generator"><i class="bx bx-plus"></i></a>
-              </div>
-            </div>
-            <h5><a href="https://github.com/Valiantsin2021/Playwright-Postman-assertions-generation" class="github"
-                target=”_blank”><i class="bx bxl-github"><strong>Explore this project</strong></i></a></h5>
-            <div class="portfolio-wrap">
-              <h5><strong>Test Automation ROI Calculator</strong></h5>
-              <ul>
-                <li>Standalone web app for Test Automation return of investments calculation</li>
-              </ul>
-              <img src="assets/img/portfolio/automation-roi-calculator.png" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/automation-roi-calculator.png" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="Test Automation ROI Calculator"><i class="bx bx-plus"></i></a>
-              </div>
-            </div>
-            <h5><a href="https://valiantsin2021.github.io/test-automation-roi-calculator/" class="github"
-                target=”_blank”><i class="bx bxl-github"><strong>Explore this project</strong></i></a></h5>
-            <div class="portfolio-wrap">
-              <h5><strong>XML-JSON text comparison tool</strong></h5>
-              <ul>
-                <li>Standalone web app for text comparison with Diff.js library</li>
-              </ul>
-              <img src="assets/img/portfolio/diff.png" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/diff.png" data-gallery="portfolioGallery" class="portfolio-lightbox"
-                  title="XML-JSON text comparison tool"><i class="bx bx-plus"></i></a>
-              </div>
-            </div>
-            <h5><a href="https://valiantsin2021.github.io/Comparer-tool/" class="github" target=”_blank”><i
-                  class="bx bxl-github"><strong>Explore this project</strong></i></a></h5>
-            <div class="portfolio-wrap">
-              <h5><strong>ZOD schema generator app</strong></h5>
-              <ul>
-                <li>Standalone web app for generating Zod schema for API responses</li>
-              </ul>
-              <img src="assets/img/portfolio/schema-generator.png" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/schema-generator.png" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="ZOD schema generator"><i class="bx bx-plus"></i></a>
-              </div>
-            </div>
-            <h5><a href="https://valiantsin2021.github.io/schema-generator" class="github" target=”_blank”><i
-                  class="bx bxl-github"><strong>Explore this project</strong></i></a></h5>
-          </div>
-          <div class="portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <h5><strong>Cypress WEB UI performance testing plugin</strong></h5>
-              <ul>
-                <li>The cypress-performance plugin introduces a powerful way to measure and assert on web performance
-                  metrics directly in your Cypress tests.</li>
-              </ul>
-              <img src="assets/img/portfolio/cypress-performance.png" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/cypress-performance.png" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="cypress-performance"><i class="bx bx-plus"></i></a>
-              </div>
-            </div>
-            <h5><a href="https://www.npmjs.com/package/cypress-performance" class="github" target=”_blank”><i
-                  class="bx bxl-nodejs"><strong>Explore this project</strong></i></a></h5>
-          </div>
-        </div>
-        <div class="portfolio-item filter-web">
-
-          <div class="portfolio-wrap">
-            <h5><strong>Playwright WB UI performance testing npm library</strong></h5>
-            <ul>
-              <li>A comprehensive performance metrics collector for Playwright tests. Collect and analyze web vital
-                metrics, network timing, and resource usage in your Playwright tests.</li>
-            </ul>
-            <img src="assets/img/portfolio/playwright-performance.png" class="img-fluid" alt="">
-            <div class="portfolio-links">
-              <a href="assets/img/portfolio/playwright-performance.png" data-gallery="portfolioGallery"
-                class="portfolio-lightbox" title="playwright-performance-metrics"><i class="bx bx-plus"></i></a>
-            </div>
-          </div>
-          <h5><a href="https://www.npmjs.com/package/playwright-performance-metrics" class="github" target=”_blank”><i
-                class="bx bxl-nodejs"><strong>Explore this project</strong></i></a></h5>
-        </div>
-      </div>
-      <div class="portfolio-item filter-web">
-        <div class="portfolio-wrap">
-          <h5><strong>Newman parallel tests executor npm library</strong></h5>
-          <ul>
-            <li>Newman Parallel is an npm package that executes Postman collections in parallel, saving time by
-              running them concurrently and saving HTML and XML results reports. </li>
-          </ul>
-          <img src="assets/img/portfolio/portfolio-2.png" class="img-fluid" alt="">
-          <div class="portfolio-links">
-            <a href="assets/img/portfolio/portfolio-2.png" data-gallery="portfolioGallery" class="portfolio-lightbox"
-              title="Newman Parallel"><i class="bx bx-plus"></i></a>
-          </div>
-        </div>
-        <h5><a href="https://www.npmjs.com/package/newman-parallel" class="github" target=”_blank”><i
-              class="bx bxl-nodejs"><strong>Explore this project</strong></i></a></h5>
-      </div>
-
-      <div class="portfolio-item filter-web">
-        <div class="portfolio-wrap">
-          <h5><strong>JSON to CSV batch converter npm library</strong></h5>
-          <ul>
-            <li>Jtocsv is an npm package that reads the JSON files from a folder path, parses and flattens the data
-              and combines the data in the output CSV file. It provides flexibility through command-line arguments.
-            </li>
-          </ul>
-          <img src="assets/img/portfolio/jtocsv.jpg" class="img-fluid" alt="">
-          <div class="portfolio-links">
-            <a href="assets/img/portfolio/jtocsv.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
-              title="JSON to CSV"><i class="bx bx-plus"></i></a>
-          </div>
-        </div>
-        <h5><a href="https://www.npmjs.com/package/jtocsv" class="github" target=”_blank”><i
-              class="bx bxl-nodejs"><strong>Explore this project</strong></i></a></h5>
-      </div>
-      </div>
-    </section><!-- End Portfolio Section -->
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Services</h2>
-          <p></p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
-            <div class="icon"><i class="bi bi-briefcase"></i></div>
-            <h4 class="title"><a href="">Data driven functional/non functional, UI and API automated testing</a></h4>
-            <p class="description">Complete API backend testing solutions using Postman, Bruno, Mocha(Chai-HTTP) or
-              Pytest(requests) libraries</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon"><i class="bi bi-card-checklist"></i></div>
-            <h4 class="title"><a href="">UI E2E automated test suites</a></h4>
-            <p class="description">Development from scratch of the automated test frameworks leveraging Playwright,
-              Cypress, WebdriverIO </p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon"><i class="bi bi-bar-chart"></i></div>
-            <h4 class="title"><a href="">Performance / Load testing for Frontend and Backend</a></h4>
-            <p class="description">Jmeter, K6 and Lighthouse automated tests development</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon"><i class="bi bi-binoculars"></i></div>
-            <h4 class="title"><a href="">Test results reporting and notification systems</a></h4>
-            <p class="description">Custom solutions for leveraging the Automated tests reporting and notifications for
-              Teams, Telegramm, Slack etc.</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
-            <div class="icon"><i class="bi bi-brightness-high"></i></div>
-            <h4 class="title"><a href="">Web pages crawling and parsing solutions</a></h4>
-            <p class="description">Utilizing the custom scripts in Python and JavaScript for automated web crawling and
-              data scrapping</p>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Services Section -->
-
-    <!-- ======= Certifications Section ======= -->
-    <section id="certifications" class="testimonials section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Certifications</h2>
-          <p></p>
-        </div>
-
-        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-item" data-aos="fade-up">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  The DevOps with Docker course provides an introduction to container technologies, with a particular
-                  focus on Docker and container orchestration using Docker Compose. Containers are a lightweight,
-                  portable way to package and deploy software applications. Throughout the course, we'll explore the
-                  various components of web services, such as reverse proxies and databases, and how they can be
-                  deployed using Docker.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/certifications/certifications-1.jpg" class="testimonial-img"
-                  alt="DevOps with Docker">
-                <h3>DevOps with Docker Certificate</h3>
-                <h4><a
-                    href="https://studies.cs.helsinki.fi/stats/api/certificate/docker2023/en/16471d94cdbdcb55bb4f30f7fcf873c0"
-                    target=”_blank”>Helsinki
-                    University</a></h4>
-              </div>
-            </div><!-- End Certifications item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="100">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  This Full Stack Web Development extension CI/CD course, you will gain an understanding of why you
-                  should use a Continuous Integration / Continuous Delivery system (CI/CD system), what can one do for
-                  you, and how to get started with GitHub Actions which is...
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/certifications/certifications-2.jpg" class="testimonial-img" alt="">
-                <h3>Full Stack CI/CD Certificate</h3>
-                <h4><a
-                    href="https://studies.cs.helsinki.fi/stats/api/certificate/fs-cicd/en/ce2b668b429cb1cd4068cd5c3f04d0e0"
-                    target=”_blank”>Helsinki
-                    University</a> </h4>
-              </div>
-            </div><!-- End Certifications item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="200">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  In this Full Stack extension Containers course covered the containers utilization to create immutable
-                  execution environments for your Node.js and React projects. Containers also make it easy to include
-                  multiple services in our projects. Utilizing containers gives you flexibility to explore and
-                  experiment with multiple different and popular tools.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/certifications/certifications-3.jpg" class="testimonial-img" alt="">
-                <h3>Full Stack Containers Certificate</h3>
-                <h4><a
-                    href="https://studies.cs.helsinki.fi/stats/api/certificate/fs-containers/en/f511d7f6a828f1a34d6dc17715f80993"
-                    target=”_blank”>Helsinki
-                    University</a> </h4>
-              </div>
-            </div><!-- End Certifications item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="300">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Complete internship practice for test automation with JavaScript, including the creations from scratch
-                  of test automation frameworks utilizing Playwright/Cypress/WebdriverIO and API frameworks with Mocha,
-                  Supertest, Pytest
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/certifications/certifications-4.jpg" class="testimonial-img" alt="EPAM">
-                <h3>Test Automation with JavaScript Certificate</h3>
-                <h4><a href="https://training.epam.com/en" target=”_blank”>EPAM</a></h4>
-              </div>
-            </div><!-- End Certifications item -->
-            <div class="swiper-slide">
-              <div class="testimonial-item" data-aos="fade-up">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Lean Six Sigma Green Belt certification. A Lean Six Sigma Green Belt possesses
-                  a thorough understanding of all aspects of the Lean Six Sigma Method including competence
-                  in subject matters contained within the phases of Define, Measure, Analyze, Improve and Control
-                  (DMAIC).
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/certifications/certifications-23.png" class="testimonial-img" alt="LSS Green Belt">
-                <h3>LSS Green Belt</h3>
-                <h4>LSS Green Belt</h4>
-              </div>
-            </div><!-- End Certifications item -->
-            <div class="swiper-slide">
-              <div class="testimonial-item" data-aos="fade-up">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  AWS Certified Cloud Practitioner (CLF-C01) The foundations of cloud computing.
-                  The core AWS services, including compute, network, databases, and storage.
-                  Security best practices and compliance in the AWS Cloud.
-                  The cloud costs, economics, and billing practices of the AWS Cloud.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/certifications/certifications-20.png" class="testimonial-img"
-                  alt="AWS Certified Cloud Practitioner">
-                <h3>AWS Certified Cloud Practitioner</h3>
-                <h4><a
-                    href="https://verify.acloud.guru/8C4D120C4C73?_ga=2.75269915.884185671.1706735276-2062949792.1705783835"
-                    target=”_blank”>AWS Cloud Practitioner</a></h4>
-              </div>
-            </div><!-- End Certifications item -->
-            <div class="swiper-slide">
-              <div class="testimonial-item" data-aos="fade-up">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  AZ-900: Microsoft Azure Fundamentals Cloud concepts.
-                  Azure architecture and services. Azure management and governance.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/certifications/certifications-21.png" class="testimonial-img"
-                  alt="AWS Certified Cloud Practitioner">
-                <h3>AZ-900: Microsoft Azure Fundamentals</h3>
-                <h4><a href="https://verify.acloud.guru/16E385B626DE" target=”_blank”>Microsoft Azure Fundamentals</a>
-                </h4>
-              </div>
-            </div><!-- End Certifications item -->
-            <div class="swiper-slide">
-              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="400">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Improve your skills by tackling a new Postman challenge for 30 days in a row. The “30 Days of Postman:
-                  Coding Challenge for Developers” has been a transformative journey. From a beginner unsure of API
-                  testing intricacies to someone who confidently wields Postman’s features, I’ve emerged with a valuable
-                  skill set.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/certifications/certifications-5.jpg" class="testimonial-img" alt="">
-                <h3>30 days of Postman - for developers Certificate</h3>
-                <h4><a href="https://badgr.com/public/assertions/rJmO8Zn9TZemsyZ_BXJ28Q" target=”_blank”>Postman</a>
-                </h4>
-              </div>
-            </div><!-- End Certifications item -->
-            <div class="swiper-slide">
-              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="400">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Lean Six Sigma Green Belt Certification. Six Sigma Green Belts are devoted to process improvement for
-                  their teams. Help your team increase efficiency, decrease defects and mistakes, find and remove
-                  obstacles, and improve overall quality output.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/certifications/certifications-6.jpg" class="testimonial-img" alt="">
-                <h3>Lean Six Sigma Green Belt Certificate</h3>
-                <h4><a
-                    href="https://www.linkedin.com/learning/certificates/c9e34fe07eaeff04597822012ce97669e0330fa196354d6f10c9409532707dcb?u=1009514"
-                    target=”_blank”>LSS (Linkedin)</a></h4>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="400">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  AWS Cloud Quest: Cloud Practitioner. Build solutions in a live AWS environment — first with
-                  step-by-step guidance, then experiment on your own.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/certifications/certifications-7.jpg" class="testimonial-img" alt="">
-                <h3>AWS Cloud Practitioner Certificate</h3>
-                <h4><a href="https://www.credly.com/badges/49caf3a4-241e-4912-bb43-d2165de5dc3f/linked_in_profile"
-                    target=”_blank”>AWS</a>
-                </h4>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="400">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Google IT Automation with Python Professional Certificate. This six-course certificate, developed by
-                  Google, is designed to provide
-                  IT professionals with in-demand skills -- including Python, Git, and IT
-                  automation -- that can help them advance their careers.
-
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/certifications/certifications-24.png" class="testimonial-img" alt="Google IT ">
-                <h3>Google IT Automation with Python Professional Certificate.</h3>
-                <h4><a href="https://www.credly.com/badges/21d5a587-305c-419e-b1ec-1a282a1d8a45/public_url"
-                    target=”_blank”>Google IT Automation with Python Professional Certificate.</a></h4>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="400">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Playwright 101 test automation Certificate. Certify your expertise as a Playwright automation tester
-                  for end-to-end testing of modern web apps with this certification.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/certifications/certifications-8.jpg" class="testimonial-img" alt="">
-                <h3>Playwright 101 Certificate</h3>
-                <h4><a href="https://www.lambdatest.com/certifications/lambdatest-certified/P101-3YD0QK.png"
-                    target=”_blank”>Lambda
-                    Test</a></h4>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="400">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Cypress 101 test automation Certificate. Showcase your expertise with end-to-end testing using Cypress
-                  automation framework and stay one step ahead.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/certifications/certifications-9.jpg" class="testimonial-img" alt="">
-                <h3>Cypress 101 Certificate</h3>
-                <h4><a href="https://www.lambdatest.com/certifications/lambdatest-certified/C101-BKGQP9.png"
-                    target=”_blank”>Lambda
-                    Test</a></h4>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="400">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  LambdaTest Test Automation Professional Certificate. Test automation is an enormous time-saver, as
-                  well as a critical part of CI/CD and agile development. Whether you’re considering a career shift into
-                  test automation or just need to talk about it at work, these courses can help. Tune in, pass the final
-                  exam, and earn your certificate.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/certifications/certifications-10.jpg" class="testimonial-img" alt="">
-                <h3>LambdaTest Test Automation Professional Certificate</h3>
-                <h4><a
-                    href="https://www.linkedin.com/learning/certificates/5324df2c47a9192aac4b01e4854e99609a836e0188cc2b5e9e8b372d05db271a?u=1009514"
-                    target=”_blank”>Lambda
-                    Test</a></h4>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="400">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  JavaScript Algorithms and Data Structures Free Code Camp Certification. While HTML and CSS control the
-                  content and styling of a page, JavaScript is used to make it interactive. In the JavaScript Algorithm
-                  and Data Structures Certification, you'll learn the fundamentals of JavaScript including variables,
-                  arrays, objects, loops, and functions.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/certifications/certifications-11.jpg" class="testimonial-img"
-                  alt="JavaScript Algorithms and Data Structures">
-                <h3>JavaScript Algorithms and Data Structures </h3>
-                <h4><a
-                    href="https://www.freecodecamp.org/certification/fcc1daf9487-3b8d-4ee2-9a59-1f724033ac4e/javascript-algorithms-and-data-structures"
-                    target=”_blank”>Free
-                    Code Camp</a></h4>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="400">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  In the Quality Assurance Certification, you'll learn how to write tests with Chai to ensure your
-                  applications work the way you expect them to.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/certifications/certifications-22.png" class="testimonial-img"
-                  alt="Quality Assurance">
-                <h3>Quality Assurance</h3>
-                <h4><a
-                    href="https://www.freecodecamp.org/certification/fcc1daf9487-3b8d-4ee2-9a59-1f724033ac4e/quality-assurance-v7"
-                    target=”_blank”>Free
-                    Code Camp</a></h4>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="400">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Continuous integration with Jenkins Certificate. Understandig the Continuous integration best
-                  practices with Jenkins.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/certifications/certifications-13.jpg" class="testimonial-img"
-                  alt="Continuous integration with Jenkins Certificate">
-                <h3>Continuous integration with Jenkins Certificate</h3>
-                <h4><a href="https://testautomationu.applitools.com/certificate/?id=01d3cde3">Test Automation
-                    University</a></h4>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="400">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Cypress with Typescript Test Automation University Certification.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/certifications/certifications-12.jpg" class="testimonial-img"
-                  alt="Cypress with Typrescript Certificate">
-                <h3>Cypress with Typrescript Certificate</h3>
-                <h4><a href="https://testautomationu.applitools.com/certificate/?id=1d445b88">Test Automation
-                    University</a></h4>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="400">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  AWS API Gateway with HTTP, Lambda, DynamoDB, and iOS. Leveraging the Cloud first solutions for testing
-                  activities.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/certifications/certifications-14.jpg" class="testimonial-img"
-                  alt="AWS API Gateway with HTTP, Lambda, DynamoDB, and iOS">
-                <h3>AWS API Gateway with HTTP, Lambda, DynamoDB, and iOS Certificate.</h3>
-                <h4><a
-                    href="https://www.linkedin.com/learning/certificates/e9e20a8bd55ec3938aa6dd6445cbc465ea1e1bdcda8726961b8f061f9afadaea?u=1009514">Linkedin</a>
-                </h4>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="400">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Learning GitHub Actions for continues testing CICD setup. Automated tests integrations into deployment
-                  pipelines.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/certifications/certifications-15.jpg" class="testimonial-img"
-                  alt="Learning GitHub Actions Certificate">
-                <h3>Learning GitHub Actions Certificate.</h3>
-                <h4><a
-                    href="https://www.linkedin.com/learning/certificates/f07445d1f7dfb236622d8c71c189c3e409e92ad6cb44d47c0c403bbd38d3de17?u=1009514">Linkedin</a>
-                </h4>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="400">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Advanced Jmeter for performance testing. Load, Spike, Stress and distributed testing with Jmeter.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/certifications/certifications-16.jpg" class="testimonial-img"
-                  alt="Advanced Jmeter Certificate">
-                <h3>Advanced Jmeter Certificate.</h3>
-                <h4><a
-                    href="https://www.linkedin.com/learning/certificates/f07445d1f7dfb236622d8c71c189c3e409e92ad6cb44d47c0c403bbd38d3de17?u=1009514">Linkedin</a>
-                </h4>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="400">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Level up your API testing in Postman by harnessing the power of AI and automation techniques. Learn
-                  best practices and employ Postbot, an AI-powered assistant to streamline your workflows.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/certifications/certifications-17.jpg" class="testimonial-img"
-                  alt="Postman API tester certification">
-                <h3>Postman API tester Certificate. </h3>
-                <h4><a
-                    href="https://badgr.com/public/assertions/IxP3O7IETqCTZ0JvQu9eLg?identity__email=lutchenkovalentin@gmail.com">Postman</a>
-                </h4>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="400">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Test Automation in DevOps Certificate. Leveraging the Continuous testing in DevOps processes.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/certifications/certifications-18.jpg" class="testimonial-img"
-                  alt="Test Automation in DevOps Certificate">
-                <h3>Test Automation in DevOps Certificate.</h3>
-                <h4><a href="https://testautomationu.applitools.com/certificate/?id=9dccc300">Test Automation
-                    University</a></h4>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="400">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  JavaScript, SQL and CSS HackerRank Certificates.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/certifications/certifications-19.jpg" class="testimonial-img"
-                  alt="JavaScript, SQL and CSS Hackerank Certificates">
-                <h3>JavaScript, SQL and CSS Hackerank Certificates.</h3>
-                <h4><a href="https://www.hackerrank.com/certificates/4e734406a30d">HackerRank</a></h4>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </div>
+          <ol class="pipeline-list">
+            <li><span class="stage">requirements</span><span class="task">AI-assisted analysis &amp; refinement</span><span
+                class="status">on</span></li>
+            <li><span class="stage">test design</span><span class="task">agent-assisted authoring</span><span
+                class="status">on</span></li>
+            <li><span class="stage">execution</span><span class="task">AI test results analysis</span><span
+                class="status">on</span></li>
+            <li><span class="stage">defects</span><span class="task">AI classification &amp; triage</span><span
+                class="status">on</span></li>
+            <li><span class="stage">operations</span><span class="task">autonomous reporting agents</span><span
+                class="status">on</span></li>
+          </ol>
+          <figcaption class="pipeline-foot"><span>Σ labor hours saved</span><strong>3,500+</strong></figcaption>
+        </figure>
       </div>
     </section>
 
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
+    <!-- ======= Impact ======= -->
+    <section id="impact" class="section">
       <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Impact</p>
+          <h2>Results, not experiments</h2>
+          <p>Every AI and automation initiative I lead starts with a baseline and ends with a number.</p>
+        </header>
 
-        <div class="section-title">
-          <h2>Contact</h2>
-          <p>Feel free to reach me with the phone or email.</p>
+        <ul class="metrics">
+          <li class="metric">
+            <span class="metric-value">3,500+</span>
+            <span class="metric-label">labor hours saved by introducing the agentic approach and autonomous agents
+              across QA activities and operations</span>
+          </li>
+          <li class="metric">
+            <span class="metric-value">24</span>
+            <span class="metric-label">SDET and UAT QA analysts led in API, UI and performance testing</span>
+          </li>
+          <li class="metric">
+            <span class="metric-value">+70%</span>
+            <span class="metric-label">testing efficiency from an in-house API test generator, 700+ hours saved
+              yearly</span>
+          </li>
+          <li class="metric">
+            <span class="metric-value">2×</span>
+            <span class="metric-label">faster deployments through automated CI/CD quality gates</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ======= AI across STLC ======= -->
+    <section id="stlc" class="section section-alt">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">AI across the STLC</p>
+          <h2>Agents at every stage of the testing lifecycle</h2>
+          <p>AI is not one tool bolted on at the end. I place agents where the repetitive, high-volume work is,
+            and keep people in the loop where judgement matters.</p>
+        </header>
+
+        <ol class="stages">
+          <li class="stage-card">
+            <span class="stage-num">01</span>
+            <h3>Requirements analysis &amp; refinement</h3>
+            <p>AI-assisted requirements analysis, grooming and refinement. Ambiguities, gaps and testability risks
+              surface before the sprint commits, not after the build.</p>
+          </li>
+          <li class="stage-card">
+            <span class="stage-num">02</span>
+            <h3>Test design &amp; automation</h3>
+            <p>Agent-assisted test authoring on a unified Playwright, K6 and Newman framework, plus code generators
+              that produce API tests and assertions with full response coverage.</p>
+          </li>
+          <li class="stage-card">
+            <span class="stage-num">03</span>
+            <h3>Test results analysis</h3>
+            <p>AI-powered analysis of test runs separates real regressions from noise, so the team acts on signal
+              and the feedback loop stays short.</p>
+          </li>
+          <li class="stage-card">
+            <span class="stage-num">04</span>
+            <h3>Defect classification &amp; triage</h3>
+            <p>AI-powered defect classification and triaging routes issues to the right owner with consistent
+              severity, cutting manual triage effort.</p>
+          </li>
+          <li class="stage-card">
+            <span class="stage-num">05</span>
+            <h3>QA operations &amp; reporting</h3>
+            <p>Autonomous agents take over recurring QA operations, with unified real-time reporting that notifies
+              stakeholders the moment results land.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ======= Leadership ======= -->
+    <section id="leadership" class="section">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Leadership</p>
+          <h2>How I lead AI adoption in quality teams</h2>
+        </header>
+
+        <div class="principles">
+          <article class="principle">
+            <h3>Measure first</h3>
+            <p>Lean Six Sigma Green Belt. Each agent rollout follows DMAIC: baseline the manual effort, introduce the
+              agent, then control the result. That is how the 3,500+ hours were counted.</p>
+          </article>
+          <article class="principle">
+            <h3>People in the loop</h3>
+            <p>Agents absorb the repetitive work. Analysts move up to exploratory, risk-based testing and to
+              reviewing what the agents produce.</p>
+          </article>
+          <article class="principle">
+            <h3>Enable the team</h3>
+            <p>10+ internal trainings a year on current automation practices. Four team members certified in
+              Playwright, and hands-on mentoring for analysts moving into automation.</p>
+          </article>
+          <article class="principle">
+            <h3>One stack, one standard</h3>
+            <p>Four insurance and underwriting projects consolidated onto a single framework I built from scratch.
+              That removed tool sprawl and made quality comparable across projects.</p>
+          </article>
         </div>
+      </div>
+    </section>
 
-        <div class="row" data-aos="fade-in">
+    <!-- ======= Experience ======= -->
+    <section id="experience" class="section section-alt">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Experience</p>
+          <h2>Career</h2>
+        </header>
 
-          <div class="d-flex align-items-stretch">
-            <div class="info">
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Location:</h4>
-                <p>Benalmadena, Malaga, 29630, Spain</p>
-              </div>
-
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p><a href="mailto:lutchenkovalentin@gmail.com">lutchenkovalentin@gmail.com</a></p>
-              </div>
-
-              <div class="phone">
-                <i class="bi bi-phone"></i>
-                <h4>Call:</h4>
-                <p>+34662250565</p>
-              </div>
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d12812.674370147137!2d-4.5521283!3d36.5982484!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2ses!4v1702188856407!5m2!1sen!2ses"
-                frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+        <ol class="timeline">
+          <li class="role">
+            <div class="role-meta">
+              <span class="role-dates">2023 — Present</span>
+              <span class="role-org">Verisk Underwriting Solutions</span>
             </div>
+            <div class="role-body">
+              <h3>Agentic QA Engineering Manager</h3>
+              <ul>
+                <li>Lead a team of 24 SDET and UAT QA analysts across API, UI and performance testing for Acceptance
+                  and UAT environments in an Agile setup.</li>
+                <li>Introduced the agentic approach and autonomous agents across STLC stages: AI-assisted requirements
+                  analysis and refinement, AI-powered defect classification and triage, and test results analysis.
+                  <strong>3,500+ labor hours saved.</strong></li>
+                <li>Built a team-wide test automation framework from scratch (Playwright, K6, Newman) and integrated
+                  four insurance and underwriting projects into it.</li>
+                <li>Developed an API test code generator: +70% testing efficiency on two projects and 700+ labor hours
+                  saved yearly, freeing time for exploratory and risk-based testing.</li>
+                <li>Published two npm test-support packages powering Bamboo and Jenkins quality gates with smoke and
+                  regression suites. Deployment time cut by 2×.</li>
+                <li>Established unified, real-time test reporting and stakeholder notifications.</li>
+              </ul>
+            </div>
+          </li>
+          <li class="role">
+            <div class="role-meta">
+              <span class="role-dates">2022</span>
+              <span class="role-org">EPAM · Málaga</span>
+            </div>
+            <div class="role-body">
+              <h3>QA Automation Engineer</h3>
+              <ul>
+                <li>Migrated UI and API regression suites from WebdriverIO and Mocha/Postman to Cypress, unifying the
+                  project's stack.</li>
+                <li>Risk-based test plan improvements shortened test execution by 20%.</li>
+                <li>Docker, GitHub Actions and Jenkins integration gave a consistent test environment and cut
+                  maintenance time by 20%.</li>
+              </ul>
+            </div>
+          </li>
+          <li class="role">
+            <div class="role-meta">
+              <span class="role-dates">2018 — 2022</span>
+              <span class="role-org">Virona IT · Remote</span>
+            </div>
+            <div class="role-body">
+              <h3>Manual / Automation QA Analyst</h3>
+              <ul>
+                <li>Functional and non-functional testing of sports-domain products across the full testing life
+                  cycle, using WebdriverIO, Postman/Newman and Mocha/Supertest.</li>
+              </ul>
+            </div>
+          </li>
+          <li class="role">
+            <div class="role-meta">
+              <span class="role-dates">2009 — 2018</span>
+              <span class="role-org">Club de Hockey · Benalmádena</span>
+            </div>
+            <div class="role-body">
+              <h3>Manager</h3>
+              <ul>
+                <li>Nine years of business operations: customer relationships, sales and service, conflict resolution
+                  and office management.</li>
+              </ul>
+            </div>
+          </li>
+        </ol>
 
+        <div class="edu">
+          <h3>Education</h3>
+          <ul>
+            <li><strong>Bachelor of Business Administration</strong> · Dutch Delta University, Netherlands · 2004 — 2006
+            </li>
+            <li><strong>DevOps with Docker, Full Stack CI/CD &amp; Containers</strong> · University of Helsinki · 2023
+            </li>
+            <li><strong>Test Automation program</strong> · EPAM University · 2022 — 2023</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Toolkit ======= -->
+    <section id="toolkit" class="section">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Toolkit</p>
+          <h2>What I work with</h2>
+        </header>
+
+        <div class="toolkit">
+          <div class="tool-group">
+            <h3>AI &amp; agents</h3>
+            <ul class="chips">
+              <li>Agentic QA workflows</li>
+              <li>Autonomous agents</li>
+              <li>AI defect triage</li>
+              <li>AI results analysis</li>
+              <li>AI requirements refinement</li>
+              <li>MCP (Playwright, Chrome DevTools)</li>
+            </ul>
+          </div>
+          <div class="tool-group">
+            <h3>Test engineering</h3>
+            <ul class="chips">
+              <li>Playwright</li>
+              <li>Cypress</li>
+              <li>WebdriverIO</li>
+              <li>K6</li>
+              <li>JMeter</li>
+              <li>Postman / Newman</li>
+              <li>Bruno</li>
+              <li>Mocha</li>
+              <li>Supertest</li>
+              <li>Jest / Vitest</li>
+              <li>Pytest</li>
+            </ul>
+          </div>
+          <div class="tool-group">
+            <h3>Platform &amp; CI/CD</h3>
+            <ul class="chips">
+              <li>GitHub Actions</li>
+              <li>Jenkins</li>
+              <li>Bamboo</li>
+              <li>GitLab CI</li>
+              <li>Docker</li>
+              <li>AWS</li>
+              <li>Azure</li>
+            </ul>
+          </div>
+          <div class="tool-group">
+            <h3>Process &amp; languages</h3>
+            <ul class="chips">
+              <li>Lean Six Sigma</li>
+              <li>ISTQB</li>
+              <li>Risk-based testing</li>
+              <li>Agile / Scrum</li>
+              <li>JavaScript / TypeScript</li>
+              <li>Python</li>
+              <li>English · Spanish · Russian (C1+)</li>
+            </ul>
           </div>
         </div>
-
       </div>
-    </section><!-- End Contact Section -->
+    </section>
 
-  </main><!-- End #main -->
+    <!-- ======= Open source ======= -->
+    <section id="open-source" class="section section-alt">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Open source</p>
+          <h2>Tools I have built and published</h2>
+          <p>Hands-on engineering behind the leadership work.</p>
+        </header>
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
+        <ul class="projects">
+          <li class="project">
+            <img src="assets/img/portfolio/automation-roi-calculator.png" alt="Test Automation ROI Calculator interface"
+              loading="lazy">
+            <div class="project-body">
+              <h3>Test Automation ROI Calculator</h3>
+              <p>Web app that models the return on investment of test automation for business cases.</p>
+              <a href="https://valiantsin2021.github.io/test-automation-roi-calculator/" target="_blank"
+                rel="noopener">Open app <svg class="icon" aria-hidden="true">
+                  <use href="#i-arrow" />
+                </svg></a>
+            </div>
+          </li>
+          <li class="project">
+            <img src="assets/img/portfolio/portfolio-1.png" alt="API test assertions generator interface"
+              loading="lazy">
+            <div class="project-body">
+              <h3>API Assertions Generator</h3>
+              <p>Generates API test assertions for Postman, Insomnia, Mocha/Cypress, Playwright and Pytest with full
+                body, header and schema coverage.</p>
+              <a href="https://github.com/Valiantsin2021/Playwright-Postman-assertions-generation" target="_blank"
+                rel="noopener">View on GitHub <svg class="icon" aria-hidden="true">
+                  <use href="#i-arrow" />
+                </svg></a>
+            </div>
+          </li>
+          <li class="project">
+            <img src="assets/img/portfolio/playwright-performance.png" alt="playwright-performance-metrics output"
+              loading="lazy">
+            <div class="project-body">
+              <h3>playwright-performance-metrics</h3>
+              <p>npm library that collects web vitals, network timing and resource usage inside Playwright tests.</p>
+              <a href="https://www.npmjs.com/package/playwright-performance-metrics" target="_blank"
+                rel="noopener">View on npm <svg class="icon" aria-hidden="true">
+                  <use href="#i-arrow" />
+                </svg></a>
+            </div>
+          </li>
+          <li class="project">
+            <img src="assets/img/portfolio/cypress-performance.png" alt="cypress-performance plugin output"
+              loading="lazy">
+            <div class="project-body">
+              <h3>cypress-performance</h3>
+              <p>Cypress plugin to measure and assert on web performance metrics directly in tests.</p>
+              <a href="https://www.npmjs.com/package/cypress-performance" target="_blank" rel="noopener">View on npm
+                <svg class="icon" aria-hidden="true">
+                  <use href="#i-arrow" />
+                </svg></a>
+            </div>
+          </li>
+          <li class="project">
+            <img src="assets/img/portfolio/portfolio-2.png" alt="newman-parallel report output" loading="lazy">
+            <div class="project-body">
+              <h3>newman-parallel</h3>
+              <p>Runs Postman collections in parallel and saves HTML and XML reports.</p>
+              <a href="https://www.npmjs.com/package/newman-parallel" target="_blank" rel="noopener">View on npm <svg
+                  class="icon" aria-hidden="true">
+                  <use href="#i-arrow" />
+                </svg></a>
+            </div>
+          </li>
+          <li class="project">
+            <img src="assets/img/portfolio/schema-generator.png" alt="Zod schema generator interface" loading="lazy">
+            <div class="project-body">
+              <h3>Zod Schema Generator</h3>
+              <p>Generates Zod schemas from API responses for contract validation.</p>
+              <a href="https://valiantsin2021.github.io/schema-generator" target="_blank" rel="noopener">Open app <svg
+                  class="icon" aria-hidden="true">
+                  <use href="#i-arrow" />
+                </svg></a>
+            </div>
+          </li>
+        </ul>
+        <p class="more-link">More tools, including an <a href="https://valiantsin2021.github.io/Comparer-tool/"
+            target="_blank" rel="noopener">XML/JSON comparer</a> and <a href="https://www.npmjs.com/package/jtocsv"
+            target="_blank" rel="noopener">jtocsv</a>, on <a href="https://github.com/Valiantsin2021" target="_blank"
+            rel="noopener">GitHub</a>.</p>
+      </div>
+    </section>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <!-- ======= Credentials ======= -->
+    <section id="credentials" class="section">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Credentials</p>
+          <h2>Certifications</h2>
+        </header>
+
+        <ul class="certs">
+          <li class="cert">
+            <img src="assets/img/certifications/certifications-23.png" alt="" loading="lazy">
+            <div>
+              <h3>Lean Six Sigma Green Belt</h3>
+              <p>DMAIC process improvement</p>
+            </div>
+          </li>
+          <li class="cert">
+            <span class="cert-badge" aria-hidden="true">ISTQB</span>
+            <div>
+              <h3>ISTQB Certified Tester</h3>
+              <p>International Software Testing Qualifications Board</p>
+            </div>
+          </li>
+          <li class="cert">
+            <img src="assets/img/certifications/certifications-20.png" alt="" loading="lazy">
+            <div>
+              <h3><a href="https://verify.acloud.guru/8C4D120C4C73" target="_blank" rel="noopener">AWS Certified Cloud
+                  Practitioner</a></h3>
+              <p>Amazon Web Services</p>
+            </div>
+          </li>
+          <li class="cert">
+            <img src="assets/img/certifications/certifications-21.png" alt="" loading="lazy">
+            <div>
+              <h3><a href="https://verify.acloud.guru/16E385B626DE" target="_blank" rel="noopener">AZ-900 Azure
+                  Fundamentals</a></h3>
+              <p>Microsoft</p>
+            </div>
+          </li>
+          <li class="cert">
+            <img src="assets/img/certifications/certifications-24.png" alt="" loading="lazy">
+            <div>
+              <h3><a href="https://www.credly.com/badges/21d5a587-305c-419e-b1ec-1a282a1d8a45/public_url"
+                  target="_blank" rel="noopener">IT Automation with Python</a></h3>
+              <p>Google Professional Certificate</p>
+            </div>
+          </li>
+          <li class="cert">
+            <img src="assets/img/certifications/certifications-8.jpg" alt="" loading="lazy">
+            <div>
+              <h3><a href="https://www.lambdatest.com/certifications/lambdatest-certified/P101-3YD0QK.png"
+                  target="_blank" rel="noopener">Playwright 101</a></h3>
+              <p>LambdaTest</p>
+            </div>
+          </li>
+        </ul>
+
+        <details class="cert-all">
+          <summary>Show all certifications</summary>
+          <ul>
+            <li><a href="https://studies.cs.helsinki.fi/stats/api/certificate/docker2023/en/16471d94cdbdcb55bb4f30f7fcf873c0"
+                target="_blank" rel="noopener">DevOps with Docker</a> · University of Helsinki</li>
+            <li><a href="https://studies.cs.helsinki.fi/stats/api/certificate/fs-cicd/en/ce2b668b429cb1cd4068cd5c3f04d0e0"
+                target="_blank" rel="noopener">Full Stack CI/CD</a> · University of Helsinki</li>
+            <li><a href="https://studies.cs.helsinki.fi/stats/api/certificate/fs-containers/en/f511d7f6a828f1a34d6dc17715f80993"
+                target="_blank" rel="noopener">Full Stack Containers</a> · University of Helsinki</li>
+            <li><a href="https://www.linkedin.com/learning/certificates/c9e34fe07eaeff04597822012ce97669e0330fa196354d6f10c9409532707dcb"
+                target="_blank" rel="noopener">Lean Six Sigma Green Belt</a> · LinkedIn Learning</li>
+            <li><a href="https://www.credly.com/badges/49caf3a4-241e-4912-bb43-d2165de5dc3f/linked_in_profile"
+                target="_blank" rel="noopener">AWS Cloud Quest: Cloud Practitioner</a> · AWS</li>
+            <li><a href="https://training.epam.com/en" target="_blank" rel="noopener">Test Automation with
+                JavaScript</a> · EPAM</li>
+            <li><a href="https://www.lambdatest.com/certifications/lambdatest-certified/C101-BKGQP9.png"
+                target="_blank" rel="noopener">Cypress 101</a> · LambdaTest</li>
+            <li><a href="https://www.linkedin.com/learning/certificates/5324df2c47a9192aac4b01e4854e99609a836e0188cc2b5e9e8b372d05db271a"
+                target="_blank" rel="noopener">Test Automation Professional</a> · LambdaTest</li>
+            <li><a href="https://badgr.com/public/assertions/IxP3O7IETqCTZ0JvQu9eLg" target="_blank"
+                rel="noopener">Postman API Tester</a> · Postman</li>
+            <li><a href="https://badgr.com/public/assertions/rJmO8Zn9TZemsyZ_BXJ28Q" target="_blank"
+                rel="noopener">30 Days of Postman for Developers</a> · Postman</li>
+            <li><a href="https://testautomationu.applitools.com/certificate/?id=9dccc300" target="_blank"
+                rel="noopener">Test Automation in DevOps</a> · Test Automation University</li>
+            <li><a href="https://testautomationu.applitools.com/certificate/?id=01d3cde3" target="_blank"
+                rel="noopener">Continuous Integration with Jenkins</a> · Test Automation University</li>
+            <li><a href="https://testautomationu.applitools.com/certificate/?id=1d445b88" target="_blank"
+                rel="noopener">Cypress with TypeScript</a> · Test Automation University</li>
+            <li><a href="https://www.linkedin.com/learning/certificates/f07445d1f7dfb236622d8c71c189c3e409e92ad6cb44d47c0c403bbd38d3de17"
+                target="_blank" rel="noopener">Learning GitHub Actions</a> · LinkedIn Learning</li>
+            <li>Advanced JMeter · LinkedIn Learning</li>
+            <li><a href="https://www.linkedin.com/learning/certificates/e9e20a8bd55ec3938aa6dd6445cbc465ea1e1bdcda8726961b8f061f9afadaea"
+                target="_blank" rel="noopener">AWS API Gateway with HTTP, Lambda and DynamoDB</a> · LinkedIn Learning
+            </li>
+            <li><a href="https://www.freecodecamp.org/certification/fcc1daf9487-3b8d-4ee2-9a59-1f724033ac4e/quality-assurance-v7"
+                target="_blank" rel="noopener">Quality Assurance</a> · freeCodeCamp</li>
+            <li><a href="https://www.freecodecamp.org/certification/fcc1daf9487-3b8d-4ee2-9a59-1f724033ac4e/javascript-algorithms-and-data-structures"
+                target="_blank" rel="noopener">JavaScript Algorithms and Data Structures</a> · freeCodeCamp</li>
+            <li><a href="https://www.hackerrank.com/certificates/4e734406a30d" target="_blank"
+                rel="noopener">JavaScript, SQL and CSS</a> · HackerRank</li>
+          </ul>
+        </details>
+      </div>
+    </section>
+
+    <!-- ======= Contact ======= -->
+    <section id="contact" class="section section-alt">
+      <div class="container contact">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Building an AI quality engineering function?</h2>
+          <p>I am open to Head of AI Quality and QA engineering leadership roles. The fastest way to reach me is email
+            or LinkedIn.</p>
+          <div class="hero-ctas">
+            <a href="mailto:lutchenkovalentin@gmail.com" class="btn btn-primary">Email me</a>
+            <a href="https://www.linkedin.com/in/valiantsin-lutchanka/" target="_blank" rel="noopener"
+              class="btn btn-ghost">Connect on LinkedIn</a>
+          </div>
+        </div>
+        <ul class="contact-list">
+          <li><svg class="icon" aria-hidden="true">
+              <use href="#i-mail" />
+            </svg><a href="mailto:lutchenkovalentin@gmail.com">lutchenkovalentin@gmail.com</a></li>
+          <li><svg class="icon" aria-hidden="true">
+              <use href="#i-linkedin" />
+            </svg><a href="https://www.linkedin.com/in/valiantsin-lutchanka/" target="_blank"
+              rel="noopener">linkedin.com/in/valiantsin-lutchanka</a></li>
+          <li><svg class="icon" aria-hidden="true">
+              <use href="#i-github" />
+            </svg><a href="https://github.com/Valiantsin2021" target="_blank" rel="noopener">github.com/Valiantsin2021</a>
+          </li>
+          <li><svg class="icon" aria-hidden="true">
+              <use href="#i-link" />
+            </svg><a href="https://bento.me/valentin-lutchanka/" target="_blank" rel="noopener">bento.me/valentin-lutchanka</a>
+          </li>
+          <li><svg class="icon" aria-hidden="true">
+              <use href="#i-pin" />
+            </svg><span>Málaga, Spain</span></li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year">2026</span> Valentin Lutchanka</p>
+    </div>
+  </footer>
+
   <script src="assets/js/main.js"></script>
-
-  <!-- Christmas Mode -->
-  <!-- <script src="https://unpkg.com/christmas-mode/dist/christmas-mode.umd.js"></script> -->
-
-  <!-- <script src="assets/js/newyear.js"></script> -->
-  <!-- <script>
-    ChristmasMode.init({
-      toggle: true, // Show toggle switch (default: true)
-      musicButton: true, // Show music button/caroler (default: true)
-      autoEnable: false, // Auto-enable on init (default: false)
-      snow: true, // Enable snow effect (default: true)
-      lights: true, // Enable Christmas lights (default: true)
-      tree: false, // Enable Christmas tree (default: true)
-      snowman: false, // Enable snowman (default: true)
-      northPole: false, // Enable North Pole sign (default: true)
-      target: document.body, // Target element (default: document.body)
-    });
-  </script> -->
 </body>
 
 </html>
