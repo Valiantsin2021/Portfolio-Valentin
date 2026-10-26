@@ -69,7 +69,8 @@
     },
     { rootMargin: '-45% 0px -50% 0px' }
   )
-  links.forEach((_, id) => {
+  // The hero has no nav link; observing it clears the highlight at the top of the page
+  ;['top', ...links.keys()].forEach(id => {
     const section = document.getElementById(id)
     if (section) observer.observe(section)
   })
@@ -111,7 +112,7 @@
       rows.forEach(row => setRow(row, 'queued', 'queued'))
       rows.forEach((row, i) => {
         timers.push(setTimeout(() => setRow(row, 'running', 'running'), i * STEP))
-        timers.push(setTimeout(() => setRow(row, 'done', 'on'), (i + 1) * STEP - 120))
+        timers.push(setTimeout(() => setRow(row, 'done', 'done'), (i + 1) * STEP - 120))
       })
       timers.push(setTimeout(() => (rerun.disabled = false), rows.length * STEP))
       countUp(rows.length * STEP)
