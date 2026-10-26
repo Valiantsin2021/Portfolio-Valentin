@@ -2,6 +2,7 @@
   'use strict'
 
   const root = document.documentElement
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)')
 
   // Theme toggle: explicit choice is stored, otherwise follow the OS setting
   const themeBtn = document.querySelector('.theme-toggle')
@@ -13,13 +14,22 @@
     themeBtn.setAttribute('aria-label', `Switch to ${next} theme`)
   }
 
-  themeBtn.addEventListener('click', () => {
-    const next = currentTheme() === 'dark' ? 'light' : 'dark'
-    root.setAttribute('data-theme', next)
+  const setTheme = theme => {
+    root.setAttribute('data-theme', theme)
     try {
-      localStorage.setItem('theme', next)
+      localStorage.setItem('theme', theme)
     } catch (e) {}
     syncThemeLabel()
+  }
+
+  themeBtn.addEventListener('click', () => {
+    const next = currentTheme() === 'dark' ? 'light' : 'dark'
+    // Crossfade between themes where the View Transitions API exists
+    if (document.startViewTransition && !reduceMotion.matches) {
+      document.startViewTransition(() => setTheme(next))
+    } else {
+      setTheme(next)
+    }
   })
   prefersDark.addEventListener('change', syncThemeLabel)
   syncThemeLabel()
@@ -63,6 +73,54 @@
     const section = document.getElementById(id)
     if (section) observer.observe(section)
   })
+
+  // Hero pipeline: stages run one after another while the total counts up.
+  // Static markup already shows the finished state, so no-JS and reduced motion lose nothing.
+  const pipeline = document.querySelector('.pipeline')
+  if (pipeline && !reduceMotion.matches) {
+    const rows = [...pipeline.querySelectorAll('.pipeline-list li')]
+    const total = pipeline.querySelector('.pipeline-foot strong')
+    const rerun = pipeline.querySelector('.pipeline-rerun')
+    const STEP = 650
+    const TOTAL = 3500
+    let timers = []
+    let frame
+
+    const setRow = (row, state, label) => {
+      row.dataset.state = state
+      row.querySelector('.status').textContent = label
+    }
+
+    const countUp = duration => {
+      const start = performance.now()
+      const tick = now => {
+        const t = Math.min((now - start) / duration, 1)
+        // Linear on purpose: the count should track how many stages have finished
+        total.textContent = Math.round(TOTAL * t).toLocaleString('en-US')
+        if (t < 1) frame = requestAnimationFrame(tick)
+        else total.textContent = '3,500+'
+      }
+      frame = requestAnimationFrame(tick)
+    }
+
+    const run = () => {
+      timers.forEach(clearTimeout)
+      cancelAnimationFrame(frame)
+      timers = []
+      rerun.disabled = true
+      rows.forEach(row => setRow(row, 'queued', 'queued'))
+      rows.forEach((row, i) => {
+        timers.push(setTimeout(() => setRow(row, 'running', 'running'), i * STEP))
+        timers.push(setTimeout(() => setRow(row, 'done', 'on'), (i + 1) * STEP - 120))
+      })
+      timers.push(setTimeout(() => (rerun.disabled = false), rows.length * STEP))
+      countUp(rows.length * STEP)
+    }
+
+    rerun.hidden = false
+    rerun.addEventListener('click', run)
+    run()
+  }
 
   document.getElementById('year').textContent = new Date().getFullYear()
 })()

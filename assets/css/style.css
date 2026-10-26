@@ -181,6 +181,22 @@ ol {
   border-bottom: 1px solid var(--border);
 }
 
+/* Header edge appears once the page scrolls */
+@supports (animation-timeline: scroll()) {
+  .site-header {
+    border-bottom-color: transparent;
+    animation: header-edge linear both;
+    animation-timeline: scroll();
+    animation-range: 0 80px;
+  }
+}
+
+@keyframes header-edge {
+  to {
+    border-bottom-color: var(--border);
+  }
+}
+
 .header-inner {
   height: var(--header-h);
   display: flex;
@@ -539,13 +555,61 @@ ol {
   gap: 12px;
   align-items: center;
   padding: 10px 16px;
-  animation: row-in 0.4s var(--ease) both;
+  transition: background-color 0.3s var(--ease);
 }
 
-.pipeline-list li:nth-child(2) { animation-delay: 0.08s; }
-.pipeline-list li:nth-child(3) { animation-delay: 0.16s; }
-.pipeline-list li:nth-child(4) { animation-delay: 0.24s; }
-.pipeline-list li:nth-child(5) { animation-delay: 0.32s; }
+.pipeline-list .task {
+  transition: color 0.3s var(--ease);
+}
+
+/* Run states, set by main.js. Without JS every row stays "on". */
+.pipeline-list li[data-state="queued"] .task,
+.pipeline-list li[data-state="queued"] .status {
+  color: var(--code-muted);
+}
+
+.pipeline-list li[data-state="queued"] .status::before {
+  background: var(--code-muted);
+  box-shadow: none;
+}
+
+.pipeline-list li[data-state="running"] {
+  background: rgb(74 222 128 / 0.07);
+}
+
+.pipeline-list li[data-state="running"] .status::before {
+  animation: pulse 0.8s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  50% {
+    transform: scale(0.6);
+    opacity: 0.5;
+  }
+}
+
+.pipeline-rerun {
+  margin: -10px -8px -10px auto;
+  min-height: 44px;
+  padding: 0 10px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  background: none;
+  color: var(--code-muted);
+  font: inherit;
+  font-size: 0.8125rem;
+  cursor: pointer;
+  transition: color 0.2s var(--ease), border-color 0.2s var(--ease);
+}
+
+.pipeline-rerun:hover:not(:disabled) {
+  color: var(--code-text);
+  border-color: rgb(148 163 184 / 0.3);
+}
+
+.pipeline-rerun:disabled {
+  cursor: default;
+}
 
 .pipeline-list .stage {
   color: var(--code-muted);
@@ -560,9 +624,11 @@ ol {
   align-items: center;
   gap: 6px;
   color: var(--code-accent);
+  min-width: 9ch;
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.06em;
+  transition: color 0.3s var(--ease);
 }
 
 .pipeline-list .status::before {
@@ -601,12 +667,6 @@ ol {
   }
 }
 
-@keyframes row-in {
-  from {
-    opacity: 0;
-    transform: translateY(6px);
-  }
-}
 
 /*--------------------------------------------------------------
 # Sections
@@ -786,10 +846,32 @@ ol {
 
 /* Timeline */
 .timeline {
+  position: relative;
   list-style: none;
+  padding-left: 28px;
+}
+
+/* Rail; the accent copy fills with scroll where scroll-driven animations exist */
+.timeline::before,
+.timeline::after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 8px;
+  bottom: 8px;
+  width: 2px;
+  border-radius: 2px;
+  background: var(--border);
+}
+
+.timeline::after {
+  display: none;
+  background: var(--accent);
+  transform-origin: top;
 }
 
 .role {
+  position: relative;
   display: grid;
   gap: 8px 40px;
   padding-bottom: 32px;
@@ -798,6 +880,50 @@ ol {
 .role + .role {
   padding-top: 32px;
   border-top: 1px solid var(--border);
+}
+
+.role::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  left: -29px;
+  top: 5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid var(--accent);
+  background: var(--surface-2);
+}
+
+.role + .role::before {
+  top: 37px;
+}
+
+@supports (animation-timeline: view()) {
+  .timeline::after {
+    display: block;
+    transform: scaleY(0);
+    animation: rail-fill linear both;
+    animation-timeline: view(block 50% 50%);
+  }
+
+  .role::before {
+    animation: dot-on linear both;
+    animation-timeline: view(block 50% 50%);
+    animation-range: cover 0% cover 100%;
+  }
+}
+
+@keyframes rail-fill {
+  to {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes dot-on {
+  to {
+    background: var(--accent);
+  }
 }
 
 @media (min-width: 768px) {
@@ -950,6 +1076,14 @@ ol {
   object-position: top;
   border-bottom: 1px solid var(--border);
   background: var(--surface-2);
+  transition: object-position 0.6s var(--ease);
+}
+
+/* Tall screenshots scroll to show the rest of the tool */
+.project:hover img,
+.project:focus-within img {
+  object-position: bottom;
+  transition-duration: 3s;
 }
 
 .project-body {
