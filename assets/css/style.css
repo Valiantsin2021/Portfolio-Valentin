@@ -19,8 +19,8 @@
   --code-accent: #4ade80;
   --shadow: 0 1px 2px rgb(15 23 42 / 0.06), 0 8px 24px rgb(15 23 42 / 0.06);
 
-  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-  --font-mono: "JetBrains Mono", ui-monospace, "Cascadia Code", Consolas, monospace;
+  --font-sans: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "Cascadia Code", Consolas, monospace;
   --radius: 12px;
   --radius-sm: 8px;
   --header-h: 64px;
@@ -1020,8 +1020,7 @@ ol {
   border-radius: var(--radius);
 }
 
-.cert img,
-.cert-badge {
+.cert img {
   width: 64px;
   height: 64px;
   flex: none;
@@ -1030,15 +1029,6 @@ ol {
   background: var(--surface-2);
 }
 
-.cert-badge {
-  display: grid;
-  place-items: center;
-  background: var(--accent-soft);
-  color: var(--accent);
-  font-family: var(--font-mono);
-  font-size: 0.8125rem;
-  font-weight: 500;
-}
 
 .cert h3 {
   font-size: 1rem;
