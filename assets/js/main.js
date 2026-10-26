@@ -64,16 +64,15 @@
       entries.forEach(entry => {
         if (!entry.isIntersecting) return
         links.forEach(a => a.removeAttribute('aria-current'))
-        links.get(entry.target.id)?.setAttribute('aria-current', 'true')
+        // Sections without their own link name the link they belong to in data-nav
+        const id = entry.target.dataset.nav || entry.target.id
+        links.get(id)?.setAttribute('aria-current', 'true')
       })
     },
     { rootMargin: '-45% 0px -50% 0px' }
   )
   // The hero has no nav link; observing it clears the highlight at the top of the page
-  ;['top', ...links.keys()].forEach(id => {
-    const section = document.getElementById(id)
-    if (section) observer.observe(section)
-  })
+  document.querySelectorAll('main > section[id]').forEach(section => observer.observe(section))
 
   // Hero pipeline: stages run one after another while the total counts up.
   // Static markup already shows the finished state, so no-JS and reduced motion lose nothing.
@@ -121,6 +120,25 @@
     rerun.hidden = false
     rerun.addEventListener('click', run)
     run()
+  }
+
+  // Certificate lightbox. Without <dialog> support the thumbnail link opens the image in a new tab.
+  const certDialog = document.querySelector('.cert-dialog')
+  if (certDialog && certDialog.showModal) {
+    const full = certDialog.querySelector('img')
+    document.querySelectorAll('.cert-thumb').forEach(link =>
+      link.addEventListener('click', e => {
+        e.preventDefault()
+        full.src = link.href
+        full.alt = link.getAttribute('aria-label').replace('View certificate: ', 'Certificate: ')
+        certDialog.showModal()
+      })
+    )
+    certDialog.querySelector('.cert-close').addEventListener('click', () => certDialog.close())
+    // A click on the backdrop lands on the dialog element itself
+    certDialog.addEventListener('click', e => {
+      if (e.target === certDialog) certDialog.close()
+    })
   }
 
   document.getElementById('year').textContent = new Date().getFullYear()

@@ -1,0 +1,286 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-26T00:00:00Z",
+  "title": "Design System: Valentin Lutchanka Portfolio",
+  "extensions": {
+    "colorMeta": {
+      "pass-green": {
+        "role": "primary",
+        "displayName": "Pass Green",
+        "tonalRamp": [
+          "#052e16",
+          "#14532d",
+          "#166534",
+          "#15803d",
+          "#16a34a",
+          "#22c55e",
+          "#4ade80",
+          "#dcfce7"
+        ]
+      },
+      "pass-green-dark": {
+        "role": "primary",
+        "displayName": "Pass Green (dark theme)",
+        "tonalRamp": [
+          "#052e16",
+          "#14532d",
+          "#166534",
+          "#15803d",
+          "#16a34a",
+          "#22c55e",
+          "#4ade80",
+          "#dcfce7"
+        ]
+      },
+      "pass-green-wash": {
+        "role": "primary",
+        "displayName": "Pass Green Wash"
+      },
+      "report-paper": {
+        "role": "neutral",
+        "displayName": "Report Paper",
+        "tonalRamp": [
+          "#020617",
+          "#0f172a",
+          "#1e293b",
+          "#334155",
+          "#475569",
+          "#94a3b8",
+          "#e2e8f0",
+          "#f8fafc"
+        ]
+      },
+      "sheet-white": {
+        "role": "neutral",
+        "displayName": "Sheet White"
+      },
+      "ledger-tint": {
+        "role": "neutral",
+        "displayName": "Ledger Tint"
+      },
+      "hairline": {
+        "role": "neutral",
+        "displayName": "Hairline"
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "tonalRamp": [
+          "#020617",
+          "#0f172a",
+          "#1e293b",
+          "#334155",
+          "#475569",
+          "#94a3b8",
+          "#e2e8f0",
+          "#f8fafc"
+        ]
+      },
+      "ink-muted": {
+        "role": "neutral",
+        "displayName": "Ink Muted"
+      },
+      "terminal-night": {
+        "role": "neutral",
+        "displayName": "Terminal Night"
+      },
+      "terminal-pass": {
+        "role": "primary",
+        "displayName": "Terminal Pass"
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero headline only."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section h2."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Stage, role, principle, project and cert h3."
+      },
+      "figure": {
+        "displayName": "Figure",
+        "purpose": "Metric values; lead figure 3.25rem in Pass Green."
+      },
+      "lead": {
+        "displayName": "Lead",
+        "purpose": "Hero and section intros."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Running copy, 62-72ch."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Mono dates, stage numbers, pipeline statuses. No eyebrows."
+      }
+    },
+    "shadows": [
+      {
+        "name": "panel-lift",
+        "value": "0 1px 2px rgb(15 23 42 / 0.06), 0 8px 24px rgb(15 23 42 / 0.06)",
+        "purpose": "Pipeline panel and open mobile menu, light theme."
+      },
+      {
+        "name": "panel-lift-dark",
+        "value": "0 1px 2px rgb(0 0 0 / 0.4), 0 8px 24px rgb(0 0 0 / 0.25)",
+        "purpose": "Same roles, dark theme."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease",
+        "value": "cubic-bezier(0.2, 0.8, 0.2, 1)",
+        "purpose": "All state transitions."
+      },
+      {
+        "name": "duration-state",
+        "value": "0.2s",
+        "purpose": "Color, border, background and lift changes."
+      },
+      {
+        "name": "duration-press",
+        "value": "0.15s",
+        "purpose": "Button press scale to 0.98."
+      },
+      {
+        "name": "duration-pan",
+        "value": "3s",
+        "purpose": "Project screenshot pan on hover."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "xs",
+        "value": "480px"
+      },
+      {
+        "name": "sm",
+        "value": "640px"
+      },
+      {
+        "name": "md",
+        "value": "768px"
+      },
+      {
+        "name": "lg",
+        "value": "1024px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Main action: Get in touch, nav Contact CTA.",
+      "html": "<a class=\"ds-btn ds-btn-primary\" href=\"#\">Get in touch</a>",
+      "css": ".ds-btn { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0 22px; border-radius: 8px; border: 1px solid transparent; font-family: 'IBM Plex Sans', system-ui, sans-serif; font-weight: 600; text-decoration: none; transition: background-color 0.2s cubic-bezier(0.2,0.8,0.2,1), border-color 0.2s cubic-bezier(0.2,0.8,0.2,1), transform 0.15s cubic-bezier(0.2,0.8,0.2,1); } .ds-btn-primary { background: var(--accent, #15803d); color: var(--on-accent, #fff); } .ds-btn-primary:hover { background: var(--accent-hover, #166534); } .ds-btn:active { transform: scale(0.98); } .ds-btn:focus-visible { outline: 2px solid var(--accent, #15803d); outline-offset: 3px; }"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Secondary action next to a primary.",
+      "html": "<a class=\"ds-btn-ghost\" href=\"#\">See the impact</a>",
+      "css": ".ds-btn-ghost { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0 22px; border-radius: 8px; border: 1px solid var(--border, #e2e8f0); color: var(--text, #0f172a); font-family: 'IBM Plex Sans', system-ui, sans-serif; font-weight: 600; text-decoration: none; transition: border-color 0.2s cubic-bezier(0.2,0.8,0.2,1), transform 0.15s; } .ds-btn-ghost:hover { border-color: var(--text-muted, #475569); } .ds-btn-ghost:active { transform: scale(0.98); } .ds-btn-ghost:focus-visible { outline: 2px solid var(--accent, #15803d); outline-offset: 3px; }"
+    },
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Header links with active fill and green Contact CTA.",
+      "html": "<nav class=\"ds-nav\"><a href=\"#\">Impact</a><a href=\"#\" aria-current=\"true\">AI in QA</a><a href=\"#\">Experience</a><a class=\"ds-nav-cta\" href=\"#\">Contact</a></nav>",
+      "css": ".ds-nav { display: flex; align-items: center; gap: 4px; font-family: 'IBM Plex Sans', system-ui, sans-serif; } .ds-nav a { padding: 8px 12px; border-radius: 8px; color: var(--text-muted, #475569); font-size: 0.9375rem; font-weight: 500; text-decoration: none; transition: color 0.2s, background-color 0.2s; } .ds-nav a:hover, .ds-nav a[aria-current='true'] { color: var(--text, #0f172a); background: var(--surface-2, #f1f5f9); } .ds-nav .ds-nav-cta { margin-left: 8px; color: var(--on-accent, #fff); background: var(--accent, #15803d); } .ds-nav .ds-nav-cta:hover { background: var(--accent-hover, #166534); color: var(--on-accent, #fff); } .ds-nav a:focus-visible { outline: 2px solid var(--accent, #15803d); outline-offset: 3px; }"
+    },
+    {
+      "name": "Project Card",
+      "kind": "card",
+      "refersTo": "project-card",
+      "description": "Published tool with screenshot, description and outbound link.",
+      "html": "<article class=\"ds-project\"><div class=\"ds-project-img\"></div><div class=\"ds-project-body\"><h3>newman-parallel</h3><p>Runs Postman collections in parallel and saves HTML and XML reports.</p><a href=\"#\">View on npm</a></div></article>",
+      "css": ".ds-project { display: flex; flex-direction: column; max-width: 340px; background: var(--surface, #fff); border: 1px solid var(--border, #e2e8f0); border-radius: 12px; overflow: hidden; font-family: 'IBM Plex Sans', system-ui, sans-serif; transition: border-color 0.2s cubic-bezier(0.2,0.8,0.2,1), transform 0.2s cubic-bezier(0.2,0.8,0.2,1); } .ds-project:hover, .ds-project:focus-within { border-color: var(--accent, #15803d); transform: translateY(-2px); } .ds-project-img { aspect-ratio: 16/10; background: var(--surface-2, #f1f5f9); border-bottom: 1px solid var(--border, #e2e8f0); } .ds-project-body { padding: 20px; } .ds-project-body h3 { margin: 0; font-size: 1.0625rem; font-weight: 600; color: var(--text, #0f172a); } .ds-project-body p { margin: 8px 0 0; color: var(--text-muted, #475569); font-size: 0.9375rem; line-height: 1.6; } .ds-project-body a { display: inline-flex; min-height: 44px; align-items: center; padding-top: 12px; color: var(--accent, #15803d); font-weight: 600; text-decoration: none; } .ds-project-body a:focus-visible { outline: 2px solid var(--accent, #15803d); outline-offset: 3px; }"
+    },
+    {
+      "name": "Metric Row",
+      "kind": "custom",
+      "description": "Measured figures between hairlines; lead figure in Pass Green.",
+      "html": "<ul class=\"ds-metrics\"><li><span class=\"ds-mv ds-mv-lead\">3,500+</span><span class=\"ds-ml\">labor hours saved</span></li><li><span class=\"ds-mv\">24</span><span class=\"ds-ml\">QA analysts led</span></li><li><span class=\"ds-mv\">2×</span><span class=\"ds-ml\">faster deployments</span></li></ul>",
+      "css": ".ds-metrics { list-style: none; display: grid; grid-template-columns: 1.4fr 1fr 1fr; margin: 0; padding: 0; border-top: 1px solid var(--border, #e2e8f0); font-family: 'IBM Plex Sans', system-ui, sans-serif; } .ds-metrics li { padding: 28px 24px 28px 0; } .ds-metrics li + li { padding-left: 24px; border-left: 1px solid var(--border, #e2e8f0); } .ds-mv { display: block; font-size: 2.5rem; font-weight: 700; letter-spacing: -0.03em; line-height: 1.1; font-variant-numeric: tabular-nums; color: var(--text, #0f172a); } .ds-mv-lead { color: var(--accent, #15803d); font-size: 3.25rem; } .ds-ml { display: block; margin-top: 10px; color: var(--text-muted, #475569); font-size: 0.9375rem; }"
+    },
+    {
+      "name": "Pipeline Panel",
+      "kind": "custom",
+      "refersTo": "pipeline-panel",
+      "description": "Signature dark run-log card of the agentic STLC.",
+      "html": "<figure class=\"ds-pipe\"><div class=\"ds-pipe-bar\">agentic-stlc</div><ul><li><span class=\"ds-st\">requirements</span><span>AI-assisted refinement</span><span class=\"ds-ok\">done</span></li><li><span class=\"ds-st\">defects</span><span>AI classification &amp; triage</span><span class=\"ds-ok\">done</span></li></ul><div class=\"ds-pipe-foot\"><span>Σ labor hours saved</span><strong>3,500+</strong></div></figure>",
+      "css": ".ds-pipe { margin: 0; max-width: 460px; background: #0f172a; color: #e2e8f0; border-radius: 12px; box-shadow: 0 1px 2px rgb(15 23 42 / 0.06), 0 8px 24px rgb(15 23 42 / 0.06); font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 0.875rem; overflow: hidden; } .ds-pipe-bar { padding: 12px 16px; color: #94a3b8; border-bottom: 1px solid rgb(148 163 184 / 0.15); } .ds-pipe ul { list-style: none; margin: 0; padding: 12px 0; } .ds-pipe li { display: grid; grid-template-columns: 7.5rem 1fr auto; gap: 12px; padding: 10px 16px; } .ds-st { color: #94a3b8; } .ds-ok { color: #4ade80; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.06em; } .ds-pipe-foot { display: flex; justify-content: space-between; align-items: baseline; padding: 14px 16px; border-top: 1px solid rgb(148 163 184 / 0.15); color: #94a3b8; } .ds-pipe-foot strong { color: #4ade80; font-size: 1.25rem; font-weight: 500; }"
+    },
+    {
+      "name": "Stack Row",
+      "kind": "custom",
+      "description": "Toolkit row: discipline, main tools, also-used, proof figure.",
+      "html": "<ul class=\"ds-stack\"><li><h3>Test automation</h3><div><p class=\"ds-main\">Playwright · K6 · Newman</p><p class=\"ds-also\">Also Cypress, WebdriverIO, JMeter</p></div><p class=\"ds-proof\">Team-wide framework built from scratch, <strong>4</strong> projects on it</p></li></ul>",
+      "css": ".ds-stack { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--border, #e2e8f0); font-family: 'IBM Plex Sans', system-ui, sans-serif; } .ds-stack li { display: grid; grid-template-columns: 11rem 1fr 15rem; gap: 6px 32px; align-items: baseline; padding: 24px 0; border-bottom: 1px solid var(--border, #e2e8f0); } .ds-stack h3 { margin: 0; font-size: 1.0625rem; font-weight: 600; color: var(--text, #0f172a); } .ds-main { margin: 0; font-weight: 600; color: var(--text, #0f172a); } .ds-also, .ds-proof { margin: 4px 0 0; color: var(--text-muted, #475569); font-size: 0.9375rem; } .ds-proof { margin: 0; } .ds-proof strong { color: var(--accent, #15803d); font-weight: 700; font-variant-numeric: tabular-nums; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Quality Report",
+    "overview": "The page behaves like a well-run quality report handed to a hiring manager: calm paper, hairline rules, figures that line up, and exactly one signal color that means \"passed\". Nothing on the page is decorative for its own sake. Hierarchy comes from type weight, measured whitespace and the green accent landing only on things that carry evidence: the headline figure, stage numbers, dates, the primary action.\n\nDensity is moderate and scan-friendly. Content sits in a single 1160px column; sections alternate between report paper and a faint ledger tint, separated by full-bleed hairlines rather than boxes. Lists are rows, not cards: metrics, STLC stages, career roles and contact lines are all divided by 1px rules so the eye reads them top to bottom like a table.\n\nComponents are engineered and confident: solid green primary buttons, crisp 8px corners, 44px+ targets, and motion that only confirms state (a 2px lift, a scale-down on press, a scroll-filled timeline rail). The one deliberate contrast is the dark pipeline panel in the hero, a terminal-style run log that shows the agentic STLC \"passing\" stage by stage.",
+    "keyCharacteristics": [
+      "Slate neutrals plus a single Pass Green accent, in both light and dark themes.",
+      "IBM Plex Sans for everything read; IBM Plex Mono for labels, dates, stage numbers and the run log.",
+      "Hairline-ruled rows over boxed cards; cards appear only for published tools. No pills.",
+      "Tabular, heavy figures for every measured number.",
+      "Flat at rest; depth is reserved for the pipeline panel and the mobile menu."
+    ],
+    "rules": [
+      {
+        "name": "The One Signal Rule",
+        "body": "Pass Green is the only hue on the page. It marks evidence, sequence and action; it never fills large surfaces. No secondary or tertiary accent exists.",
+        "section": "colors"
+      },
+      {
+        "name": "The Personal Site Rule",
+        "body": "No employer colors or logos. Verisk appears as text only.",
+        "section": "colors"
+      },
+      {
+        "name": "The Numbers Line Up Rule",
+        "body": "Every measured figure uses font-variant-numeric: tabular-nums and heavy weight. Numbers are the hero, not the adjectives around them.",
+        "section": "typography"
+      },
+      {
+        "name": "The Mono Means Metadata Rule",
+        "body": "Mono never sets prose. It labels, dates, numbers and logs.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat Report Rule",
+        "body": "Surfaces are flat at rest. Cards show state by border color and a 2px lift, not by adding shadow.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do keep Pass Green as the only hue and use it for evidence, sequence and action.",
+      "Do divide lists with 1px hairlines and alternate section bands with Ledger Tint.",
+      "Do set every impact number in heavy tabular figures.",
+      "Do use IBM Plex Mono for labels, dates, stage numbers and logs only.",
+      "Do define every new color for both light and dark themes, including the [data-theme] overrides.",
+      "Do keep interactive targets at 44px minimum and honor prefers-reduced-motion.",
+      "Do keep Contact reachable in one tap at every width."
+    ],
+    "donts": [
+      "Don't introduce a second accent color, gradients, or Verisk brand colors/logos.",
+      "Don't box content that reads as a list; cards are for published tools only.",
+      "Don't add shadows to resting surfaces beyond the pipeline panel and mobile menu.",
+      "Don't set prose in mono or headlines in anything but Plex Sans.",
+      "Don't add motion that doesn't confirm state or progress.",
+      "Don't put eyebrow/kicker labels above headings."
+    ]
+  }
+}

@@ -80,6 +80,10 @@
       <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
       <circle cx="12" cy="10" r="3" />
     </symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="10" />
+      <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10Z" />
+    </symbol>
     <symbol id="i-sun" viewBox="0 0 24 24">
       <circle cx="12" cy="12" r="4" />
       <path
@@ -108,17 +112,17 @@
 
       <nav id="site-nav" class="site-nav" aria-label="Primary">
         <ul>
-          <li><a href="#impact">Impact</a></li>
           <li><a href="#stlc">AI in QA</a></li>
-          <li><a href="#leadership">Leadership</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#toolkit">Toolkit</a></li>
-          <li><a href="#credentials">Credentials</a></li>
-          <li><a href="#contact" class="nav-cta">Contact</a></li>
+          <li><a href="#experience">Career</a></li>
+          <li><a href="#toolkit">Stack</a></li>
+          <li><a href="#open-source">Tools</a></li>
+          <li><a href="#credentials">Certifications</a></li>
+          <li class="nav-cta-item"><a href="#contact" class="nav-cta">Contact</a></li>
         </ul>
       </nav>
 
       <div class="header-actions">
+        <a href="#contact" class="header-cta">Contact</a>
         <button type="button" class="icon-btn theme-toggle" aria-label="Switch color theme">
           <svg class="icon icon-sun" aria-hidden="true">
             <use href="#i-sun" />
@@ -150,8 +154,9 @@
             <img src="assets/img/profile-img.jpg" alt="Portrait of Valentin Lutchanka" class="avatar" width="56"
               height="56">
             <div>
-              <p class="hero-name">Agentic QA Engineering Manager</p>
-              <p class="hero-role">Verisk Underwriting Solutions · Málaga, Spain</p>
+              <p class="hero-name">Valentin Lutchanka</p>
+              <p class="hero-role">Hands on Agentic QA Engineering Manager</p>
+              <p class="hero-role"><span>Verisk Underwriting Solutions</span> · <span>Málaga, Spain</span></p>
             </div>
           </div>
 
@@ -184,7 +189,7 @@
 
         <figure class="pipeline" aria-label="Where AI works in my testing lifecycle">
           <div class="pipeline-bar">
-            <span class="pipeline-title">agentic-stlc</span>
+            <span class="pipeline-title">agentic-STLC</span>
             <button type="button" class="pipeline-rerun" hidden>re-run</button>
           </div>
           <ol class="pipeline-list">
@@ -280,20 +285,19 @@
     </section>
 
     <!-- ======= Leadership ======= -->
-    <section id="leadership" class="section">
+    <section id="leadership" class="section" data-nav="stlc">
       <div class="container">
         <header class="section-head">
           <h2>How I run AI adoption</h2>
         </header>
 
-        <!-- DRAFT: personal view, rewrite in your own words -->
-        <blockquote class="view">
+        <div class="view">
           <p> I started in QA in 2018 as a manual tester. That's where I learned where testing time really goes, and it's why I moved into automation,
             then SDET work, then leading a team. Now I manage how we use AI in testing. Having done each of those jobs,
             I know which parts are repetitive enough to give to an agent. Triage, sorting through test results and the first read of new requirements go to agents,
             while the decisions stay with people. I measure a baseline before I introduce anything, because if the gain can't show up as a number on the report,
             I don't trust it.</p>
-        </blockquote>
+        </div>
 
         <div class="principles">
           <article class="principle">
@@ -380,7 +384,7 @@
               </ul>
             </div>
           </li>
-          <li class="role">
+          <li class="role role-minor">
             <div class="role-meta">
               <span class="role-dates">2009 — 2018</span>
               <span class="role-org">Club de Hockey · Benalmádena</span>
@@ -408,63 +412,54 @@
       </div>
     </section>
 
-    <!-- ======= Toolkit ======= -->
+    <!-- ======= Stack ======= -->
     <section id="toolkit" class="section section-tight">
       <div class="container">
         <header class="section-head">
-          <h2>Toolkit</h2>
+          <h2>Stack</h2>
+          <p>Tools I use, and what I've shipped with them.</p>
         </header>
 
-        <div class="toolkit">
-          <div class="tool-group">
+        <ul class="stack">
+          <li class="stack-row">
             <h3>AI &amp; agents</h3>
-            <ul class="chips">
-              <li>Agentic QA workflows</li>
-              <li>Autonomous agents</li>
-              <li>AI defect triage</li>
-              <li>AI results analysis</li>
-              <li>AI requirements refinement</li>
-              <li>MCP (Playwright, LangChain, Chrome DevTools)</li>
-            </ul>
-          </div>
-          <div class="tool-group">
-            <h3>Test engineering</h3>
-            <ul class="chips">
-              <li>Playwright</li>
-              <li>Cypress</li>
-              <li>WebdriverIO</li>
-              <li>K6</li>
-              <li>JMeter</li>
-              <li>Mocha</li>
-              <li>Supertest</li>
-              <li>Jest / Vitest</li>
-              <li>Pytest</li>
-              <li>JavaScript / TypeScript</li>
-              <li>Python</li>
-            </ul>
-          </div>
-          <div class="tool-group">
-            <h3>Platform &amp; CI/CD</h3>
-            <ul class="chips">
-              <li>GitHub Actions</li>
-              <li>Jenkins</li>
-              <li>Bamboo</li>
-              <li>GitLab CI</li>
-              <li>Docker</li>
-              <li>AWS</li>
-            </ul>
-          </div>
-          <div class="tool-group">
-            <h3>Process &amp; languages</h3>
-            <ul class="chips">
-              <li>Lean Six Sigma</li>
-              <li>ISTQB</li>
-              <li>Risk-based testing</li>
-              <li>Agile / Scrum</li>
-              <li>English · Spanish · Russian (C1+)</li>
-            </ul>
-          </div>
-        </div>
+            <div class="stack-tools">
+              <p class="stack-main">MCP (Playwright, LangChain, Chrome DevTools) · LangGraph</p>
+            </div>
+            <p class="stack-proof">Agents across <strong>5</strong> STLC stages</p>
+          </li>
+          <li class="stack-row">
+            <h3>Test automation</h3>
+            <div class="stack-tools">
+              <p class="stack-main">Playwright · K6 · Newman</p>
+              <p class="stack-also">Also Cypress, WebdriverIO, JMeter, Mocha, Supertest, Jest / Vitest, Pytest</p>
+            </div>
+            <p class="stack-proof">Team-wide framework built from scratch, <strong>4</strong> projects on it</p>
+          </li>
+          <li class="stack-row">
+            <h3>CI/CD &amp; cloud</h3>
+            <div class="stack-tools">
+              <p class="stack-main">Jenkins · Bamboo · GitHub Actions · Docker</p>
+              <p class="stack-also">Also GitLab CI, AWS</p>
+            </div>
+            <p class="stack-proof">Automated quality gates, <strong>2×</strong> faster deployments</p>
+          </li>
+          <li class="stack-row">
+            <h3>Programming</h3>
+            <div class="stack-tools">
+              <p class="stack-main">JavaScript / TypeScript · Python</p>
+            </div>
+            <p class="stack-proof">Agentic development in both languages</p>
+          </li>
+          <li class="stack-row">
+            <h3>Method</h3>
+            <div class="stack-tools">
+              <p class="stack-main">Lean Six Sigma (DMAIC) · ISTQB</p>
+              <p class="stack-also">Also risk-based testing, Agile / Scrum</p>
+            </div>
+            <p class="stack-proof">Every agent rollout baselined first</p>
+          </li>
+        </ul>
       </div>
     </section>
 
@@ -473,7 +468,7 @@
       <div class="container">
         <header class="section-head">
           <h2>Tools Development Initiatives I Led</h2>
-          <p>Open-source utilities I built for my own teams, then released.</p>
+          <p>Open-source utilities built and released for my own team.</p>
         </header>
 
         <ul class="projects">
@@ -565,14 +560,16 @@
 
         <ul class="certs">
           <li class="cert">
-            <img src="assets/img/certifications/certifications-23.png" alt="" loading="lazy">
+            <a href="assets/img/certifications/certifications-23.png" class="cert-thumb" target="_blank" rel="noopener"
+              aria-label="View certificate: Lean Six Sigma Green Belt"><img src="assets/img/certifications/certifications-23.png" alt="" loading="lazy"></a>
             <div>
               <h3>Lean Six Sigma Green Belt</h3>
               <p>DMAIC process improvement · 2024</p>
             </div>
           </li>
           <li class="cert">
-            <img src="assets/img/certifications/ai-powered-manager.jpg" alt="" loading="lazy">
+            <a href="assets/img/certifications/ai-powered-manager.jpg" class="cert-thumb" target="_blank" rel="noopener"
+              aria-label="View certificate: Become an AI-Powered People Manager"><img src="assets/img/certifications/ai-powered-manager.jpg" alt="" loading="lazy"></a>
             <div>
               <h3><a href="https://www.linkedin.com/learning/become-an-ai-powered-people-manager-2025" target="_blank"
                   rel="noopener">Become an AI-Powered People Manager</a></h3>
@@ -580,7 +577,8 @@
             </div>
           </li>
           <li class="cert">
-            <img src="assets/img/certifications/leading-with-impact.jpg" alt="" loading="lazy">
+            <a href="assets/img/certifications/leading-with-impact.jpg" class="cert-thumb" target="_blank" rel="noopener"
+              aria-label="View certificate: Leading with Impact"><img src="assets/img/certifications/leading-with-impact.jpg" alt="" loading="lazy"></a>
             <div>
               <h3><a href="https://www.linkedin.com/learning/paths/verisk-leading-with-impact-cohort-experience"
                   target="_blank" rel="noopener">Leading with Impact</a></h3>
@@ -588,14 +586,16 @@
             </div>
           </li>
           <li class="cert">
-            <img src="assets/img/certifications/istqb.jpg" alt="" loading="lazy">
+            <a href="assets/img/certifications/istqb.jpg" class="cert-thumb" target="_blank" rel="noopener"
+              aria-label="View certificate: ISTQB Certified Tester Foundation Level"><img src="assets/img/certifications/istqb.jpg" alt="" loading="lazy"></a>
             <div>
               <h3>ISTQB Certified Tester Foundation Level</h3>
               <p>CTFL v4.0 · ISTQB / iSQI · 2024</p>
             </div>
           </li>
           <li class="cert">
-            <img src="assets/img/certifications/certifications-20.png" alt="" loading="lazy">
+            <a href="assets/img/certifications/certifications-20.png" class="cert-thumb" target="_blank" rel="noopener"
+              aria-label="View certificate: AWS Certified Cloud Practitioner"><img src="assets/img/certifications/certifications-20.png" alt="" loading="lazy"></a>
             <div>
               <h3><a href="https://verify.acloud.guru/8C4D120C4C73" target="_blank" rel="noopener">AWS Certified Cloud
                   Practitioner</a></h3>
@@ -603,7 +603,8 @@
             </div>
           </li>
           <li class="cert">
-            <img src="assets/img/certifications/certifications-4.jpg" alt="" loading="lazy">
+            <a href="assets/img/certifications/certifications-4.jpg" class="cert-thumb" target="_blank" rel="noopener"
+              aria-label="View certificate: Test Automation with JavaScript"><img src="assets/img/certifications/certifications-4.jpg" alt="" loading="lazy"></a>
             <div>
               <h3><a href="https://training.epam.com/en" target="_blank" rel="noopener">Test Automation with
                   JavaScript</a></h3>
@@ -611,7 +612,8 @@
             </div>
           </li>
           <li class="cert">
-            <img src="assets/img/certifications/certifications-24.png" alt="" loading="lazy">
+            <a href="assets/img/certifications/certifications-24.png" class="cert-thumb" target="_blank" rel="noopener"
+              aria-label="View certificate: IT Automation with Python"><img src="assets/img/certifications/certifications-24.png" alt="" loading="lazy"></a>
             <div>
               <h3><a href="https://www.credly.com/badges/21d5a587-305c-419e-b1ec-1a282a1d8a45/public_url"
                   target="_blank" rel="noopener">IT Automation with Python</a></h3>
@@ -619,14 +621,16 @@
             </div>
           </li>
           <li class="cert">
-            <img src="assets/img/certifications/certifications-2.jpg" alt="" loading="lazy">
+            <a href="assets/img/certifications/certifications-2.jpg" class="cert-thumb" target="_blank" rel="noopener"
+              aria-label="View certificate: Full Stack CI/CD"><img src="assets/img/certifications/certifications-2.jpg" alt="" loading="lazy"></a>
             <div>
               <h3><a href="https://studies.cs.helsinki.fi/stats/api/certificate/fs-cicd/en/ce2b668b429cb1cd4068cd5c3f04d0e0" target="_blank" rel="noopener">Full Stack CI/CD</a></h3>
               <p>University of Helsinki · 2024</p>
             </div>
           </li>
           <li class="cert">
-            <img src="assets/img/certifications/langgraph-cert.jpg" alt="" loading="lazy">
+            <a href="assets/img/certifications/langgraph-cert.jpg" class="cert-thumb" target="_blank" rel="noopener"
+              aria-label="View certificate: Introduction to LangGraph (Python)"><img src="assets/img/certifications/langgraph-cert.jpg" alt="" loading="lazy"></a>
             <div>
               <h3>Introduction to LangGraph (Python)</h3>
               <p>LangChain Academy · 2026</p>
@@ -682,7 +686,6 @@
     <section id="contact" class="section section-alt">
       <div class="container contact">
         <div>
-          <p class="eyebrow">Contact</p>
           <h2>Building an AI quality engineering function?</h2>
           <p>I am open to Head of AI Quality and QA engineering leadership roles. The fastest way to reach me is email
             or LinkedIn.</p>
@@ -707,9 +710,21 @@
           <li><svg class="icon" aria-hidden="true">
               <use href="#i-pin" />
             </svg><span>Málaga, Spain</span></li>
+          <li><svg class="icon" aria-hidden="true">
+              <use href="#i-globe" />
+            </svg><span>English · Spanish · Russian (C1+)</span></li>
         </ul>
       </div>
     </section>
+
+    <dialog class="cert-dialog" aria-label="Certificate">
+      <button type="button" class="icon-btn cert-close" aria-label="Close certificate">
+        <svg class="icon" aria-hidden="true">
+          <use href="#i-x" />
+        </svg>
+      </button>
+      <img src="" alt="">
+    </dialog>
 
   </main>
 
