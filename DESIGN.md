@@ -1,258 +1,323 @@
 ---
-name: Valentin Lutchanka Portfolio
-description: Agentic QA leadership, presented as a calm, audited quality report.
+name: Valentin Lutchanka, Portfolio
+description: A QA leader's career drawn as one transit line; the visit rides it from 2018 to now.
 colors:
-  pass-green: "#15803d"
-  pass-green-deep: "#166534"
-  pass-green-wash: "#dcfce7"
-  on-pass-green: "#ffffff"
-  report-paper: "#f8fafc"
-  sheet-white: "#ffffff"
-  ledger-tint: "#f1f5f9"
-  hairline: "#e2e8f0"
-  ink: "#0f172a"
-  ink-muted: "#475569"
-  terminal-night: "#0f172a"
-  terminal-text: "#e2e8f0"
-  terminal-muted: "#94a3b8"
-  terminal-pass: "#4ade80"
-  pass-green-dark: "#22c55e"
-  pass-green-dark-hover: "#4ade80"
-  on-pass-green-dark: "#052e16"
-  report-paper-dark: "#0b1120"
-  sheet-dark: "#111a2e"
-  ledger-tint-dark: "#0f1729"
-  hairline-dark: "#233049"
-  ink-dark: "#f1f5f9"
-  ink-muted-dark: "#a3b1c6"
-  terminal-night-dark: "#070c18"
+  enamel-white: "#fbfaf7"
+  platform-paper: "#f3f2ee"
+  tile-grey: "#e6e4de"
+  rule-grey: "#d2d0c8"
+  signal-grey: "#8b8d91"
+  muted-ink: "#5d6066"
+  graphite: "#2a2c30"
+  sign-ink: "#16181b"
+  line-plum: "#6b2fa0"
+  line-plum-ink: "#5a2589"
+  on-line: "#ffffff"
+  plum-wash: "#ece3f4"
+  here-amber: "#f2a900"
+  on-here: "#16181b"
+  board-cell: "#2f3238"
+  board-muted: "#b6b8bc"
+  dark-ground: "#141518"
+  dark-plate: "#1c1e22"
+  dark-rule: "#34363c"
+  dark-text: "#ecebe6"
+  dark-text-muted: "#a8aaaf"
+  dark-line-plum: "#a877d8"
+  dark-line-plum-ink: "#c4a1e6"
+  dark-plum-wash: "#2a2233"
+  dark-board: "#0d0e10"
+  dark-board-cell: "#2a2d32"
 typography:
   display:
-    fontFamily: "IBM Plex Sans, system-ui, -apple-system, Segoe UI, Roboto, sans-serif"
-    fontSize: "clamp(2.125rem, 4.2vw, 3.25rem)"
-    fontWeight: 700
-    lineHeight: 1.2
+    fontFamily: "Overpass, system-ui, -apple-system, Segoe UI, Roboto, sans-serif"
+    fontSize: "clamp(3rem, 7.6vw, 6rem)"
+    fontWeight: 900
+    lineHeight: 0.92
+    letterSpacing: "-0.04em"
+  headline-terminus:
+    fontFamily: "Overpass, system-ui, sans-serif"
+    fontSize: "clamp(2.25rem, 4.6vw, 3.75rem)"
+    fontWeight: 900
+    lineHeight: 1
+    letterSpacing: "-0.035em"
+  headline-plate:
+    fontFamily: "Overpass, system-ui, sans-serif"
+    fontSize: "clamp(2rem, 3.6vw, 3rem)"
+    fontWeight: 800
+    lineHeight: 1.32
     letterSpacing: "-0.03em"
-  headline:
-    fontFamily: "IBM Plex Sans, system-ui, sans-serif"
-    fontSize: "clamp(1.75rem, 3vw, 2.5rem)"
+  claim:
+    fontFamily: "Overpass, system-ui, sans-serif"
+    fontSize: "clamp(1.625rem, 2.8vw, 2.25rem)"
     fontWeight: 700
-    lineHeight: 1.2
+    lineHeight: 1.15
     letterSpacing: "-0.02em"
   title:
-    fontFamily: "IBM Plex Sans, system-ui, sans-serif"
-    fontSize: "1.125rem"
-    fontWeight: 600
-    lineHeight: 1.2
-    letterSpacing: "-0.02em"
-  figure:
-    fontFamily: "IBM Plex Sans, system-ui, sans-serif"
-    fontSize: "2.5rem"
-    fontWeight: 700
+    fontFamily: "Overpass, system-ui, sans-serif"
+    fontSize: "1.375rem"
+    fontWeight: 800
     lineHeight: 1.1
-    letterSpacing: "-0.03em"
-    fontFeature: "tnum"
+    letterSpacing: "-0.02em"
   lead:
-    fontFamily: "IBM Plex Sans, system-ui, sans-serif"
+    fontFamily: "Overpass, system-ui, sans-serif"
     fontSize: "1.125rem"
     fontWeight: 400
     lineHeight: 1.6
   body:
-    fontFamily: "IBM Plex Sans, system-ui, sans-serif"
-    fontSize: "1rem"
+    fontFamily: "Overpass, system-ui, sans-serif"
+    fontSize: "1.0625rem"
     fontWeight: 400
     lineHeight: 1.6
-  label:
-    fontFamily: "IBM Plex Mono, ui-monospace, Cascadia Code, Consolas, monospace"
+  board-figure:
+    fontFamily: "Overpass Mono, ui-monospace, Cascadia Code, Consolas, monospace"
+    fontSize: "clamp(2.25rem, 4vw, 3.25rem)"
+    fontWeight: 600
+    lineHeight: 1
+    fontFeature: "tnum"
+  label-mono:
+    fontFamily: "Overpass Mono, ui-monospace, Cascadia Code, Consolas, monospace"
     fontSize: "0.875rem"
-    fontWeight: 500
+    fontWeight: 600
+    lineHeight: 1.6
 rounded:
-  sm: "8px"
-  md: "12px"
-  pill: "999px"
-  round: "50%"
+  plate: "0px"
+  button: "2px"
+  cell: "3px"
+  roundel: "50%"
 spacing:
-  xs: "8px"
-  sm: "12px"
-  md: "16px"
-  lg: "24px"
-  xl: "32px"
-  2xl: "48px"
-  3xl: "64px"
-  section: "72px"
-  section-lg: "104px"
+  gutter: "20px"
+  gutter-wide: "32px"
+  band: "10px"
+  rail-x: "28px"
+  rail-md: "64px"
+  rail-lg: "88px"
+  header: "68px"
+  max: "1240px"
+  section: "80px"
+  section-wide: "120px"
+  section-tight: "64px"
+  section-tight-wide: "96px"
 components:
   button-primary:
-    backgroundColor: "{colors.pass-green}"
-    textColor: "{colors.on-pass-green}"
-    rounded: "{rounded.sm}"
-    padding: "0 22px"
-    height: "48px"
+    backgroundColor: "{colors.line-plum}"
+    textColor: "{colors.on-line}"
+    rounded: "{rounded.button}"
+    padding: "0 24px"
+    height: "52px"
+    typography: "{typography.body}"
   button-primary-hover:
-    backgroundColor: "{colors.pass-green-deep}"
-    textColor: "{colors.on-pass-green}"
+    backgroundColor: "{colors.sign-ink}"
+    textColor: "{colors.platform-paper}"
   button-ghost:
     backgroundColor: "transparent"
-    textColor: "{colors.ink}"
-    rounded: "{rounded.sm}"
-    padding: "0 22px"
-    height: "48px"
-  icon-button:
-    backgroundColor: "transparent"
-    textColor: "{colors.ink}"
-    rounded: "{rounded.sm}"
-    size: "44px"
-  nav-link:
-    textColor: "{colors.ink-muted}"
-    rounded: "{rounded.sm}"
-    padding: "8px 12px"
-  nav-link-active:
-    backgroundColor: "{colors.ledger-tint}"
-    textColor: "{colors.ink}"
-  project-card:
-    backgroundColor: "{colors.sheet-white}"
-    rounded: "{rounded.md}"
-    padding: "20px"
-  pipeline-panel:
-    backgroundColor: "{colors.terminal-night}"
-    textColor: "{colors.terminal-text}"
-    rounded: "{rounded.md}"
-    padding: "12px 16px"
+    textColor: "{colors.sign-ink}"
+    rounded: "{rounded.button}"
+    padding: "0 24px"
+    height: "52px"
+  button-ghost-hover:
+    backgroundColor: "{colors.sign-ink}"
+    textColor: "{colors.platform-paper}"
+  nav-cta:
+    backgroundColor: "{colors.sign-ink}"
+    textColor: "{colors.platform-paper}"
+    rounded: "{rounded.plate}"
+    padding: "0 16px"
+    height: "44px"
+  nav-cta-hover:
+    backgroundColor: "{colors.line-plum}"
+  station-plate:
+    backgroundColor: "{colors.sign-ink}"
+    textColor: "{colors.platform-paper}"
+    rounded: "{rounded.plate}"
+    padding: "0.1em 0.32em 0.02em"
+    typography: "{typography.headline-plate}"
+  here-tag:
+    backgroundColor: "{colors.here-amber}"
+    textColor: "{colors.on-here}"
+    rounded: "{rounded.plate}"
+    padding: "2px 10px 0"
+    typography: "{typography.label-mono}"
+  board-cell:
+    backgroundColor: "{colors.board-cell}"
+    textColor: "{colors.platform-paper}"
+    rounded: "{rounded.cell}"
+    width: "0.78em"
+    height: "1.18em"
+    typography: "{typography.board-figure}"
+  roundel:
+    backgroundColor: "{colors.platform-paper}"
+    rounded: "{rounded.roundel}"
+    size: "48px"
+  roundel-here:
+    backgroundColor: "{colors.here-amber}"
+    rounded: "{rounded.roundel}"
+    size: "48px"
 ---
 
-# Design System: Valentin Lutchanka Portfolio
+# Design System: Valentin Lutchanka, Portfolio
 
 ## Overview
 
-**Creative North Star: "The Quality Report"**
+**Creative North Star: "One Line, Ridden"**
 
-The page behaves like a well-run quality report handed to a hiring manager: calm paper, hairline rules, figures that line up, and exactly one signal color that means "passed". Nothing on the page is decorative for its own sake. Hierarchy comes from type weight, measured whitespace and the green accent landing only on things that carry evidence: the headline figure, stage numbers, dates, the primary action.
+The career is a single transit line and the page is a ride along it. The world is enamel signage: a warm off-white ground, near-black sign ink, and one plum line colour drawn as continuous bands. Amber appears only where the visitor is, or where the career is now. Type is Overpass, a Highway Gothic descendant, set heavy and tight like station signage; Overpass Mono speaks only for figures, dates and times, the way a timetable does.
 
-Density is moderate and scan-friendly. Content sits in a single 1160px column; sections alternate between report paper and a faint ledger tint, separated by full-bleed hairlines rather than boxes. Lists are rows, not cards: metrics, STLC stages, career roles and contact lines are all divided by 1px rules so the eye reads them top to bottom like a table.
+Density alternates like a line does. Dense stations (the departure board of measured outcomes, the STLC stopping pattern, the career roles) are separated by quiet platforms on the enamel-white plate ground (leadership, stack, credentials). On wide screens a vertical route runs down a left rail through every section: dashed ahead, solid behind, with an amber rider at mid-viewport and a stop at each section head. On phones the rail is dropped and the hero strip map turns vertical, because the gutter would cost the reading measure.
 
-Components are engineered and confident: solid green primary buttons, crisp 8px corners, 44px+ targets, and motion that only confirms state (a 2px lift, a scale-down on press, a scroll-filled timeline rail). The one deliberate contrast is the dark pipeline panel in the hero, a terminal-style run log that shows the agentic STLC "passing" stage by stage.
+The system is flat and drawn. Depth comes from ink rules, solid plates and colour fields, never from cards floating on shadows. The user ruled out flashy creative-agency effects and the dark neon "AI" look; the dark theme is the same signage at night, not a glow treatment.
 
 **Key Characteristics:**
-- Slate neutrals plus a single Pass Green accent, in both light and dark themes.
-- IBM Plex Sans for everything read; IBM Plex Mono for labels, dates, stage numbers and the run log.
-- Hairline-ruled rows over boxed cards; cards appear only for published tools. No pills.
-- Tabular, heavy figures for every measured number.
-- Flat at rest; depth is reserved for the pipeline panel and the mobile menu.
+- One plum line colour, used as bands, rules and fills; amber reserved for "you are here".
+- One numbered neutral ramp (n-0 to n-9) carries ground, plates, rules and text.
+- Section titles are square ink station plates; positions on the line are round roundels.
+- Overpass heavy for signage, Overpass Mono only for figures, dates and times.
+- Flat surfaces, ink borders, colour-field sections (ink board, plum terminus).
+- Motion is the line itself: drawn once, filled by scroll, digits rolled once.
 
 ## Colors
 
-Cool slate paper and ink with one green that reads as a passing test.
+A warm enamel neutral ramp with one saturated plum line and a single amber signal.
 
 ### Primary
-- **Pass Green** (light `pass-green`, dark `pass-green-dark`): primary buttons, nav "Contact" CTA, eyebrow labels, stage numbers, role dates, timeline rail and dots, the headline 3,500+ figure, link text, focus outline. Hover deepens in light (`pass-green-deep`) and brightens in dark (`pass-green-dark-hover`).
-- **Pass Green Wash** (`pass-green-wash`; dark uses Pass Green at 12% alpha): reserved token, currently unused.
+- **Line Plum** (line-plum): the line. Strip-map band, route band and fill, nav underline bar, principle top rules, STLC stopping-pattern track, passed stops, primary button fill, the contact terminus field. In dark theme it lifts to Dark Line Plum so the band holds on near-black.
+- **Plum Ink** (line-plum-ink): plum as text. Links, STLC stage numbers, stack proof figures, icon hover. Darker than the band so it reads at body size.
+- **Plum Wash** (plum-wash): the only plum tint; the roundel fill on hover in the strip map.
+
+### Secondary
+- **Here Amber** (here-amber): "you are here". The current strip-map roundel and its pulse ring, the current role's date tag and enlarged stop, the rider on the route, the contact terminus centre, and text selection. Always carries Sign Ink text (on-here), never white.
 
 ### Neutral
-- **Report Paper** (`report-paper` / `report-paper-dark`): page background.
-- **Sheet White** (`sheet-white` / `sheet-dark`): project card surface.
-- **Ledger Tint** (`ledger-tint` / `ledger-tint-dark`): alternate section bands, nav hover/active fill, cert thumbnail and image backgrounds.
-- **Hairline** (`hairline` / `hairline-dark`): every divider, card border, ghost button border, inactive timeline rail, list markers.
-- **Ink** (`ink` / `ink-dark`): headings, body emphasis, `<strong>`.
-- **Ink Muted** (`ink-muted` / `ink-muted-dark`): body copy in leads, descriptions, labels, secondary metadata.
+- **Enamel White** (enamel-white, n-0): plate ground for quiet platforms (leadership, stack, credentials), education panel, dialog.
+- **Platform Paper** (platform-paper, n-1): page ground and the text colour on ink and board surfaces.
+- **Tile Grey** (tile-grey, n-2): ramp step reserved; light surface separation.
+- **Rule Grey** (rule-grey, n-3): hairline rules between rows, list items, cert thumbnails.
+- **Signal Grey** (signal-grey, n-5) and **Graphite** (graphite, n-8): ramp steps held for intermediate ink; n-9 is the footer ground.
+- **Muted Ink** (muted-ink, n-6): secondary text, leads, descriptions, timestamps.
+- **Sign Ink** (sign-ink, n-9): primary text, header rule, station plates, ghost-button border, portrait frame, focus ring, roundel and stop borders.
+- **Board** (sign-ink as board, board-cell, board-muted): the departure board section re-scopes ground to ink, cells to a lifted graphite, secondary text to a light grey.
 
-### Terminal (pipeline panel only)
-- **Terminal Night** (`terminal-night` / `terminal-night-dark`), **Terminal Text**, **Terminal Muted**, **Terminal Pass** (`terminal-pass`): the run-log panel is dark in both themes and uses its own brighter green for "done" states and the Σ total.
+Dark theme swaps ground, plate, rule, text, muted, line, line ink, wash, board and cell to the dark-* tokens; amber and the ramp's ink stay.
 
 ### Named Rules
-**The One Signal Rule.** Pass Green is the only hue on the page. It marks evidence, sequence and action; it never fills large surfaces. No secondary or tertiary accent exists.
+**The One Line Rule.** Plum is the only hue that draws structure. No second accent, no gradient of plums beyond line, ink and wash.
 
-**The Personal Site Rule.** No employer colors or logos. Verisk appears as text only.
+**The You-Are-Here Rule.** Amber marks position only: the current station, the current role, the rider, the terminus. If an amber element does not answer "where am I on the line", it is not amber.
+
+**The Numbered Ramp Rule.** Neutrals come from the n-ramp or a themed alias of it (bg, plate, rule, text, text-muted). New greys are added as ramp steps, not inline tints.
 
 ## Typography
 
-**Display Font:** IBM Plex Sans (with system-ui, -apple-system, Segoe UI, Roboto)
-**Label/Mono Font:** IBM Plex Mono (with ui-monospace, Cascadia Code, Consolas)
+**Display Font:** Overpass (with system-ui, -apple-system, Segoe UI, Roboto, sans-serif)
+**Body Font:** Overpass
+**Label/Mono Font:** Overpass Mono (with ui-monospace, Cascadia Code, Consolas, monospace)
 
-**Character:** An engineering family used with editorial restraint. Plex Sans carries the argument in tight, heavy headlines; Plex Mono tags things the way a test report tags them: stage IDs, dates, statuses.
+**Character:** Road-sign geometry set heavy and tight for names and plates, relaxed at 1.6 for reading; the mono is a timetable voice that never carries prose.
 
 ### Hierarchy
-- **Display** (700, `clamp(2.125rem, 4.2vw, 3.25rem)`, 1.2, -0.03em): hero headline only.
-- **Headline** (700, `clamp(1.75rem, 3vw, 2.5rem)`, 1.2): section `h2`.
-- **Title** (600, 1.0625–1.25rem, 1.2): stage, principle, role, project and cert `h3`.
-- **Figure** (700, 2.5rem, 1.1, tabular numerals): metric values; the lead figure rises to 3.25rem in Pass Green.
-- **Lead** (400, 1.125rem, 1.6, max 60ch): hero intro; section intros at 1.0625rem. The personal-view statement scales `clamp(1.1875rem, 2vw, 1.4375rem)` at 1.55.
-- **Body** (400, 1rem, 1.6): copy, capped 62–64ch; `text-wrap: pretty` on all paragraphs and list items.
-- **Label** (Mono 500, 0.875rem): dates and stage numbers; 0.75rem uppercase 0.06em for pipeline statuses. No eyebrow labels above headings; headings stand alone.
+- **Display** (900, clamp(3rem, 7.6vw, 6rem), 0.92, -0.04em): the name in the hero, signage scale, one per page.
+- **Headline Terminus** (900, clamp(2.25rem, 4.6vw, 3.75rem), 1, -0.035em, max 14ch): the contact heading at the end of the line.
+- **Headline Plate** (800, clamp(2rem, 3.6vw, 3rem), 1.32, -0.03em): section titles, always inside a station plate; the tall line-height gives wrapped plates breathing room.
+- **Claim** (700, clamp(1.625rem, 2.8vw, 2.25rem), 1.15, max 26ch): the hero thesis line.
+- **Title** (800, 1.125rem to 1.625rem, 1.1, -0.02em): h3 for roles (1.625rem), stages (1.375rem), principles, projects, education (1.25rem), stack rows and strip stations (1.125rem).
+- **Lead** (400, 1.125rem, 1.6, 60 to 62ch): hero lead and section intros, in Muted Ink with Sign Ink strong.
+- **Body** (400, 1.0625rem, 1.6, 64 to 70ch): role bullets, stage text, descriptions.
+- **Board Figure** (Mono 600, clamp(2.25rem, 4vw, 3.25rem), 1, tabular figures): impact numbers on the departure board.
+- **Label Mono** (Mono 500 to 600, 0.8125rem to 0.9375rem): station times, role dates, stage numbers, local time, stack proof figures.
 
 ### Named Rules
-**The Numbers Line Up Rule.** Every measured figure uses `font-variant-numeric: tabular-nums` and heavy weight. Numbers are the hero, not the adjectives around them.
+**The Timetable Rule.** Overpass Mono sets figures, dates and times only. Never a heading, never a sentence.
 
-**The Mono Means Metadata Rule.** Mono never sets prose. It labels, dates, numbers and logs.
+**The Heavy Sign Rule.** Headings run 800 to 900 with negative tracking; nothing between 400 body and 700 is used for headings.
 
 ## Layout
 
-Single centered column, max 1160px, gutters 16px on mobile and 32px from 768px. Sections pad 72px vertically, 104px from 1024px (`section-tight` holds 72px). Section heads cap at 680px with 40px below.
+Single column of full-bleed sections inside a 1240px container with 20px gutters (32px from 768px). Sections pad 80px vertically (120px from 1024px); tight board-style sections pad 64px (96px). Section heads cap at 760px with 48px below.
 
-Grids are simple and content-driven: hero 1.35fr / 1fr at 1024px+ (copy left, pipeline right); metrics 1 → 2 → 4 columns (first column 1.4fr) split by vertical hairlines; stages as 56px number / title / description rows from 768px; career as 220px meta / body from 768px; toolkit and principles 2-up from 768px; projects and certs 1 → 2 → 3 columns (640 / 1024). Navigation collapses to a dropdown sheet below 1024px.
+The route rail: from 760px a left rail (64px, 88px from 1100px) is added to the container's left padding for every section inside the line and for contact. The route band (10px) sits 28px into the rail; stops, the rider and the terminus centre on that axis. Below 760px the rail is 0 and the route, stops and terminus are hidden; the hero strip map carries the line vertically instead.
 
-Spacing steps are 8 / 12 / 16 / 24 / 32 / 48 / 64. Sticky header is 64px; anchor scroll offsets by header + 16px.
+Hero: name and role line full width, then copy plus portrait in two columns from 760px (portrait 200 to 260px, then 260 to 330px from 960px), then the strip map full width with five equal stations.
+
+Inner patterns are ruled lists, not card grids: metrics (300px label column from 760px), stages (48px number, title, text from 900px), roles (240px meta column from 900px), stack rows (200px, 1.4fr, 1fr from 900px). Principles go 1, 2, 4 columns; projects 1, 2, 3; certs 1, 2, 3.
+
+Header is sticky at 68px with a 3px ink rule; navigation collapses below 1024px into a full-width panel with stacked 52px rows and a header CTA.
 
 ## Elevation & Depth
 
-Flat by default. Depth comes from tonal bands (paper vs ledger tint) and hairlines, not shadows.
+Flat. Depth is conveyed by colour fields (ink departure board, plum contact terminus, enamel-white quiet platforms against platform paper), heavy ink rules (3px header and stack rules, 3px portrait and dialog frames, 2px project frames) and hairlines (1px rule grey). The only shadows are functional: a soft lift under the moving rider so it reads above the band, and a 1px highlight under each board cell's split line.
 
 ### Shadow Vocabulary
-- **Panel lift** (light `0 1px 2px rgb(15 23 42 / 0.06), 0 8px 24px rgb(15 23 42 / 0.06)`; dark `0 1px 2px rgb(0 0 0 / 0.4), 0 8px 24px rgb(0 0 0 / 0.25)`): the hero pipeline panel and the open mobile menu. Nothing else.
-- **Frosted header** (85% page background + `saturate(160%) blur(10px)`): sticky header; its bottom hairline fades in over the first 80px of scroll.
+- **Rider lift** (`box-shadow: 0 2px 8px rgb(0 0 0 / 0.18)`): the amber rider only.
+- **Flap split** (`box-shadow: 0 1px 0 rgb(255 255 255 / 0.06)`): under the 1px split line in each departure-board cell.
 
 ### Named Rules
-**The Flat Report Rule.** Surfaces are flat at rest. Cards show state by border color and a 2px lift, not by adding shadow.
+**The Drawn Not Floated Rule.** Surfaces separate by rule, frame or colour field. Do not lift sections or rows on shadows.
 
 ## Shapes
 
-Crisp, lightly rounded geometry. Controls, nav links, icon buttons and cert thumbnails use 8px (`rounded.sm`). Large containers (project cards, pipeline panel) use 12px (`rounded.md`). The avatar and timeline dots are circles. Borders are always 1px hairlines; the only 2px strokes are the principle left-rule and timeline rail, both in Pass Green.
+Two shapes only: square and round. Square is information (station plates, nav CTA, here tags, portrait, project frames, edu panel, dialog: 0 radius; buttons soften to 2px; board cells to 3px for the flap). Round is position on the line (roundels, stops, rider, terminus, nav-active dot on mobile, bullet rings, drawn separator dots, brand mark). Roundels are thick ink rings on the ground colour; the ring weight scales with size (48px/9px, 40px/8px, 34px/7px, 22px/5px, 56px/11px for the terminus).
+
+**The Square Information, Round Position Rule.** If it names something it is square; if it marks where something is on the line it is round.
 
 ## Components
 
 ### Buttons
-Solid, confident, 48px tall.
-- **Shape:** gently rounded (8px).
-- **Primary:** Pass Green fill, white text (dark-on-green in dark theme), 600 weight, 0 22px padding.
-- **Ghost:** transparent with hairline border and ink text; border darkens to Ink Muted on hover.
-- **Hover / Focus / Active:** color shifts over 0.2s on `cubic-bezier(0.2, 0.8, 0.2, 1)`; press scales to 0.98; focus is a 2px Pass Green outline offset 3px.
-- **Icon button:** 44px square, transparent, Ledger Tint fill on hover. Used for theme toggle, menu toggle and social links (social links add a hairline border that turns green on hover).
-
-### Stack Rows
-- **Style:** hairline-ruled rows, 3 columns from 768px (discipline 11rem / tools / proof 15rem), stacked on mobile.
-- **Tools:** main tools in Ink 600 separated by " · "; secondary tools in a muted "Also …" line.
-- **Proof:** one muted line reusing a fact already on the page, its figure in Pass Green bold tabular.
-- No pills or tags anywhere on the page.
-
-### Cards / Containers
-- **Project card:** Sheet White, hairline border, 12px corners, 20px body padding, 16:10 screenshot on top. Hover turns the border Pass Green, lifts 2px, and slowly pans tall screenshots from top to bottom (3s).
-- **Metric row:** not a card; figures sit between hairlines with vertical rules between columns.
-- **Principle:** 2px Pass Green left-rule, 20px indent, no box.
-- **Certification:** 112×84 thumbnail (hairline border, 8px corners, Ledger Tint fill, `object-fit: contain` so mixed-ratio certificates stay whole) beside title + issuer · year; 1 → 2 → 3 columns. Nine featured; the rest sit in a `<details>` list. Thumbnails are links that open the full certificate in a modal `<dialog>` (hugs the image, max 960px / 90vh, dark scrim, close button top-right, Esc and backdrop click close); without `<dialog>` support they open the image in a new tab. Hover/focus: Pass Green border + 2px lift, zoom-in cursor.
+Signage-solid and blunt.
+- **Shape:** near-square (2px), 52px tall, 24px horizontal padding, 700 weight, 1rem.
+- **Primary:** Line Plum fill with on-line text; hover inverts to Sign Ink fill with ground text.
+- **Ghost:** 2px Sign Ink border, ink text; hover fills ink.
+- **Active:** nudges down 1px.
+- **On the terminus:** primary flips to on-line fill with plum text (hover to n-9 with white); ghost uses on-line border.
 
 ### Navigation
-Sticky frosted header with name as wordmark (600, 1.0625rem). Links are muted 0.9375rem/500 with 8px 12px padding; hover and current section (`aria-current`) get Ledger Tint fill and ink text. Five links whose labels match their section headings (AI in QA · Career · Stack · Tools · Certifications; Impact is reached from the hero button), then the Pass Green "Contact" CTA. Sections without a link name their parent link via `data-nav` for the scroll-spy. Below 1024px the CTA moves out of the menu into the header bar (always visible), and a menu button opens a full-width sheet with stacked 12px-padded links.
+- **Desktop:** 600 weight 0.9375rem links, 44px targets. A 5px plum bar draws in from the left on hover and for the section in view, sitting on the header's ink rule. The final item is a square ink CTA that turns plum on hover.
+- **Mobile (below 1024px):** panel below the header with its own 3px ink rule, 52px rows separated by hairlines, active state as a 12px plum dot at the right edge; the CTA moves into the header bar.
+- **Brand:** name in 800 with a small plum-ringed roundel before it (hidden below 440px).
 
-### Pipeline Panel (signature)
-A dark terminal card titled `agentic-stlc` listing five STLC stages as mono rows (stage / task / status), ending with `Σ labor hours saved 3,500+` in Terminal Pass. On load, JS runs the rows through queued → running → done (dot → check mark); a "re-run" button replays it. Without JS every row shows done.
+### Station Plate
+Every section h2 is wrapped in an inline square ink plate (Sign Ink fill, ground text, padding 0.1em 0.32em 0.02em) with box-decoration-break clone so wrapped titles become stacked plates. The board and terminus sections re-scope ink so plates invert correctly.
 
-### Career Timeline (signature)
-Left 2px rail with ringed dots per role. Where scroll-driven animations exist, a Pass Green copy of the rail fills with scroll and each dot fills in as it passes center. Dates in Pass Green mono; bullets use hairline-colored markers.
+### Hero Strip Map
+A 10px plum band behind five roundels (48px, 9px ink ring on ground). Each station is a link: name (800, 1.125rem) and mono time. The current station's roundel fills amber with a 3px amber pulse ring, and its time becomes an amber here tag. Hover scales the roundel 1.12 and fills it plum wash. Below 760px the map turns vertical with 40px roundels.
+
+### Route, Stops and Rider
+A 10px band down the rail: dashed plum ahead (14px on, 12px off), solid plum fill behind, filled by scroll progress to mid-viewport. Each section head and role carries a 34px stop (7px ink ring); passed stops fill plum. The current role's stop is 46px and amber; minor roles get a 22px stop. The rider is a 26px amber disc with a 5px ink ring, sticky at 50vh.
+
+### Departure Board
+The impact section is an ink field. Rows are ruled with 1px lifted-graphite hairlines and carry a mono figure and a label. Each digit sits in its own flap cell (graphite fill, 3px radius, 0.78em by 1.18em, a 1px split line at mid-height); symbols sit uncelled.
+
+### STLC Stopping Pattern
+Ruled rows with a 4px plum track at the left and an 18px plum-ringed stop per stage; the track starts and ends at the first and last stops. Mono plum stage numbers.
+
+### Here Tag
+Amber block behind mono date text (Sign Ink, 600). Used on the current station time and the current role dates only.
+
+### Separator Dot
+Inline lists use a drawn 4px dot (radial gradient in currentColor at 70% opacity) instead of the font's middle dot, which sits off-centre in Overpass. It is non-atomic so it never begins a wrapped line.
+
+### Contact Terminus
+The line ends in a plum field: a 56px amber roundel with an 11px on-line ring, fed by a 10px on-line band from above, aligned to the route axis. Contact list rows are 52px with translucent hairlines; local time in mono.
+
+### Focus
+A 3px solid outline in the current text colour, offset 3px. It inherits ink, board text or on-line automatically per section.
 
 ## Do's and Don'ts
 
 ### Do:
-- **Do** keep Pass Green as the only hue and use it for evidence, sequence and action.
-- **Do** divide lists with 1px hairlines and alternate section bands with Ledger Tint.
-- **Do** set every impact number in heavy tabular figures.
-- **Do** use IBM Plex Mono for labels, dates, stage numbers and logs only.
-- **Do** define every new color for both light and dark themes, including the `[data-theme]` overrides.
-- **Do** keep interactive targets at 44px minimum and honor `prefers-reduced-motion`.
-- **Do** keep Contact reachable in one tap at every width.
+- **Do** draw structure in Line Plum only, as bands of 10px (route, strip), 5px (nav bar, principle rules) or 4px (stopping-pattern track).
+- **Do** wrap every section h2 in a square ink station plate.
+- **Do** keep amber for position: the current station, current role, rider and terminus.
+- **Do** set dates, times and figures in Overpass Mono with tabular figures on the board.
+- **Do** separate content with ink rules, hairlines and colour fields; keep surfaces flat.
+- **Do** alternate dense sections with quiet enamel-white platforms.
+- **Do** keep the reduced-motion path: animations collapse to their end state, the reel and roundel transitions are removed, and the board renders its final figures from markup.
+- **Do** run motion through the line: the hero band draws over 1.4s, stations light in order at 0.25s steps, the route fills with scroll, digits roll once when the board enters view, all on cubic-bezier(0.16, 1, 0.3, 1).
 
 ### Don't:
-- **Don't** introduce a second accent color, gradients, or Verisk brand colors/logos.
-- **Don't** box content that reads as a list; cards are for published tools only.
-- **Don't** add shadows to resting surfaces beyond the pipeline panel and mobile menu.
-- **Don't** set prose in mono or headlines in anything but Plex Sans.
-- **Don't** add motion that doesn't confirm state or progress.
-- **Don't** put eyebrow/kicker labels above headings.
+- **Don't** use amber for decoration, emphasis or status unrelated to "where am I".
+- **Don't** add a second accent hue or plum tints beyond line, ink and wash.
+- **Don't** set headings or prose in Overpass Mono.
+- **Don't** lift sections or rows on drop shadows or build card grids with shadows.
+- **Don't** use flashy creative-agency effects or a dark neon "AI" look; the dark theme is night signage, not glow.
+- **Don't** introduce neutrals outside the numbered ramp and its themed aliases.
+- **Don't** use the font's middle-dot glyph as a separator; use the drawn dot.

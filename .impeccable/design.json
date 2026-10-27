@@ -1,175 +1,72 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-26T00:00:00Z",
-  "title": "Design System: Valentin Lutchanka Portfolio",
+  "generatedAt": "2026-10-27T00:00:00Z",
+  "title": "Design System: Valentin Lutchanka, Portfolio",
   "extensions": {
     "colorMeta": {
-      "pass-green": {
-        "role": "primary",
-        "displayName": "Pass Green",
-        "tonalRamp": [
-          "#052e16",
-          "#14532d",
-          "#166534",
-          "#15803d",
-          "#16a34a",
-          "#22c55e",
-          "#4ade80",
-          "#dcfce7"
-        ]
-      },
-      "pass-green-dark": {
-        "role": "primary",
-        "displayName": "Pass Green (dark theme)",
-        "tonalRamp": [
-          "#052e16",
-          "#14532d",
-          "#166534",
-          "#15803d",
-          "#16a34a",
-          "#22c55e",
-          "#4ade80",
-          "#dcfce7"
-        ]
-      },
-      "pass-green-wash": {
-        "role": "primary",
-        "displayName": "Pass Green Wash"
-      },
-      "report-paper": {
-        "role": "neutral",
-        "displayName": "Report Paper",
-        "tonalRamp": [
-          "#020617",
-          "#0f172a",
-          "#1e293b",
-          "#334155",
-          "#475569",
-          "#94a3b8",
-          "#e2e8f0",
-          "#f8fafc"
-        ]
-      },
-      "sheet-white": {
-        "role": "neutral",
-        "displayName": "Sheet White"
-      },
-      "ledger-tint": {
-        "role": "neutral",
-        "displayName": "Ledger Tint"
-      },
-      "hairline": {
-        "role": "neutral",
-        "displayName": "Hairline"
-      },
-      "ink": {
-        "role": "neutral",
-        "displayName": "Ink",
-        "tonalRamp": [
-          "#020617",
-          "#0f172a",
-          "#1e293b",
-          "#334155",
-          "#475569",
-          "#94a3b8",
-          "#e2e8f0",
-          "#f8fafc"
-        ]
-      },
-      "ink-muted": {
-        "role": "neutral",
-        "displayName": "Ink Muted"
-      },
-      "terminal-night": {
-        "role": "neutral",
-        "displayName": "Terminal Night"
-      },
-      "terminal-pass": {
-        "role": "primary",
-        "displayName": "Terminal Pass"
-      }
+      "enamel-white": { "role": "neutral", "displayName": "Enamel White (n-0)", "canonical": "#fbfaf7", "tonalRamp": ["#16181b", "#2a2c30", "#5d6066", "#8b8d91", "#d2d0c8", "#e6e4de", "#f3f2ee", "#fbfaf7"] },
+      "platform-paper": { "role": "neutral", "displayName": "Platform Paper (n-1)", "canonical": "#f3f2ee", "tonalRamp": ["#16181b", "#2a2c30", "#5d6066", "#8b8d91", "#d2d0c8", "#e6e4de", "#f3f2ee", "#fbfaf7"] },
+      "tile-grey": { "role": "neutral", "displayName": "Tile Grey (n-2)", "canonical": "#e6e4de", "tonalRamp": ["#16181b", "#2a2c30", "#5d6066", "#8b8d91", "#d2d0c8", "#e6e4de", "#f3f2ee", "#fbfaf7"] },
+      "rule-grey": { "role": "neutral", "displayName": "Rule Grey (n-3)", "canonical": "#d2d0c8", "tonalRamp": ["#16181b", "#2a2c30", "#5d6066", "#8b8d91", "#d2d0c8", "#e6e4de", "#f3f2ee", "#fbfaf7"] },
+      "signal-grey": { "role": "neutral", "displayName": "Signal Grey (n-5)", "canonical": "#8b8d91", "tonalRamp": ["#16181b", "#2a2c30", "#5d6066", "#8b8d91", "#d2d0c8", "#e6e4de", "#f3f2ee", "#fbfaf7"] },
+      "muted-ink": { "role": "neutral", "displayName": "Muted Ink (n-6)", "canonical": "#5d6066", "tonalRamp": ["#16181b", "#2a2c30", "#5d6066", "#8b8d91", "#d2d0c8", "#e6e4de", "#f3f2ee", "#fbfaf7"] },
+      "graphite": { "role": "neutral", "displayName": "Graphite (n-8)", "canonical": "#2a2c30", "tonalRamp": ["#16181b", "#2a2c30", "#5d6066", "#8b8d91", "#d2d0c8", "#e6e4de", "#f3f2ee", "#fbfaf7"] },
+      "sign-ink": { "role": "neutral", "displayName": "Sign Ink (n-9)", "canonical": "#16181b", "tonalRamp": ["#16181b", "#2a2c30", "#5d6066", "#8b8d91", "#d2d0c8", "#e6e4de", "#f3f2ee", "#fbfaf7"] },
+      "line-plum": { "role": "primary", "displayName": "Line Plum", "canonical": "#6b2fa0", "tonalRamp": ["#2a0f42", "#3f1764", "#5a2589", "#6b2fa0", "#8a55bd", "#a877d8", "#c4a1e6", "#ece3f4"] },
+      "line-plum-ink": { "role": "primary", "displayName": "Plum Ink", "canonical": "#5a2589", "tonalRamp": ["#2a0f42", "#3f1764", "#5a2589", "#6b2fa0", "#8a55bd", "#a877d8", "#c4a1e6", "#ece3f4"] },
+      "plum-wash": { "role": "primary", "displayName": "Plum Wash", "canonical": "#ece3f4", "tonalRamp": ["#2a0f42", "#3f1764", "#5a2589", "#6b2fa0", "#8a55bd", "#a877d8", "#c4a1e6", "#ece3f4"] },
+      "on-line": { "role": "primary", "displayName": "On Line", "canonical": "#ffffff" },
+      "here-amber": { "role": "secondary", "displayName": "Here Amber", "canonical": "#f2a900", "tonalRamp": ["#4a3300", "#6e4c00", "#9a6b00", "#c78a00", "#f2a900", "#f7c24d", "#fad88a", "#fdf0cc"] },
+      "on-here": { "role": "secondary", "displayName": "On Here", "canonical": "#16181b" },
+      "board-cell": { "role": "neutral", "displayName": "Board Cell", "canonical": "#2f3238" },
+      "board-muted": { "role": "neutral", "displayName": "Board Muted", "canonical": "#b6b8bc" },
+      "dark-ground": { "role": "neutral", "displayName": "Night Ground", "canonical": "#141518" },
+      "dark-plate": { "role": "neutral", "displayName": "Night Plate", "canonical": "#1c1e22" },
+      "dark-rule": { "role": "neutral", "displayName": "Night Rule", "canonical": "#34363c" },
+      "dark-text": { "role": "neutral", "displayName": "Night Text", "canonical": "#ecebe6" },
+      "dark-text-muted": { "role": "neutral", "displayName": "Night Muted", "canonical": "#a8aaaf" },
+      "dark-line-plum": { "role": "primary", "displayName": "Night Line Plum", "canonical": "#a877d8" },
+      "dark-line-plum-ink": { "role": "primary", "displayName": "Night Plum Ink", "canonical": "#c4a1e6" },
+      "dark-plum-wash": { "role": "primary", "displayName": "Night Plum Wash", "canonical": "#2a2233" },
+      "dark-board": { "role": "neutral", "displayName": "Night Board", "canonical": "#0d0e10" },
+      "dark-board-cell": { "role": "neutral", "displayName": "Night Board Cell", "canonical": "#2a2d32" }
     },
     "typographyMeta": {
-      "display": {
-        "displayName": "Display",
-        "purpose": "Hero headline only."
-      },
-      "headline": {
-        "displayName": "Headline",
-        "purpose": "Section h2."
-      },
-      "title": {
-        "displayName": "Title",
-        "purpose": "Stage, role, principle, project and cert h3."
-      },
-      "figure": {
-        "displayName": "Figure",
-        "purpose": "Metric values; lead figure 3.25rem in Pass Green."
-      },
-      "lead": {
-        "displayName": "Lead",
-        "purpose": "Hero and section intros."
-      },
-      "body": {
-        "displayName": "Body",
-        "purpose": "Running copy, 62-72ch."
-      },
-      "label": {
-        "displayName": "Label",
-        "purpose": "Mono dates, stage numbers, pipeline statuses. No eyebrows."
-      }
+      "display": { "displayName": "Display", "purpose": "The name in the hero, signage scale, once per page." },
+      "headline-terminus": { "displayName": "Headline Terminus", "purpose": "Contact heading at the end of the line." },
+      "headline-plate": { "displayName": "Headline Plate", "purpose": "Section h2, always inside a square ink station plate." },
+      "claim": { "displayName": "Claim", "purpose": "Hero thesis line, max 26ch." },
+      "title": { "displayName": "Title", "purpose": "h3 for roles, stages, principles, projects, stack rows; 1.125rem to 1.625rem." },
+      "lead": { "displayName": "Lead", "purpose": "Hero lead and section intros in muted ink." },
+      "body": { "displayName": "Body", "purpose": "Reading text, 64 to 70ch." },
+      "board-figure": { "displayName": "Board Figure", "purpose": "Departure-board impact numbers in flap cells." },
+      "label-mono": { "displayName": "Label Mono", "purpose": "Dates, times, stage numbers, proof figures only." }
     },
     "shadows": [
-      {
-        "name": "panel-lift",
-        "value": "0 1px 2px rgb(15 23 42 / 0.06), 0 8px 24px rgb(15 23 42 / 0.06)",
-        "purpose": "Pipeline panel and open mobile menu, light theme."
-      },
-      {
-        "name": "panel-lift-dark",
-        "value": "0 1px 2px rgb(0 0 0 / 0.4), 0 8px 24px rgb(0 0 0 / 0.25)",
-        "purpose": "Same roles, dark theme."
-      }
+      { "name": "rider-lift", "value": "0 2px 8px rgb(0 0 0 / 0.18)", "purpose": "Lifts the moving amber rider above the route band. The only lift in the system." },
+      { "name": "flap-split", "value": "0 1px 0 rgb(255 255 255 / 0.06)", "purpose": "Highlight under the split line in each departure-board cell." }
     ],
     "motion": [
-      {
-        "name": "ease",
-        "value": "cubic-bezier(0.2, 0.8, 0.2, 1)",
-        "purpose": "All state transitions."
-      },
-      {
-        "name": "duration-state",
-        "value": "0.2s",
-        "purpose": "Color, border, background and lift changes."
-      },
-      {
-        "name": "duration-press",
-        "value": "0.15s",
-        "purpose": "Button press scale to 0.98."
-      },
-      {
-        "name": "duration-pan",
-        "value": "3s",
-        "purpose": "Project screenshot pan on hover."
-      }
+      { "name": "ease", "value": "cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "The single easing for every transition and keyframe." },
+      { "name": "draw-line", "value": "1.4s scaleX 0 to 1 (scaleY below 760px)", "purpose": "Hero strip-map band draws once on load." },
+      { "name": "stop-in", "value": "0.5s scale 0.4 to 1 with fade, delays 0.15s + 0.25s per station", "purpose": "Strip-map stations light in order behind the drawing line." },
+      { "name": "here-ring", "value": "1.8s scale 1 to 1.7 fade out, 1.6s delay, 3 iterations", "purpose": "Amber pulse on the current station, then rests." },
+      { "name": "route-fill", "value": "scaleY(var(--progress)) driven by scroll to mid-viewport", "purpose": "Route fills solid behind the rider; stops above mid-viewport turn plum." },
+      { "name": "digit-roll", "value": "reel translateY, 900ms + 160ms per digit, once on 60% visibility", "purpose": "Departure-board digits roll to value once." },
+      { "name": "nav-bar", "value": "0.3s scaleX from left", "purpose": "Plum underline bar on hover and active section." },
+      { "name": "dialog-in", "value": "0.3s fade + translateY(12px) scale(0.98)", "purpose": "Certificate dialog entry." },
+      { "name": "reduced-motion", "value": "animation 0.01ms, no delay, 1 iteration; reel, roundel, project transitions removed; digits not built", "purpose": "No spatial travel; end states and colour changes remain." }
     ],
     "breakpoints": [
-      {
-        "name": "xs",
-        "value": "480px"
-      },
-      {
-        "name": "sm",
-        "value": "640px"
-      },
-      {
-        "name": "md",
-        "value": "768px"
-      },
-      {
-        "name": "lg",
-        "value": "1024px"
-      }
+      { "name": "tiny", "value": "440px", "purpose": "Brand roundel hidden, tighter header." },
+      { "name": "hero-where", "value": "560px", "purpose": "Employer and location stack below this." },
+      { "name": "rail", "value": "760px", "purpose": "Route rail 64px appears; strip map horizontal; hero two columns." },
+      { "name": "gutter", "value": "768px", "purpose": "Gutter 20px to 32px." },
+      { "name": "rows", "value": "900px", "purpose": "Role, stage and stack rows go multi-column." },
+      { "name": "hero-wide", "value": "960px", "purpose": "Wider portrait column, contact two columns." },
+      { "name": "nav", "value": "1024px", "purpose": "Desktop nav; section padding 120px." },
+      { "name": "rail-wide", "value": "1100px", "purpose": "Rail 88px; projects three columns." },
+      { "name": "wide", "value": "1200px", "purpose": "Principles four columns, certs three." }
     ]
   },
   "components": [
@@ -177,110 +74,113 @@
       "name": "Primary Button",
       "kind": "button",
       "refersTo": "button-primary",
-      "description": "Main action: Get in touch, nav Contact CTA.",
-      "html": "<a class=\"ds-btn ds-btn-primary\" href=\"#\">Get in touch</a>",
-      "css": ".ds-btn { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0 22px; border-radius: 8px; border: 1px solid transparent; font-family: 'IBM Plex Sans', system-ui, sans-serif; font-weight: 600; text-decoration: none; transition: background-color 0.2s cubic-bezier(0.2,0.8,0.2,1), border-color 0.2s cubic-bezier(0.2,0.8,0.2,1), transform 0.15s cubic-bezier(0.2,0.8,0.2,1); } .ds-btn-primary { background: var(--accent, #15803d); color: var(--on-accent, #fff); } .ds-btn-primary:hover { background: var(--accent-hover, #166534); } .ds-btn:active { transform: scale(0.98); } .ds-btn:focus-visible { outline: 2px solid var(--accent, #15803d); outline-offset: 3px; }"
+      "description": "Plum signage button for the main action; inverts to ink on hover.",
+      "html": "<a href=\"#\" class=\"ds-btn ds-btn-primary\">Get in touch</a>",
+      "css": ".ds-btn { display: inline-flex; align-items: center; justify-content: center; min-height: 52px; padding: 0 24px; font-family: var(--font-sans); font-weight: 700; font-size: 1rem; text-decoration: none; border: 2px solid transparent; border-radius: 2px; transition: background-color 0.2s, color 0.2s, border-color 0.2s, transform 0.15s var(--ease); } .ds-btn:active { transform: translateY(1px); } .ds-btn:focus-visible { outline: 3px solid var(--text); outline-offset: 3px; } .ds-btn-primary { background: var(--line); color: var(--on-line); } .ds-btn-primary:hover { background: var(--text); color: var(--bg); }"
     },
     {
       "name": "Ghost Button",
       "kind": "button",
       "refersTo": "button-ghost",
-      "description": "Secondary action next to a primary.",
-      "html": "<a class=\"ds-btn-ghost\" href=\"#\">See the impact</a>",
-      "css": ".ds-btn-ghost { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0 22px; border-radius: 8px; border: 1px solid var(--border, #e2e8f0); color: var(--text, #0f172a); font-family: 'IBM Plex Sans', system-ui, sans-serif; font-weight: 600; text-decoration: none; transition: border-color 0.2s cubic-bezier(0.2,0.8,0.2,1), transform 0.15s; } .ds-btn-ghost:hover { border-color: var(--text-muted, #475569); } .ds-btn-ghost:active { transform: scale(0.98); } .ds-btn-ghost:focus-visible { outline: 2px solid var(--accent, #15803d); outline-offset: 3px; }"
+      "description": "Ink-outlined secondary action; fills ink on hover.",
+      "html": "<a href=\"#\" class=\"ds-btn-ghost\">See the impact</a>",
+      "css": ".ds-btn-ghost { display: inline-flex; align-items: center; justify-content: center; min-height: 52px; padding: 0 24px; font-family: var(--font-sans); font-weight: 700; font-size: 1rem; text-decoration: none; border: 2px solid var(--text); border-radius: 2px; color: var(--text); background: transparent; transition: background-color 0.2s, color 0.2s, transform 0.15s var(--ease); } .ds-btn-ghost:hover { background: var(--text); color: var(--bg); } .ds-btn-ghost:active { transform: translateY(1px); } .ds-btn-ghost:focus-visible { outline: 3px solid var(--text); outline-offset: 3px; }"
     },
     {
       "name": "Navigation",
       "kind": "nav",
-      "refersTo": "nav-link",
-      "description": "Header links with active fill and green Contact CTA.",
-      "html": "<nav class=\"ds-nav\"><a href=\"#\">Impact</a><a href=\"#\" aria-current=\"true\">AI in QA</a><a href=\"#\">Experience</a><a class=\"ds-nav-cta\" href=\"#\">Contact</a></nav>",
-      "css": ".ds-nav { display: flex; align-items: center; gap: 4px; font-family: 'IBM Plex Sans', system-ui, sans-serif; } .ds-nav a { padding: 8px 12px; border-radius: 8px; color: var(--text-muted, #475569); font-size: 0.9375rem; font-weight: 500; text-decoration: none; transition: color 0.2s, background-color 0.2s; } .ds-nav a:hover, .ds-nav a[aria-current='true'] { color: var(--text, #0f172a); background: var(--surface-2, #f1f5f9); } .ds-nav .ds-nav-cta { margin-left: 8px; color: var(--on-accent, #fff); background: var(--accent, #15803d); } .ds-nav .ds-nav-cta:hover { background: var(--accent-hover, #166534); color: var(--on-accent, #fff); } .ds-nav a:focus-visible { outline: 2px solid var(--accent, #15803d); outline-offset: 3px; }"
+      "refersTo": "nav-cta",
+      "description": "Station sign bar: ink rule, plum underline bar for hover and the section in view, square ink CTA.",
+      "html": "<header class=\"ds-nav\"><span class=\"ds-brand\">Valentin Lutchanka</span><ul><li><a href=\"#\" aria-current=\"true\">Impact</a></li><li><a href=\"#\">Career</a></li><li><a href=\"#\" class=\"ds-nav-cta\">Contact</a></li></ul></header>",
+      "css": ".ds-nav { display: flex; align-items: center; gap: 24px; height: 68px; padding: 0 20px; background: var(--bg); border-bottom: 3px solid var(--text); font-family: var(--font-sans); } .ds-brand { display: inline-flex; align-items: center; gap: 10px; font-weight: 800; color: var(--text); } .ds-brand::before { content: \"\"; width: 16px; height: 16px; border-radius: 50%; border: 4px solid var(--line); background: var(--bg); box-sizing: border-box; } .ds-nav ul { display: flex; gap: 4px; margin: 0 0 0 auto; padding: 0; list-style: none; } .ds-nav a { position: relative; display: inline-flex; align-items: center; min-height: 44px; padding: 0 12px; color: var(--text); font-weight: 600; font-size: 0.9375rem; text-decoration: none; } .ds-nav a:not(.ds-nav-cta)::after { content: \"\"; position: absolute; left: 12px; right: 12px; bottom: -14px; height: 5px; background: var(--line); transform: scaleX(0); transform-origin: left; transition: transform 0.3s var(--ease); } .ds-nav a:not(.ds-nav-cta):hover::after, .ds-nav a[aria-current]::after { transform: scaleX(1); } .ds-nav a:focus-visible { outline: 3px solid var(--text); outline-offset: 3px; } .ds-nav-cta { background: var(--text); color: var(--bg) !important; padding: 0 16px !important; margin-left: 8px; transition: background-color 0.2s; } .ds-nav-cta:hover { background: var(--line); }"
     },
     {
-      "name": "Project Card",
+      "name": "Station Plate",
+      "kind": "custom",
+      "refersTo": "station-plate",
+      "description": "Every section h2 sits in a square ink plate; wrapped lines clone the plate.",
+      "html": "<h2 class=\"ds-plate-h\"><span class=\"ds-plate\">Where agents sit in my QA team's processes</span></h2>",
+      "css": ".ds-plate-h { margin: 0; max-width: 760px; font-family: var(--font-sans); font-size: clamp(2rem, 3.6vw, 3rem); font-weight: 800; line-height: 1.32; letter-spacing: -0.03em; text-wrap: balance; } .ds-plate { -webkit-box-decoration-break: clone; box-decoration-break: clone; padding: 0.1em 0.32em 0.02em; background: var(--text); color: var(--bg); }"
+    },
+    {
+      "name": "Strip Map",
+      "kind": "custom",
+      "refersTo": "roundel",
+      "description": "Hero career line: plum band draws, roundels light in order, the current station is amber.",
+      "html": "<ol class=\"ds-strip\"><li><a href=\"#\"><span class=\"ds-roundel\"></span><span class=\"ds-st-name\">SDET</span><span class=\"ds-st-time\">2022</span></a></li><li><a href=\"#\"><span class=\"ds-roundel\"></span><span class=\"ds-st-name\">Automation Manager</span><span class=\"ds-st-time\">2023</span></a></li><li class=\"ds-here\"><a href=\"#\"><span class=\"ds-roundel\"></span><span class=\"ds-st-name\">Senior Agentic QA Manager</span><span class=\"ds-st-time\">Now</span></a></li></ol>",
+      "css": ".ds-strip { position: relative; display: grid; grid-template-columns: repeat(3, 1fr); margin: 0; padding: 0; list-style: none; font-family: var(--font-sans); } .ds-strip::before { content: \"\"; position: absolute; left: 0; right: 0; top: 19px; height: 10px; background: var(--line); transform-origin: left; animation: ds-draw 1.4s var(--ease) both; } .ds-strip a { position: relative; display: grid; justify-items: start; gap: 2px; padding-right: 12px; color: var(--text); text-decoration: none; } .ds-strip a:focus-visible { outline: 3px solid var(--text); outline-offset: 3px; } .ds-roundel { width: 48px; height: 48px; margin-bottom: 14px; border-radius: 50%; border: 9px solid var(--text); background: var(--bg); box-sizing: border-box; transition: transform 0.25s var(--ease), background-color 0.25s; } .ds-strip a:hover .ds-roundel { transform: scale(1.12); background: var(--line-soft); } .ds-st-name { font-weight: 800; font-size: 1.125rem; line-height: 1.2; } .ds-st-time { font-family: var(--font-mono); font-size: 0.8125rem; font-weight: 500; color: var(--text-muted); } .ds-here .ds-roundel { background: var(--here); } .ds-here .ds-st-time { padding: 1px 8px 0; background: var(--here); color: var(--on-here); font-weight: 600; } @keyframes ds-draw { from { transform: scaleX(0); } } @media (prefers-reduced-motion: reduce) { .ds-strip::before { animation: none; } .ds-roundel { transition: none; } }"
+    },
+    {
+      "name": "Route Stops and Rider",
+      "kind": "custom",
+      "refersTo": "roundel-here",
+      "description": "Vertical route in the rail: dashed ahead, solid behind, stops fill plum when passed, amber rider at mid-viewport.",
+      "html": "<div class=\"ds-route\"><span class=\"ds-route-fill\"></span><span class=\"ds-stop ds-passed\" style=\"top:8px\"></span><span class=\"ds-rider\"></span><span class=\"ds-stop\" style=\"top:120px\"></span></div>",
+      "css": ".ds-route { position: relative; width: 10px; height: 170px; margin-left: 24px; background: repeating-linear-gradient(to bottom, var(--line) 0 14px, transparent 14px 26px); } .ds-route-fill { position: absolute; left: 0; right: 0; top: 0; height: 50%; background: var(--line); } .ds-stop { position: absolute; left: -12px; width: 34px; height: 34px; border-radius: 50%; border: 7px solid var(--text); background: var(--bg); box-sizing: border-box; transition: background-color 0.3s var(--ease); } .ds-passed { background: var(--line); } .ds-rider { position: absolute; top: 72px; left: -8px; width: 26px; height: 26px; border-radius: 50%; background: var(--here); border: 5px solid var(--text); box-sizing: border-box; box-shadow: 0 2px 8px rgb(0 0 0 / 0.18); }"
+    },
+    {
+      "name": "Departure Board Figure",
+      "kind": "custom",
+      "refersTo": "board-cell",
+      "description": "Impact figure on the ink board: each digit in its own flap cell, symbols uncelled.",
+      "html": "<div class=\"ds-board\"><span class=\"ds-value\"><span class=\"ds-cell\">3</span><span class=\"ds-cell ds-sym\">,</span><span class=\"ds-cell\">5</span><span class=\"ds-cell\">0</span><span class=\"ds-cell\">0</span><span class=\"ds-cell ds-sym\">+</span></span><span class=\"ds-label\">labor hours saved</span></div>",
+      "css": ".ds-board { display: grid; gap: 12px; padding: 24px; background: var(--board); color: var(--board-text); font-family: var(--font-sans); } .ds-value { display: inline-flex; gap: 4px; font-family: var(--font-mono); font-weight: 600; font-size: clamp(2.25rem, 4vw, 3.25rem); line-height: 1; font-variant-numeric: tabular-nums; } .ds-cell { position: relative; display: inline-block; width: 0.78em; height: 1.18em; line-height: 1.22em; overflow: hidden; background: var(--board-cell); border-radius: 3px; text-align: center; } .ds-cell::after { content: \"\"; position: absolute; left: 0; right: 0; top: 50%; height: 1px; background: var(--board); box-shadow: 0 1px 0 rgb(255 255 255 / 0.06); } .ds-sym { background: transparent; width: auto; min-width: 0.4em; } .ds-sym::after { display: none; } .ds-label { font-size: 1.125rem; }"
+    },
+    {
+      "name": "Here Tag and Separator",
+      "kind": "chip",
+      "refersTo": "here-tag",
+      "description": "Amber mono date tag for the current role; drawn dot separators for inline lists.",
+      "html": "<p class=\"ds-meta\"><span class=\"ds-here-tag\">2023 — Now</span> <span>Verisk&#8288;<span class=\"ds-sep\">·</span>Málaga</span></p>",
+      "css": ".ds-meta { display: grid; gap: 4px; justify-items: start; margin: 0; font-family: var(--font-sans); color: var(--text-muted); font-weight: 600; } .ds-here-tag { padding: 2px 10px 0; background: var(--here); color: var(--on-here); font-family: var(--font-mono); font-size: 0.9375rem; font-weight: 600; } .ds-sep { font-size: 0; padding: 2px 10px; vertical-align: middle; background: radial-gradient(circle, currentColor 0 2px, transparent 2.5px) center / 100% 100% no-repeat; opacity: 0.7; }"
+    },
+    {
+      "name": "Contact Terminus",
       "kind": "card",
-      "refersTo": "project-card",
-      "description": "Published tool with screenshot, description and outbound link.",
-      "html": "<article class=\"ds-project\"><div class=\"ds-project-img\"></div><div class=\"ds-project-body\"><h3>newman-parallel</h3><p>Runs Postman collections in parallel and saves HTML and XML reports.</p><a href=\"#\">View on npm</a></div></article>",
-      "css": ".ds-project { display: flex; flex-direction: column; max-width: 340px; background: var(--surface, #fff); border: 1px solid var(--border, #e2e8f0); border-radius: 12px; overflow: hidden; font-family: 'IBM Plex Sans', system-ui, sans-serif; transition: border-color 0.2s cubic-bezier(0.2,0.8,0.2,1), transform 0.2s cubic-bezier(0.2,0.8,0.2,1); } .ds-project:hover, .ds-project:focus-within { border-color: var(--accent, #15803d); transform: translateY(-2px); } .ds-project-img { aspect-ratio: 16/10; background: var(--surface-2, #f1f5f9); border-bottom: 1px solid var(--border, #e2e8f0); } .ds-project-body { padding: 20px; } .ds-project-body h3 { margin: 0; font-size: 1.0625rem; font-weight: 600; color: var(--text, #0f172a); } .ds-project-body p { margin: 8px 0 0; color: var(--text-muted, #475569); font-size: 0.9375rem; line-height: 1.6; } .ds-project-body a { display: inline-flex; min-height: 44px; align-items: center; padding-top: 12px; color: var(--accent, #15803d); font-weight: 600; text-decoration: none; } .ds-project-body a:focus-visible { outline: 2px solid var(--accent, #15803d); outline-offset: 3px; }"
-    },
-    {
-      "name": "Metric Row",
-      "kind": "custom",
-      "description": "Measured figures between hairlines; lead figure in Pass Green.",
-      "html": "<ul class=\"ds-metrics\"><li><span class=\"ds-mv ds-mv-lead\">3,500+</span><span class=\"ds-ml\">labor hours saved</span></li><li><span class=\"ds-mv\">24</span><span class=\"ds-ml\">QA analysts led</span></li><li><span class=\"ds-mv\">2×</span><span class=\"ds-ml\">faster deployments</span></li></ul>",
-      "css": ".ds-metrics { list-style: none; display: grid; grid-template-columns: 1.4fr 1fr 1fr; margin: 0; padding: 0; border-top: 1px solid var(--border, #e2e8f0); font-family: 'IBM Plex Sans', system-ui, sans-serif; } .ds-metrics li { padding: 28px 24px 28px 0; } .ds-metrics li + li { padding-left: 24px; border-left: 1px solid var(--border, #e2e8f0); } .ds-mv { display: block; font-size: 2.5rem; font-weight: 700; letter-spacing: -0.03em; line-height: 1.1; font-variant-numeric: tabular-nums; color: var(--text, #0f172a); } .ds-mv-lead { color: var(--accent, #15803d); font-size: 3.25rem; } .ds-ml { display: block; margin-top: 10px; color: var(--text-muted, #475569); font-size: 0.9375rem; }"
-    },
-    {
-      "name": "Pipeline Panel",
-      "kind": "custom",
-      "refersTo": "pipeline-panel",
-      "description": "Signature dark run-log card of the agentic STLC.",
-      "html": "<figure class=\"ds-pipe\"><div class=\"ds-pipe-bar\">agentic-stlc</div><ul><li><span class=\"ds-st\">requirements</span><span>AI-assisted refinement</span><span class=\"ds-ok\">done</span></li><li><span class=\"ds-st\">defects</span><span>AI classification &amp; triage</span><span class=\"ds-ok\">done</span></li></ul><div class=\"ds-pipe-foot\"><span>Σ labor hours saved</span><strong>3,500+</strong></div></figure>",
-      "css": ".ds-pipe { margin: 0; max-width: 460px; background: #0f172a; color: #e2e8f0; border-radius: 12px; box-shadow: 0 1px 2px rgb(15 23 42 / 0.06), 0 8px 24px rgb(15 23 42 / 0.06); font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 0.875rem; overflow: hidden; } .ds-pipe-bar { padding: 12px 16px; color: #94a3b8; border-bottom: 1px solid rgb(148 163 184 / 0.15); } .ds-pipe ul { list-style: none; margin: 0; padding: 12px 0; } .ds-pipe li { display: grid; grid-template-columns: 7.5rem 1fr auto; gap: 12px; padding: 10px 16px; } .ds-st { color: #94a3b8; } .ds-ok { color: #4ade80; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.06em; } .ds-pipe-foot { display: flex; justify-content: space-between; align-items: baseline; padding: 14px 16px; border-top: 1px solid rgb(148 163 184 / 0.15); color: #94a3b8; } .ds-pipe-foot strong { color: #4ade80; font-size: 1.25rem; font-weight: 500; }"
-    },
-    {
-      "name": "Stack Row",
-      "kind": "custom",
-      "description": "Toolkit row: discipline, main tools, also-used, proof figure.",
-      "html": "<ul class=\"ds-stack\"><li><h3>Test automation</h3><div><p class=\"ds-main\">Playwright · K6 · Newman</p><p class=\"ds-also\">Also Cypress, WebdriverIO, JMeter</p></div><p class=\"ds-proof\">Team-wide framework built from scratch, <strong>4</strong> projects on it</p></li></ul>",
-      "css": ".ds-stack { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--border, #e2e8f0); font-family: 'IBM Plex Sans', system-ui, sans-serif; } .ds-stack li { display: grid; grid-template-columns: 11rem 1fr 15rem; gap: 6px 32px; align-items: baseline; padding: 24px 0; border-bottom: 1px solid var(--border, #e2e8f0); } .ds-stack h3 { margin: 0; font-size: 1.0625rem; font-weight: 600; color: var(--text, #0f172a); } .ds-main { margin: 0; font-weight: 600; color: var(--text, #0f172a); } .ds-also, .ds-proof { margin: 4px 0 0; color: var(--text-muted, #475569); font-size: 0.9375rem; } .ds-proof { margin: 0; } .ds-proof strong { color: var(--accent, #15803d); font-weight: 700; font-variant-numeric: tabular-nums; }"
+      "refersTo": "button-primary",
+      "description": "End of the line: plum field, amber terminus roundel fed by the band, inverted buttons.",
+      "html": "<section class=\"ds-terminus-field\"><span class=\"ds-terminus\"></span><h2>Let's talk about your QA team</h2><a href=\"#\" class=\"ds-t-btn\">Email me</a></section>",
+      "css": ".ds-terminus-field { position: relative; padding: 64px 24px 48px 104px; background: var(--line); color: var(--on-line); font-family: var(--font-sans); overflow: hidden; } .ds-terminus-field h2 { margin: 0 0 24px; font-size: clamp(2.25rem, 4.6vw, 3.75rem); font-weight: 900; line-height: 1; letter-spacing: -0.035em; max-width: 14ch; } .ds-terminus { position: absolute; left: 28px; top: 58px; width: 56px; height: 56px; border-radius: 50%; border: 11px solid var(--on-line); background: var(--here); box-sizing: border-box; } .ds-terminus::before { content: \"\"; position: absolute; left: 50%; bottom: 100%; width: 10px; height: 140px; margin-left: -5px; background: var(--on-line); } .ds-t-btn { display: inline-flex; align-items: center; min-height: 52px; padding: 0 24px; border-radius: 2px; background: var(--on-line); color: var(--line); font-weight: 700; text-decoration: none; transition: background-color 0.2s, color 0.2s; } .ds-t-btn:hover { background: var(--n-9); color: #fff; } .ds-t-btn:focus-visible { outline: 3px solid var(--on-line); outline-offset: 3px; }"
     }
   ],
   "narrative": {
-    "northStar": "The Quality Report",
-    "overview": "The page behaves like a well-run quality report handed to a hiring manager: calm paper, hairline rules, figures that line up, and exactly one signal color that means \"passed\". Nothing on the page is decorative for its own sake. Hierarchy comes from type weight, measured whitespace and the green accent landing only on things that carry evidence: the headline figure, stage numbers, dates, the primary action.\n\nDensity is moderate and scan-friendly. Content sits in a single 1160px column; sections alternate between report paper and a faint ledger tint, separated by full-bleed hairlines rather than boxes. Lists are rows, not cards: metrics, STLC stages, career roles and contact lines are all divided by 1px rules so the eye reads them top to bottom like a table.\n\nComponents are engineered and confident: solid green primary buttons, crisp 8px corners, 44px+ targets, and motion that only confirms state (a 2px lift, a scale-down on press, a scroll-filled timeline rail). The one deliberate contrast is the dark pipeline panel in the hero, a terminal-style run log that shows the agentic STLC \"passing\" stage by stage.",
+    "northStar": "One Line, Ridden",
+    "overview": "The career is a single transit line and the page is a ride along it. The world is enamel signage: a warm off-white ground, near-black sign ink, and one plum line colour drawn as continuous bands. Amber appears only where the visitor is, or where the career is now. Type is Overpass, a Highway Gothic descendant, set heavy and tight like station signage; Overpass Mono speaks only for figures, dates and times, the way a timetable does.\n\nDensity alternates like a line does. Dense stations (the departure board of measured outcomes, the STLC stopping pattern, the career roles) are separated by quiet platforms on the enamel-white plate ground (leadership, stack, credentials). On wide screens a vertical route runs down a left rail through every section: dashed ahead, solid behind, with an amber rider at mid-viewport and a stop at each section head. On phones the rail is dropped and the hero strip map turns vertical, because the gutter would cost the reading measure.\n\nThe system is flat and drawn. Depth comes from ink rules, solid plates and colour fields, never from cards floating on shadows. The user ruled out flashy creative-agency effects and the dark neon \"AI\" look; the dark theme is the same signage at night, not a glow treatment.",
     "keyCharacteristics": [
-      "Slate neutrals plus a single Pass Green accent, in both light and dark themes.",
-      "IBM Plex Sans for everything read; IBM Plex Mono for labels, dates, stage numbers and the run log.",
-      "Hairline-ruled rows over boxed cards; cards appear only for published tools. No pills.",
-      "Tabular, heavy figures for every measured number.",
-      "Flat at rest; depth is reserved for the pipeline panel and the mobile menu."
+      "One plum line colour, used as bands, rules and fills; amber reserved for \"you are here\".",
+      "One numbered neutral ramp (n-0 to n-9) carries ground, plates, rules and text.",
+      "Section titles are square ink station plates; positions on the line are round roundels.",
+      "Overpass heavy for signage, Overpass Mono only for figures, dates and times.",
+      "Flat surfaces, ink borders, colour-field sections (ink board, plum terminus).",
+      "Motion is the line itself: drawn once, filled by scroll, digits rolled once."
     ],
     "rules": [
-      {
-        "name": "The One Signal Rule",
-        "body": "Pass Green is the only hue on the page. It marks evidence, sequence and action; it never fills large surfaces. No secondary or tertiary accent exists.",
-        "section": "colors"
-      },
-      {
-        "name": "The Personal Site Rule",
-        "body": "No employer colors or logos. Verisk appears as text only.",
-        "section": "colors"
-      },
-      {
-        "name": "The Numbers Line Up Rule",
-        "body": "Every measured figure uses font-variant-numeric: tabular-nums and heavy weight. Numbers are the hero, not the adjectives around them.",
-        "section": "typography"
-      },
-      {
-        "name": "The Mono Means Metadata Rule",
-        "body": "Mono never sets prose. It labels, dates, numbers and logs.",
-        "section": "typography"
-      },
-      {
-        "name": "The Flat Report Rule",
-        "body": "Surfaces are flat at rest. Cards show state by border color and a 2px lift, not by adding shadow.",
-        "section": "elevation"
-      }
+      { "name": "The One Line Rule", "body": "Plum is the only hue that draws structure. No second accent, no gradient of plums beyond line, ink and wash.", "section": "colors" },
+      { "name": "The You-Are-Here Rule", "body": "Amber marks position only: the current station, the current role, the rider, the terminus. If an amber element does not answer \"where am I on the line\", it is not amber.", "section": "colors" },
+      { "name": "The Numbered Ramp Rule", "body": "Neutrals come from the n-ramp or a themed alias of it (bg, plate, rule, text, text-muted). New greys are added as ramp steps, not inline tints.", "section": "colors" },
+      { "name": "The Timetable Rule", "body": "Overpass Mono sets figures, dates and times only. Never a heading, never a sentence.", "section": "typography" },
+      { "name": "The Heavy Sign Rule", "body": "Headings run 800 to 900 with negative tracking; nothing between 400 body and 700 is used for headings.", "section": "typography" },
+      { "name": "The Drawn Not Floated Rule", "body": "Surfaces separate by rule, frame or colour field. Do not lift sections or rows on shadows.", "section": "elevation" },
+      { "name": "The Square Information, Round Position Rule", "body": "If it names something it is square; if it marks where something is on the line it is round.", "section": "shapes" }
     ],
     "dos": [
-      "Do keep Pass Green as the only hue and use it for evidence, sequence and action.",
-      "Do divide lists with 1px hairlines and alternate section bands with Ledger Tint.",
-      "Do set every impact number in heavy tabular figures.",
-      "Do use IBM Plex Mono for labels, dates, stage numbers and logs only.",
-      "Do define every new color for both light and dark themes, including the [data-theme] overrides.",
-      "Do keep interactive targets at 44px minimum and honor prefers-reduced-motion.",
-      "Do keep Contact reachable in one tap at every width."
+      "Do draw structure in Line Plum only, as bands of 10px (route, strip), 5px (nav bar, principle rules) or 4px (stopping-pattern track).",
+      "Do wrap every section h2 in a square ink station plate.",
+      "Do keep amber for position: the current station, current role, rider and terminus.",
+      "Do set dates, times and figures in Overpass Mono with tabular figures on the board.",
+      "Do separate content with ink rules, hairlines and colour fields; keep surfaces flat.",
+      "Do alternate dense sections with quiet enamel-white platforms.",
+      "Do keep the reduced-motion path: animations collapse to their end state, the reel and roundel transitions are removed, and the board renders its final figures from markup.",
+      "Do run motion through the line: the hero band draws over 1.4s, stations light in order at 0.25s steps, the route fills with scroll, digits roll once when the board enters view, all on cubic-bezier(0.16, 1, 0.3, 1)."
     ],
     "donts": [
-      "Don't introduce a second accent color, gradients, or Verisk brand colors/logos.",
-      "Don't box content that reads as a list; cards are for published tools only.",
-      "Don't add shadows to resting surfaces beyond the pipeline panel and mobile menu.",
-      "Don't set prose in mono or headlines in anything but Plex Sans.",
-      "Don't add motion that doesn't confirm state or progress.",
-      "Don't put eyebrow/kicker labels above headings."
+      "Don't use amber for decoration, emphasis or status unrelated to \"where am I\".",
+      "Don't add a second accent hue or plum tints beyond line, ink and wash.",
+      "Don't set headings or prose in Overpass Mono.",
+      "Don't lift sections or rows on drop shadows or build card grids with shadows.",
+      "Don't use flashy creative-agency effects or a dark neon \"AI\" look; the dark theme is night signage, not glow.",
+      "Don't introduce neutrals outside the numbered ramp and its themed aliases.",
+      "Don't use the font's middle-dot glyph as a separator; use the drawn dot."
     ]
   }
 }

@@ -1,0 +1,109 @@
+{
+  "title": "Choose the visual world",
+  "question": "The roll assigned The Strip Map. Keep it, take an alternate, or re-roll.",
+  "options": [
+    {
+      "id": "assigned",
+      "kind": "assigned",
+      "label": "The Strip Map",
+      "kicker": "THE ROLL",
+      "lineage": "European rail strip maps above train doors, and station wayfinding signage",
+      "thesis": "Your career is one line with stations; the visitor rides it from manual tester to manager of 24.",
+      "palette": ["#f3f2ee", "#16181b", "#6b2fa0", "#f2a900"],
+      "materials": ["enamel sign white", "line-colour bands", "station roundels", "timetable figures"],
+      "viewport": "Name at signage scale left, real portrait right, the career line running full width at the fold with 'you are here' lit on Agentic QA; Get in touch beside the headline.",
+      "risk": "A metro-map career page is a known portfolio trope; it only works if the line is a strict system, not a doodle.",
+      "raised": [
+        {"from": "challenger-nixie", "raise": "Impact figures hold fixed digit places and roll per digit, like a departure board, never a blurred count-up."},
+        {"from": "challenger-zone", "raise": "Tones come from one numbered ramp only; no ad hoc tints anywhere."},
+        {"from": "challenger-plankton", "raise": "Line behind the rider fills solid, line ahead stays dashed: scroll history is visible."},
+        {"from": "challenger-atelier", "raise": "Every section is a numbered station with identical plate anatomy, read in order."},
+        {"from": "challenger-quarry", "raise": "Dense stations alternate with quiet platforms: deliberate pacing gaps."}
+      ],
+      "html": ".impeccable/mocks/decision/assigned.html"
+    },
+    {
+      "id": "model-pick",
+      "kind": "pick",
+      "label": "The Annual Report",
+      "kicker": "IMPECCABLE’S PICK",
+      "lineage": "1970s Swiss corporate annual reports",
+      "thesis": "The portfolio as an executive's annual report: key figures on the cover, the year in review inside.",
+      "palette": ["#ffffff", "#111111", "#1f3b2d"],
+      "materials": ["coated stock", "one deep corporate field", "tabular figures"],
+      "viewport": "Split cover: 3,500+ at poster scale on a deep field, name, role and the other three figures as a ruled key-figures table.",
+      "risk": "Familiar: where most runs for an exec portfolio land, and the split hero edges toward template.",
+      "html": ".impeccable/mocks/decision/pick.html"
+    },
+    {
+      "id": "challenger-scher",
+      "kind": "challenger",
+      "catalogId": "brand-identity-canon-scher-street-typography",
+      "label": "Street Typography",
+      "verdict": "competitive",
+      "lineage": "Public theater street posters",
+      "thesis": "The claim shouted at architectural scale: MEASURED, cropped by the frame.",
+      "palette": ["#f6d21c", "#111111", "#ffffff", "#e8431c"],
+      "materials": ["wood-type caps", "diagonal baselines", "reversed bands"],
+      "viewport": "Yellow wall, MEASURED IN HOURS stacked and cropped, 3,500+ reversed on black, contact in the red-orange band.",
+      "case": "Wins on clarity of the claim; loses on audience identification, too loud for a senior manager.",
+      "risk": "Reads creative-agency, which you ruled out.",
+      "html": ".impeccable/mocks/decision/scher.html",
+      "hero": "https://impeccable.style/worlds/cards/brand-identity-canon-scher-street-typography-hero.webp"
+    },
+    {
+      "id": "challenger-nixie", "kind": "challenger", "catalogId": "signals-instruments-nixie-laboratory-counter",
+      "label": "Nixie Counter", "verdict": "declined", "lineage": "laboratory nixie counters",
+      "thesis": "Impact numbers glowing in tube banks.", "palette": ["#111111", "#ff7a1a", "#8a8f94"],
+      "materials": ["glass tubes", "steel chassis"], "viewport": "Four tube banks, one per figure.",
+      "case": "Dark glow is the look you ruled out; numbers read as gadget.", "risk": "Novelty.",
+      "kept": "Fixed digit places that roll per digit."
+    },
+    {
+      "id": "challenger-zone", "kind": "challenger", "catalogId": "operate-b-exposure-record-zone-sheets",
+      "label": "Exposure Record", "verdict": "declined", "lineage": "darkroom exposure records",
+      "thesis": "Career as translucent exposure sheets.", "palette": ["#e9e9e6", "#3a3a3a", "#c0287a"],
+      "materials": ["tracing paper", "hatching"], "viewport": "Overlapping sheets over a zone ramp.",
+      "case": "No link to QA leadership for recruiters.", "risk": "Opaque metaphor.",
+      "kept": "One numbered tonal ramp as the only tokens."
+    },
+    {
+      "id": "challenger-atelier", "kind": "challenger", "catalogId": "pop-culture-shelf-couture-doll-atelier",
+      "label": "Couture Atelier", "verdict": "declined", "lineage": "doll couture lookbooks",
+      "thesis": "Sections as lookbook plates.", "palette": ["#f5efe6", "#e8c4c4", "#111111"],
+      "materials": ["tissue", "gold script"], "viewport": "Runway lineup of plates.",
+      "case": "Wrong register entirely.", "risk": "Off-brand.",
+      "kept": "Numbered plates with identical anatomy, read in order."
+    },
+    {
+      "id": "challenger-plankton", "kind": "challenger", "catalogId": "reefs-bioluminescent-nocturnal-plankton-wake-stars",
+      "label": "Plankton Wake", "verdict": "declined", "lineage": "bioluminescent night sea",
+      "thesis": "Pointer wakes of living light.", "palette": ["#02060c", "#2f8cff", "#6ff"],
+      "materials": ["GPU particles"], "viewport": "Black field with blue trails.",
+      "case": "Dark neon, which you ruled out.", "risk": "Flashy.",
+      "kept": "Visible history: what you passed stays drawn."
+    },
+    {
+      "id": "challenger-quarry", "kind": "challenger", "catalogId": "dream-surreal-impossible-worlds-cloud-quarry",
+      "label": "Cloud Quarry", "verdict": "declined", "lineage": "surreal weather quarry",
+      "thesis": "Sections cut from cloud blocks.", "palette": ["#f4f6f8", "#7fb2e5", "#6d737a"],
+      "materials": ["volumetric cloud"], "viewport": "Stacked cloud blocks.",
+      "case": "Surreal, no audience link.", "risk": "Whimsy.",
+      "kept": "Stacked blocks with deep gaps: pacing."
+    }
+  ],
+  "reroll": {"registers": ["safer", "bolder"]},
+  "buildPath": {"value": "code"},
+  "canon": true,
+  "canonCard": {
+    "kind": "canon",
+    "label": "The category standard",
+    "thesis": "A clean leadership portfolio: title headline, photo, sections, executed impeccably.",
+    "palette": ["#ffffff", "#111827", "#2563eb"],
+    "materials": ["clean grid", "portrait photography"],
+    "viewport": "Role headline and Get in touch left, portrait right.",
+    "risk": "Indistinguishable from every other leadership portfolio by design.",
+    "html": ".impeccable/mocks/decision/canon.html"
+  },
+  "steer": true
+}

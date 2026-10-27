@@ -72,60 +72,96 @@
     { rootMargin: '-45% 0px -50% 0px' }
   )
   // The hero has no nav link; observing it clears the highlight at the top of the page
-  document.querySelectorAll('main > section[id]').forEach(section => observer.observe(section))
+  document.querySelectorAll('main section[id]').forEach(section => observer.observe(section))
 
-  // Hero pipeline: stages run one after another while the total counts up.
-  // Static markup already shows the finished state, so no-JS and reduced motion lose nothing.
-  const pipeline = document.querySelector('.pipeline')
-  if (pipeline && !reduceMotion.matches) {
-    const rows = [...pipeline.querySelectorAll('.pipeline-list li')]
-    const total = pipeline.querySelector('.pipeline-foot strong')
-    const rerun = pipeline.querySelector('.pipeline-rerun')
-    const STEP = 650
-    const TOTAL = 3500
-    let timers = []
-    let frame
+  // Career line stations: always scroll to the role, even when its hash is already in the URL,
+  // and mark the role you arrive at
+  document.querySelectorAll('.strip a[href^="#"]').forEach(link =>
+    link.addEventListener('click', e => {
+      const target = document.querySelector(link.getAttribute('href'))
+      if (!target) return
+      e.preventDefault()
+      history.pushState(null, '', link.getAttribute('href'))
+      target.scrollIntoView({ behavior: reduceMotion.matches ? 'auto' : 'smooth', block: 'start' })
+      document.querySelectorAll('.role.is-arrived').forEach(r => r.classList.remove('is-arrived'))
+      target.classList.remove('is-arrived')
+      void target.offsetWidth
+      target.classList.add('is-arrived')
+    })
+  )
 
-    const setRow = (row, state, label) => {
-      row.dataset.state = state
-      row.querySelector('.status').textContent = label
+  // The route: the line behind the rider fills solid, stops it has passed light up
+  const route = document.querySelector('.route')
+  if (route) {
+    const fill = route.querySelector('.route-fill')
+    const stops = [...document.querySelectorAll('.line-wrap .stop, .terminus')]
+    let ticking = false
+
+    const update = () => {
+      ticking = false
+      const box = route.getBoundingClientRect()
+      if (!box.height) return
+      const mid = window.innerHeight / 2
+      const p = Math.min(Math.max((mid - box.top) / box.height, 0), 1)
+      fill.style.setProperty('--progress', p.toFixed(4))
+      stops.forEach(stop => stop.classList.toggle('is-passed', stop.getBoundingClientRect().top < mid))
     }
 
-    const countUp = duration => {
-      const start = performance.now()
-      const tick = now => {
-        const t = Math.min((now - start) / duration, 1)
-        // Linear on purpose: the count should track how many stages have finished
-        total.textContent = Math.round(TOTAL * t).toLocaleString('en-US')
-        if (t < 1) frame = requestAnimationFrame(tick)
-        else total.textContent = '3,500+'
+    const onScroll = () => {
+      if (!ticking) {
+        ticking = true
+        requestAnimationFrame(update)
       }
-      frame = requestAnimationFrame(tick)
     }
+    window.addEventListener('scroll', onScroll, { passive: true })
+    window.addEventListener('resize', onScroll)
+    update()
+  }
 
-    const run = () => {
-      timers.forEach(clearTimeout)
-      cancelAnimationFrame(frame)
-      timers = []
-      rerun.disabled = true
-      rows.forEach(row => setRow(row, 'queued', 'queued'))
-      rows.forEach((row, i) => {
-        timers.push(setTimeout(() => setRow(row, 'running', 'running'), i * STEP))
-        timers.push(setTimeout(() => setRow(row, 'done', 'done'), (i + 1) * STEP - 120))
-      })
-      timers.push(setTimeout(() => (rerun.disabled = false), rows.length * STEP))
-      countUp(rows.length * STEP)
-    }
+  // Departure board: each digit rolls to its value in its own cell.
+  // The markup already holds the final figures, so no-JS and reduced motion read them as-is.
+  const flaps = document.querySelectorAll('.flap')
+  if (flaps.length && !reduceMotion.matches && 'IntersectionObserver' in window) {
+    const reel = '<span class="reel">' + [...'0123456789'].map(d => `<span>${d}</span>`).join('') + '</span>'
+    flaps.forEach(el => {
+      const value = el.textContent.trim()
+      el.setAttribute('aria-label', value)
+      el.innerHTML = [...value]
+        .map(ch => (/\d/.test(ch) ? `<span class="cell" data-d="${ch}" aria-hidden="true">${reel}</span>` : `<span class="cell is-sym" aria-hidden="true">${ch}</span>`))
+        .join('')
+    })
 
-    rerun.hidden = false
-    rerun.addEventListener('click', run)
-    run()
+    const board = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) return
+          board.unobserve(entry.target)
+          entry.target.querySelectorAll('.cell[data-d]').forEach((cell, i) => {
+            const r = cell.firstElementChild
+            r.style.transitionDuration = `${900 + i * 160}ms`
+            r.style.setProperty('--d', cell.dataset.d)
+          })
+        })
+      },
+      { threshold: 0.6 }
+    )
+    flaps.forEach(el => board.observe(el))
+  }
+
+  // Local time in Málaga, so a visitor knows when a reply is likely
+  const clock = document.querySelector('.local-time')
+  if (clock) {
+    const fmt = new Intl.DateTimeFormat('en-GB', { hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Madrid' })
+    const tick = () => (clock.textContent = `${fmt.format(new Date())} local time`)
+    tick()
+    clock.hidden = false
+    setInterval(tick, 30000)
   }
 
   // Certificate lightbox. Without <dialog> support the thumbnail link opens the image in a new tab.
   const certDialog = document.querySelector('.cert-dialog')
   if (certDialog && certDialog.showModal) {
-    const full = certDialog.querySelector('img')
+    const full = certDialog.appendChild(document.createElement('img'))
     document.querySelectorAll('.cert-thumb').forEach(link =>
       link.addEventListener('click', e => {
         e.preventDefault()
