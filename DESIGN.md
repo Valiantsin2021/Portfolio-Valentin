@@ -1,258 +1,304 @@
 ---
 name: Valentin Lutchanka Portfolio
-description: Agentic QA leadership, presented as a calm, audited quality report.
+description: Agentic QA leadership presented as a Gilbreth time-and-motion study.
 colors:
-  pass-green: "#15803d"
-  pass-green-deep: "#166534"
-  pass-green-wash: "#dcfce7"
-  on-pass-green: "#ffffff"
-  report-paper: "#f8fafc"
-  sheet-white: "#ffffff"
-  ledger-tint: "#f1f5f9"
-  hairline: "#e2e8f0"
-  ink: "#0f172a"
-  ink-muted: "#475569"
-  terminal-night: "#0f172a"
-  terminal-text: "#e2e8f0"
-  terminal-muted: "#94a3b8"
-  terminal-pass: "#4ade80"
-  pass-green-dark: "#22c55e"
-  pass-green-dark-hover: "#4ade80"
-  on-pass-green-dark: "#052e16"
-  report-paper-dark: "#0b1120"
-  sheet-dark: "#111a2e"
-  ledger-tint-dark: "#0f1729"
-  hairline-dark: "#233049"
-  ink-dark: "#f1f5f9"
-  ink-muted-dark: "#a3b1c6"
-  terminal-night-dark: "#070c18"
+  signal: "#c42b21"
+  signal-hover: "#a11f17"
+  on-signal: "#ffffff"
+  ochre: "#855508"
+  blue: "#285381"
+  ground: "#e6ede3"
+  sheet: "#eef3ec"
+  plate: "#dae3d6"
+  grid: "rgb(40 82 52 / 0.085)"
+  ink: "#17201a"
+  ink-2: "#435047"
+  ink-3: "#56635a"
+  rule: "#b5c4b5"
+  rule-strong: "#17201a"
+  trail: "#17201a"
+  trail-ghost: "rgb(23 32 26 / 0.42)"
+  signal-dark: "#ff5b4d"
+  signal-hover-dark: "#ff8277"
+  on-signal-dark: "#1e0402"
+  ochre-dark: "#e3a646"
+  blue-dark: "#8ab7e6"
+  ground-dark: "#0c0f0d"
+  sheet-dark: "#111612"
+  plate-dark: "#070908"
+  grid-dark: "rgb(220 240 225 / 0.045)"
+  ink-dark: "#edf2ea"
+  ink-2-dark: "#aab6ac"
+  ink-3-dark: "#8f9c91"
+  rule-dark: "#2a332c"
+  rule-strong-dark: "#8f9c91"
+  trail-dark: "#fffaf0"
+  trail-ghost-dark: "rgb(255 250 240 / 0.34)"
 typography:
   display:
-    fontFamily: "IBM Plex Sans, system-ui, -apple-system, Segoe UI, Roboto, sans-serif"
-    fontSize: "clamp(2.125rem, 4.2vw, 3.25rem)"
-    fontWeight: 700
-    lineHeight: 1.2
-    letterSpacing: "-0.03em"
-  headline:
-    fontFamily: "IBM Plex Sans, system-ui, sans-serif"
-    fontSize: "clamp(1.75rem, 3vw, 2.5rem)"
-    fontWeight: 700
-    lineHeight: 1.2
+    fontFamily: "Archivo, Arial Narrow, system-ui, sans-serif"
+    fontSize: "clamp(3.5rem, 9.4vw, 6rem)"
+    fontWeight: 800
+    lineHeight: 0.9
+    letterSpacing: "-0.025em"
+    fontVariation: "'wdth' 72"
+  figure:
+    fontFamily: "Archivo, Arial Narrow, system-ui, sans-serif"
+    fontSize: "clamp(3.25rem, 7vw, 5.5rem)"
+    fontWeight: 800
+    lineHeight: 0.9
     letterSpacing: "-0.02em"
-  title:
-    fontFamily: "IBM Plex Sans, system-ui, sans-serif"
-    fontSize: "1.125rem"
+    fontFeature: "'tnum' 1"
+    fontVariation: "'wdth' 66"
+  headline:
+    fontFamily: "Archivo, Arial Narrow, system-ui, sans-serif"
+    fontSize: "clamp(2.25rem, 5vw, 4rem)"
+    fontWeight: 750
+    lineHeight: 0.98
+    letterSpacing: "-0.02em"
+    fontVariation: "'wdth' 78"
+  thesis:
+    fontFamily: "Archivo, Arial Narrow, system-ui, sans-serif"
+    fontSize: "clamp(1.375rem, 2.4vw, 1.875rem)"
     fontWeight: 600
     lineHeight: 1.2
-    letterSpacing: "-0.02em"
-  figure:
-    fontFamily: "IBM Plex Sans, system-ui, sans-serif"
-    fontSize: "2.5rem"
+    letterSpacing: "-0.01em"
+    fontVariation: "'wdth' 90"
+  title:
+    fontFamily: "Archivo, Arial Narrow, system-ui, sans-serif"
+    fontSize: "1.375rem"
     fontWeight: 700
-    lineHeight: 1.1
-    letterSpacing: "-0.03em"
-    fontFeature: "tnum"
-  lead:
-    fontFamily: "IBM Plex Sans, system-ui, sans-serif"
-    fontSize: "1.125rem"
-    fontWeight: 400
-    lineHeight: 1.6
+    lineHeight: 1.25
+    fontVariation: "'wdth' 85"
   body:
-    fontFamily: "IBM Plex Sans, system-ui, sans-serif"
-    fontSize: "1rem"
+    fontFamily: "Public Sans, system-ui, -apple-system, Segoe UI, Roboto, sans-serif"
+    fontSize: "1.0625rem"
     fontWeight: 400
     lineHeight: 1.6
   label:
-    fontFamily: "IBM Plex Mono, ui-monospace, Cascadia Code, Consolas, monospace"
+    fontFamily: "Public Sans, system-ui, sans-serif"
     fontSize: "0.875rem"
-    fontWeight: 500
+    fontWeight: 600
+    lineHeight: 1.5
 rounded:
-  sm: "8px"
-  md: "12px"
-  pill: "999px"
-  round: "50%"
+  key: "3px"
+  sm: "4px"
+  full: "50%"
 spacing:
   xs: "8px"
-  sm: "12px"
-  md: "16px"
-  lg: "24px"
-  xl: "32px"
-  2xl: "48px"
-  3xl: "64px"
-  section: "72px"
-  section-lg: "104px"
+  sm: "16px"
+  md: "32px"
+  lg: "48px"
+  section: "80px"
+  section-wide: "120px"
 components:
-  button-primary:
-    backgroundColor: "{colors.pass-green}"
-    textColor: "{colors.on-pass-green}"
+  button-signal:
+    backgroundColor: "{colors.signal}"
+    textColor: "{colors.on-signal}"
+    typography: "{typography.body}"
     rounded: "{rounded.sm}"
     padding: "0 22px"
     height: "48px"
-  button-primary-hover:
-    backgroundColor: "{colors.pass-green-deep}"
-    textColor: "{colors.on-pass-green}"
+  button-signal-hover:
+    backgroundColor: "{colors.signal-hover}"
   button-ghost:
-    backgroundColor: "transparent"
+    backgroundColor: "{colors.ground}"
     textColor: "{colors.ink}"
     rounded: "{rounded.sm}"
     padding: "0 22px"
     height: "48px"
-  icon-button:
-    backgroundColor: "transparent"
-    textColor: "{colors.ink}"
-    rounded: "{rounded.sm}"
-    size: "44px"
+  button-ghost-hover:
+    textColor: "{colors.signal}"
+  button-sm:
+    padding: "0 16px"
+    height: "40px"
   nav-link:
-    textColor: "{colors.ink-muted}"
+    textColor: "{colors.ink-2}"
     rounded: "{rounded.sm}"
-    padding: "8px 12px"
+    padding: "8px 10px"
   nav-link-active:
-    backgroundColor: "{colors.ledger-tint}"
     textColor: "{colors.ink}"
-  project-card:
-    backgroundColor: "{colors.sheet-white}"
-    rounded: "{rounded.md}"
-    padding: "20px"
-  pipeline-panel:
-    backgroundColor: "{colors.terminal-night}"
-    textColor: "{colors.terminal-text}"
-    rounded: "{rounded.md}"
-    padding: "12px 16px"
+  key-cap:
+    textColor: "{colors.ink-3}"
+    rounded: "{rounded.key}"
+    padding: "0 4px"
+    height: "1.25rem"
+  therblig-physical:
+    textColor: "{colors.ochre}"
+    rounded: "{rounded.full}"
+    size: "52px"
+  therblig-mental:
+    textColor: "{colors.blue}"
+    rounded: "{rounded.full}"
+    size: "52px"
+  plate-number:
+    backgroundColor: "{colors.ground}"
+    textColor: "{colors.ochre}"
+    padding: "2px 8px"
+  study-plate-frame:
+    backgroundColor: "{colors.sheet}"
+    padding: "8px"
+  cert-thumb:
+    backgroundColor: "{colors.sheet}"
+    padding: "4px"
+    width: "88px"
+    height: "66px"
 ---
 
 # Design System: Valentin Lutchanka Portfolio
 
 ## Overview
 
-**Creative North Star: "The Quality Report"**
+**Creative North Star: "The Time & Motion Study"**
 
-The page behaves like a well-run quality report handed to a hiring manager: calm paper, hairline rules, figures that line up, and exactly one signal color that means "passed". Nothing on the page is decorative for its own sake. Hierarchy comes from type weight, measured whitespace and the green accent landing only on things that carry evidence: the headline figure, stage numbers, dates, the primary action.
+The site is the record of a Gilbreth-style time study: the manual motion observed, the agents introduced, the straightened path photographed. Two materials carry it. In light, an observation sheet: engineering-pad green paper printed with a 24px grid, graphite ink, ruled rows. In dark, a photographic plate: near-black, with the motion path burned in as a white-hot light trail. The contact section and footer are always the plate, in both themes; the study ends in the darkroom.
 
-Density is moderate and scan-friendly. Content sits in a single 1160px column; sections alternate between report paper and a faint ledger tint, separated by full-bleed hairlines rather than boxes. Lists are rows, not cards: metrics, STLC stages, career roles and contact lines are all divided by 1px rules so the eye reads them top to bottom like a table.
+Every figure is measured and every measurement carries its provenance caption beside it. Numbers are set in condensed Archivo with tabular figures, the way they would be written on a stopwatch reading or a study sheet. Colour is functional, as on a real study: stopwatch red marks action and timing, ochre and blue code the therbligs. Ornament is limited to things the instruments themselves produce: dials, ticks, traces, split marks, plate numbers.
 
-Components are engineered and confident: solid green primary buttons, crisp 8px corners, 44px+ targets, and motion that only confirms state (a 2px lift, a scale-down on press, a scroll-filled timeline rail). The one deliberate contrast is the dark pipeline panel in the hero, a terminal-style run log that shows the agentic STLC "passing" stage by stage.
+Density is moderate. Content sits in ruled rows on a 1200px sheet rather than in cards; structure comes from 1px rules and 2px strong rules, not from boxes and shadows.
 
 **Key Characteristics:**
-- Slate neutrals plus a single Pass Green accent, in both light and dark themes.
-- IBM Plex Sans for everything read; IBM Plex Mono for labels, dates, stage numbers and the run log.
-- Hairline-ruled rows over boxed cards; cards appear only for published tools. No pills.
-- Tabular, heavy figures for every measured number.
-- Flat at rest; depth is reserved for the pipeline panel and the mobile menu.
+- Two materials: green grid observation sheet (light) and black photographic plate (dark), with contact and footer forced to the plate.
+- Stopwatch red is the only action colour.
+- Ochre and blue code therbligs; blue means a mental motion.
+- Light trail plus dotted ghost trail as the recurring motion signature.
+- Condensed Archivo figures (66 to 90% width) with tabular numerals; Public Sans for reading.
+- Ruled rows, not cards; 4px corners.
+- Motion tells the study (tangled path pulls taut) and always resolves to a static finished state.
 
 ## Colors
 
-Cool slate paper and ink with one green that reads as a passing test.
+A muted green-graphite neutral field with one red instrument colour and two coding hues.
 
 ### Primary
-- **Pass Green** (light `pass-green`, dark `pass-green-dark`): primary buttons, nav "Contact" CTA, eyebrow labels, stage numbers, role dates, timeline rail and dots, the headline 3,500+ figure, link text, focus outline. Hover deepens in light (`pass-green-deep`) and brightens in dark (`pass-green-dark-hover`).
-- **Pass Green Wash** (`pass-green-wash`; dark uses Pass Green at 12% alpha): reserved token, currently unused.
+- **Stopwatch Red** (`signal`; dark `signal-dark`): primary buttons, link underlines and link hover, focus rings, text selection, caret, the dial's sweep hand, the header watch hand and pin, the active nav key, the study-plate edge trace, the certificate disclosure chevron. Hover deepens in light (`signal-hover`) and brightens in dark (`signal-hover-dark`). Text on red uses `on-signal` / `on-signal-dark`.
+
+### Secondary
+- **Therblig Ochre** (`ochre`; dark `ochre-dark`): physical-motion therblig marks (Assemble, Select, Transport loaded), observation split marks, career lap dates, study-plate numbers, the "+" on the stopwatch reading.
+
+### Tertiary
+- **Therblig Blue** (`blue`; dark `blue-dark`): mental-motion therblig marks only (Plan, Inspect) and the DMAIC station dots.
 
 ### Neutral
-- **Report Paper** (`report-paper` / `report-paper-dark`): page background.
-- **Sheet White** (`sheet-white` / `sheet-dark`): project card surface.
-- **Ledger Tint** (`ledger-tint` / `ledger-tint-dark`): alternate section bands, nav hover/active fill, cert thumbnail and image backgrounds.
-- **Hairline** (`hairline` / `hairline-dark`): every divider, card border, ghost button border, inactive timeline rail, list markers.
-- **Ink** (`ink` / `ink-dark`): headings, body emphasis, `<strong>`.
-- **Ink Muted** (`ink-muted` / `ink-muted-dark`): body copy in leads, descriptions, labels, secondary metadata.
-
-### Terminal (pipeline panel only)
-- **Terminal Night** (`terminal-night` / `terminal-night-dark`), **Terminal Text**, **Terminal Muted**, **Terminal Pass** (`terminal-pass`): the run-log panel is dark in both themes and uses its own brighter green for "done" states and the Σ total.
+- **Grid Ground** (`ground` / `ground-dark`): the page and the sheet sections; carries the grid in `grid` / `grid-dark`.
+- **Sheet** (`sheet` / `sheet-dark`): the mat inside portraits, plate frames, certificate thumbnails and the dial case.
+- **Plate** (`plate` / `plate-dark`): tonal band sections (method, contact, footer).
+- **Graphite Ink** (`ink`, `ink-2`, `ink-3` and dark pairs): headings and strong text, body and secondary copy, captions and provenance.
+- **Rule** (`rule` / `rule-dark`): 1px row dividers and borders. **Strong Rule** (`rule-strong`): 2px tops of ruled lists and frame borders.
+- **Light Trail** (`trail`, `trail-ghost` and dark pairs): the drawn motion path and its dotted ghost. Graphite on the sheet, white-hot on the plate. In dark the trail also carries a glow (sidecar `trail-glow`); in light the glow is `none`.
 
 ### Named Rules
-**The One Signal Rule.** Pass Green is the only hue on the page. It marks evidence, sequence and action; it never fills large surfaces. No secondary or tertiary accent exists.
+**The Stopwatch Rule.** Red belongs to actions and timing instruments only: buttons, links, focus, the hands, the active key, the plate trace. Never use it for decoration, headings or data coding.
 
-**The Personal Site Rule.** No employer colors or logos. Verisk appears as text only.
+**The Therblig Code Rule.** Ochre codes physical motion, blue codes mental motion (Plan, Inspect). Do not swap them or introduce a third coding hue.
+
+**The Darkroom Rule.** Contact and footer are the plate in both themes, achieved by re-scoping the dark token set (force-dark), never by hard-coded colours.
 
 ## Typography
 
-**Display Font:** IBM Plex Sans (with system-ui, -apple-system, Segoe UI, Roboto)
-**Label/Mono Font:** IBM Plex Mono (with ui-monospace, Cascadia Code, Consolas)
+**Display Font:** Archivo variable (wdth 62 to 125, wght 100 to 900), with Arial Narrow, system-ui fallback
+**Body Font:** Public Sans (400, 500, 600, 700), with system-ui fallback
 
-**Character:** An engineering family used with editorial restraint. Plex Sans carries the argument in tight, heavy headlines; Plex Mono tags things the way a test report tags them: stage IDs, dates, statuses.
+**Character:** Archivo is used compressed, 66 to 90% width, like stencilled figures on a study sheet; Public Sans is plain and legible beneath it. Width tracks role: the narrower the face, the bigger the figure.
 
 ### Hierarchy
-- **Display** (700, `clamp(2.125rem, 4.2vw, 3.25rem)`, 1.2, -0.03em): hero headline only.
-- **Headline** (700, `clamp(1.75rem, 3vw, 2.5rem)`, 1.2): section `h2`.
-- **Title** (600, 1.0625–1.25rem, 1.2): stage, principle, role, project and cert `h3`.
-- **Figure** (700, 2.5rem, 1.1, tabular numerals): metric values; the lead figure rises to 3.25rem in Pass Green.
-- **Lead** (400, 1.125rem, 1.6, max 60ch): hero intro; section intros at 1.0625rem. The personal-view statement scales `clamp(1.1875rem, 2vw, 1.4375rem)` at 1.55.
-- **Body** (400, 1rem, 1.6): copy, capped 62–64ch; `text-wrap: pretty` on all paragraphs and list items.
-- **Label** (Mono 500, 0.875rem): dates and stage numbers; 0.75rem uppercase 0.06em for pipeline statuses. No eyebrow labels above headings; headings stand alone.
+- **Display** (800, clamp 3.5 to 6rem, 0.9, 72% width): the name in the hero, masked line by line.
+- **Figure** (800, clamp 3.25 to 5.5rem, 0.9, 66% width, tabular): observation figures; the stopwatch reading uses the same voice at 68% width; DMAIC letters at 70%.
+- **Headline** (750, clamp 2.25 to 4rem, 0.98, 78% width): section h2.
+- **Thesis** (600, clamp 1.375 to 1.875rem, 1.2, 90% width): the hero thesis line.
+- **Title** (700, 1.375rem, 1.25, 82 to 85% width): station, principle, lap and plate h3.
+- **Body** (400, 1.0625rem, 1.6): reading copy, capped at 60 to 68ch.
+- **Label** (600, 0.875rem): units, plate locations, legends, provenance captions (provenance at 400 in `ink-3`).
 
 ### Named Rules
-**The Numbers Line Up Rule.** Every measured figure uses `font-variant-numeric: tabular-nums` and heavy weight. Numbers are the hero, not the adjectives around them.
+**The Tabular Figure Rule.** Every measured number (figures, dates, plate numbers, key caps, stack proofs) uses tabular numerals.
 
-**The Mono Means Metadata Rule.** Mono never sets prose. It labels, dates, numbers and logs.
+**The Heading Stands Alone Rule.** No eyebrow or kicker above any heading; the h2 is the first line of a section.
 
 ## Layout
 
-Single centered column, max 1160px, gutters 16px on mobile and 32px from 768px. Sections pad 72px vertically, 104px from 1024px (`section-tight` holds 72px). Section heads cap at 680px with 40px below.
+A centred 1200px container with 16px gutters (32px from 768px). Sections are separated by a 1px rule and padded 80px (120px from 1024px). Section heads cap at 760px with a 48px gap to content. Lists of evidence (observations, stations, certs, contact details) open with a 2px strong rule and divide with 1px rules; rows pad 28px (16px for compact rows).
 
-Grids are simple and content-driven: hero 1.35fr / 1fr at 1024px+ (copy left, pipeline right); metrics 1 → 2 → 4 columns (first column 1.4fr) split by vertical hairlines; stages as 56px number / title / description rows from 768px; career as 220px meta / body from 768px; toolkit and principles 2-up from 768px; projects and certs 1 → 2 → 3 columns (640 / 1024). Navigation collapses to a dropdown sheet below 1024px.
-
-Spacing steps are 8 / 12 / 16 / 24 / 32 / 48 / 64. Sticky header is 64px; anchor scroll offsets by header + 16px.
+Rows are grids that gain columns with width: observations go figure / claim / provenance (15rem then 17rem / 1fr / 16rem at 1100px); stations go mark / title / copy / trace (72px / 19rem / 1fr / 220px at 1024px); laps go 220px meta / body at 768px. Plates and certs go 1, 2, 3 columns at 640px and 1024px. The hero is copy plus a 300 to 380px stopwatch at 1024px and reflows to a single ordered column below it, with the watch shrinking to a 128px dial beside its caption. The study band breaks out of the container to full bleed. The header is a 64px sticky bar; nav collapses below 1100px. A scroll-drawn page trail runs down the right margin from 1400px.
 
 ## Elevation & Depth
 
-Flat by default. Depth comes from tonal bands (paper vs ledger tint) and hairlines, not shadows.
+Flat. Depth comes from material, not lift: the grid sheet, tonal plate bands, 1px and 2px rules, and the sheet mat inside frames. The only shadow is one ambient drop used for things that genuinely float (the mobile nav panel and the certificate image in its dialog). The header uses a translucent ground with blur. In dark, the light trail carries a soft glow, which is the one luminous effect.
 
 ### Shadow Vocabulary
-- **Panel lift** (light `0 1px 2px rgb(15 23 42 / 0.06), 0 8px 24px rgb(15 23 42 / 0.06)`; dark `0 1px 2px rgb(0 0 0 / 0.4), 0 8px 24px rgb(0 0 0 / 0.25)`): the hero pipeline panel and the open mobile menu. Nothing else.
-- **Frosted header** (85% page background + `saturate(160%) blur(10px)`): sticky header; its bottom hairline fades in over the first 80px of scroll.
+- **Float** (sidecar `shadow-float`, light and dark values): mobile nav panel and certificate dialog image only.
+- **Trail Glow** (sidecar `trail-glow`): dark theme light trail only.
 
 ### Named Rules
-**The Flat Report Rule.** Surfaces are flat at rest. Cards show state by border color and a 2px lift, not by adding shadow.
+**The No-Card Rule.** Content sits in ruled rows on the sheet. Do not wrap rows in shadowed or filled cards.
 
 ## Shapes
 
-Crisp, lightly rounded geometry. Controls, nav links, icon buttons and cert thumbnails use 8px (`rounded.sm`). Large containers (project cards, pipeline panel) use 12px (`rounded.md`). The avatar and timeline dots are circles. Borders are always 1px hairlines; the only 2px strokes are the principle left-rule and timeline rail, both in Pass Green.
+Corners are a near-square 4px on buttons, nav links and the skip link; 3px on key caps. Frames (portrait, study plates, cert thumbnails) are square with a 1px border and an inner sheet mat. Circles are reserved for instruments: the dial, therblig marks (52px, 1.5px ring), DMAIC and lap station dots (16px, 2px ring). Lines are round-capped. Key caps have a 2px bottom border, the physical keycap edge.
 
 ## Components
 
 ### Buttons
-Solid, confident, 48px tall.
-- **Shape:** gently rounded (8px).
-- **Primary:** Pass Green fill, white text (dark-on-green in dark theme), 600 weight, 0 22px padding.
-- **Ghost:** transparent with hairline border and ink text; border darkens to Ink Muted on hover.
-- **Hover / Focus / Active:** color shifts over 0.2s on `cubic-bezier(0.2, 0.8, 0.2, 1)`; press scales to 0.98; focus is a 2px Pass Green outline offset 3px.
-- **Icon button:** 44px square, transparent, Ledger Tint fill on hover. Used for theme toggle, menu toggle and social links (social links add a hairline border that turns green on hover).
-
-### Stack Rows
-- **Style:** hairline-ruled rows, 3 columns from 768px (discipline 11rem / tools / proof 15rem), stacked on mobile.
-- **Tools:** main tools in Ink 600 separated by " · "; secondary tools in a muted "Also …" line.
-- **Proof:** one muted line reusing a fact already on the page, its figure in Pass Green bold tabular.
-- No pills or tags anywhere on the page.
-
-### Cards / Containers
-- **Project card:** Sheet White, hairline border, 12px corners, 20px body padding, 16:10 screenshot on top. Hover turns the border Pass Green, lifts 2px, and slowly pans tall screenshots from top to bottom (3s).
-- **Metric row:** not a card; figures sit between hairlines with vertical rules between columns.
-- **Principle:** 2px Pass Green left-rule, 20px indent, no box.
-- **Certification:** 112×84 thumbnail (hairline border, 8px corners, Ledger Tint fill, `object-fit: contain` so mixed-ratio certificates stay whole) beside title + issuer · year; 1 → 2 → 3 columns. Nine featured; the rest sit in a `<details>` list. Thumbnails are links that open the full certificate in a modal `<dialog>` (hugs the image, max 960px / 90vh, dark scrim, close button top-right, Esc and backdrop click close); without `<dialog>` support they open the image in a new tab. Hover/focus: Pass Green border + 2px lift, zoom-in cursor.
+Instrument-plain and firm.
+- **Shape:** 4px corners, 48px tall (40px small), 0 22px padding, Public Sans 600.
+- **Primary (Signal):** stopwatch red fill with `on-signal` text. One per context: Email in the hero.
+- **Ghost:** translucent ground fill, strong-rule border, ink text; LinkedIn, GitHub, Copy address.
+- **Hover / Focus:** signal deepens; ghost border and text turn red. Press scales to 0.97. Focus is a 2px red outline offset 3px.
 
 ### Navigation
-Sticky frosted header with name as wordmark (600, 1.0625rem). Links are muted 0.9375rem/500 with 8px 12px padding; hover and current section (`aria-current`) get Ledger Tint fill and ink text. Five links whose labels match their section headings (AI in QA · Career · Stack · Tools · Certifications; Impact is reached from the hero button), then the Pass Green "Contact" CTA. Sections without a link name their parent link via `data-nav` for the scroll-spy. Below 1024px the CTA moves out of the menu into the header bar (always visible), and a menu button opens a full-width sheet with stacked 12px-padded links.
+Sticky 64px bar with the brand stopwatch (26px; its red hand sweeps once over the full page scroll). Links are Public Sans 500 in `ink-2`, each followed by its number key cap (1 to 6). Hover and current go to `ink`; the current link's key cap turns red. Below 1100px the nav drops as a floating panel from a menu button. Key caps hide on touch devices.
 
-### Pipeline Panel (signature)
-A dark terminal card titled `agentic-stlc` listing five STLC stages as mono rows (stage / task / status), ending with `Σ labor hours saved 3,500+` in Terminal Pass. On load, JS runs the rows through queued → running → done (dot → check mark); a "re-run" button replays it. Without JS every row shows done.
+### Stopwatch Dial (signature)
+SVG dial: ink case on sheet, rule face, 60 ticks with major ticks every five, red hand and pin. The reading (3,500+ hours) is set in Figure type with an ochre "+", and a provenance caption sits under the dial.
 
-### Career Timeline (signature)
-Left 2px rail with ringed dots per role. Where scroll-driven animations exist, a Pass Green copy of the rail fills with scroll and each dot fills in as it passes center. Dates in Pass Green mono; bullets use hairline-colored markers.
+### Study Band (signature)
+Full-bleed motion study behind the hero: a dotted ghost of the tangled manual path and a solid taut trail ending in a dot, with a legend (Manual baseline / Schematic, not to scale / With agents).
+
+### Observation Rows
+Ruled rows with a huge figure, the claim, and a provenance caption in `ink-3` (right-aligned at wide widths). Each row starts with a 56px ochre split mark on the rule above.
+
+### Stations
+STLC rows: a therblig mark (circle with abbreviation plus name; ochre physical, blue mental), title, copy, and a small illustrative trace (ghost plus solid line plus end dot). Traces are illustrative, not data.
+
+### DMAIC Stations
+Five fixed stations on a horizontal trail line (vertical below 600px), each a blue-filled 16px dot over a condensed letter, its name and a one-line note on what that step means for an agent rollout.
+
+### Career Laps
+A vertical 2px rail with a trail-coloured fill; each lap is a 16px dot that fills with the trail colour when reached. Dates in ochre condensed tabular figures; bullets are 10px graphite dashes.
+
+### Study Plates
+Square-cornered 16:10 frames with an 8px sheet mat and strong-rule border. A plate number ("Pl. 01") is stamped across the bottom edge in ochre on ground. Hover or focus traces the frame's four edges in red and slowly scrolls the screenshot top to bottom; the location label turns red and its arrow nudges.
+
+### Certification Rows
+Ruled rows: an 88 by 66px framed thumbnail (border turns red on hover, opens a dialog) beside a Public Sans 600 title and `ink-3` issuer. The full list sits in a disclosure with a red chevron.
+
+### Contact Plate
+Always dark. Headline, a very large condensed email link with a thick red underline, a ghost Copy address button that swaps to a check and announces via a live region, and a ruled detail list.
+
+### Motion Grammar
+
+GSAP 3.13 with ScrollTrigger, from cdnjs, on native scroll. The markup already holds the finished state; motion only stages it.
+- **Load:** name lines rise from masks, the stopwatch hand runs two turns while the tangled path draws, then the path morphs taut and the end dot pops.
+- **Scroll:** header watch hand sweeps 0 to 360 degrees across the page; observation split marks run and figures rise from their lines; station traces draw; the DMAIC line fills; the lap rail fills and laps click as they are reached; the margin page trail draws with scroll and curls at each section.
+- **Theme:** a shutter wipe, the new theme opening as a circle from the toggle (650ms, cubic-bezier(0.7, 0, 0.2, 1)) via view transitions.
+- **Keys:** 1 to 6 jump between sections.
+- **Safety:** if GSAP has not taken over within 2.5s the hero reveals anyway. Reduced motion or missing GSAP shows the static finished state: taut trail, full rails, no transitions.
 
 ## Do's and Don'ts
 
 ### Do:
-- **Do** keep Pass Green as the only hue and use it for evidence, sequence and action.
-- **Do** divide lists with 1px hairlines and alternate section bands with Ledger Tint.
-- **Do** set every impact number in heavy tabular figures.
-- **Do** use IBM Plex Mono for labels, dates, stage numbers and logs only.
-- **Do** define every new color for both light and dark themes, including the `[data-theme]` overrides.
-- **Do** keep interactive targets at 44px minimum and honor `prefers-reduced-motion`.
-- **Do** keep Contact reachable in one tap at every width.
+- **Do** reserve `signal` for actions, links, focus and the timing instruments (hands, active key, plate edge trace).
+- **Do** code physical therbligs in ochre and mental ones (Plan, Inspect) in blue.
+- **Do** set every measured number in condensed Archivo with tabular numerals, and pair it with a provenance caption.
+- **Do** build sections as ruled rows: 2px strong rule on top, 1px rules between.
+- **Do** keep contact and footer on the dark plate via the force-dark token scope.
+- **Do** make every animation resolve to a static, complete state under reduced motion or without GSAP.
+- **Do** keep corners at 4px and circles for instruments only.
 
 ### Don't:
-- **Don't** introduce a second accent color, gradients, or Verisk brand colors/logos.
-- **Don't** box content that reads as a list; cards are for published tools only.
-- **Don't** add shadows to resting surfaces beyond the pipeline panel and mobile menu.
-- **Don't** set prose in mono or headlines in anything but Plex Sans.
-- **Don't** add motion that doesn't confirm state or progress.
-- **Don't** put eyebrow/kicker labels above headings.
+- **Don't** place eyebrows or kickers above headings.
+- **Don't** use red for decoration, headings or data coding.
+- **Don't** wrap content in shadowed cards; the float shadow is for floating panels only.
+- **Don't** hard-code colours outside the token sets; the dark plate must come from the token scope.
+- **Don't** use glyph or emoji icons; icons are inline stroked SVG (18px, 2px stroke, round caps).
+- **Don't** present illustrative traces as measured data; label schematics as schematic.

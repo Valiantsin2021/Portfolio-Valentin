@@ -1,286 +1,169 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-26T00:00:00Z",
+  "generatedAt": "2026-10-27T10:30:00Z",
   "title": "Design System: Valentin Lutchanka Portfolio",
   "extensions": {
     "colorMeta": {
-      "pass-green": {
-        "role": "primary",
-        "displayName": "Pass Green",
-        "tonalRamp": [
-          "#052e16",
-          "#14532d",
-          "#166534",
-          "#15803d",
-          "#16a34a",
-          "#22c55e",
-          "#4ade80",
-          "#dcfce7"
-        ]
-      },
-      "pass-green-dark": {
-        "role": "primary",
-        "displayName": "Pass Green (dark theme)",
-        "tonalRamp": [
-          "#052e16",
-          "#14532d",
-          "#166534",
-          "#15803d",
-          "#16a34a",
-          "#22c55e",
-          "#4ade80",
-          "#dcfce7"
-        ]
-      },
-      "pass-green-wash": {
-        "role": "primary",
-        "displayName": "Pass Green Wash"
-      },
-      "report-paper": {
-        "role": "neutral",
-        "displayName": "Report Paper",
-        "tonalRamp": [
-          "#020617",
-          "#0f172a",
-          "#1e293b",
-          "#334155",
-          "#475569",
-          "#94a3b8",
-          "#e2e8f0",
-          "#f8fafc"
-        ]
-      },
-      "sheet-white": {
-        "role": "neutral",
-        "displayName": "Sheet White"
-      },
-      "ledger-tint": {
-        "role": "neutral",
-        "displayName": "Ledger Tint"
-      },
-      "hairline": {
-        "role": "neutral",
-        "displayName": "Hairline"
-      },
-      "ink": {
-        "role": "neutral",
-        "displayName": "Ink",
-        "tonalRamp": [
-          "#020617",
-          "#0f172a",
-          "#1e293b",
-          "#334155",
-          "#475569",
-          "#94a3b8",
-          "#e2e8f0",
-          "#f8fafc"
-        ]
-      },
-      "ink-muted": {
-        "role": "neutral",
-        "displayName": "Ink Muted"
-      },
-      "terminal-night": {
-        "role": "neutral",
-        "displayName": "Terminal Night"
-      },
-      "terminal-pass": {
-        "role": "primary",
-        "displayName": "Terminal Pass"
-      }
+      "signal": { "role": "primary", "displayName": "Stopwatch Red", "darkCounterpart": "signal-dark", "tonalRamp": ["oklch(25% 0.09 28)", "oklch(35% 0.13 28)", "oklch(45% 0.17 28)", "oklch(54% 0.19 28)", "oklch(64% 0.19 28)", "oklch(74% 0.14 28)", "oklch(85% 0.08 28)", "oklch(95% 0.025 28)"] },
+      "ochre": { "role": "secondary", "displayName": "Therblig Ochre", "darkCounterpart": "ochre-dark", "tonalRamp": ["oklch(25% 0.06 70)", "oklch(35% 0.08 70)", "oklch(48% 0.10 70)", "oklch(58% 0.12 70)", "oklch(68% 0.13 70)", "oklch(77% 0.12 75)", "oklch(86% 0.08 75)", "oklch(95% 0.03 75)"] },
+      "blue": { "role": "tertiary", "displayName": "Therblig Blue (mental motion)", "darkCounterpart": "blue-dark", "tonalRamp": ["oklch(22% 0.06 250)", "oklch(32% 0.08 250)", "oklch(43% 0.10 250)", "oklch(53% 0.10 250)", "oklch(63% 0.09 250)", "oklch(74% 0.08 250)", "oklch(85% 0.05 250)", "oklch(95% 0.02 250)"] },
+      "ground": { "role": "neutral", "displayName": "Grid Ground (observation sheet)", "darkCounterpart": "ground-dark", "tonalRamp": ["#070908", "#17201a", "#2a332c", "#435047", "#56635a", "#8f9c91", "#b5c4b5", "#e6ede3"] },
+      "sheet": { "role": "neutral", "displayName": "Sheet Mat", "darkCounterpart": "sheet-dark" },
+      "plate": { "role": "neutral", "displayName": "Plate Band", "darkCounterpart": "plate-dark" },
+      "grid": { "role": "neutral", "displayName": "Engineering-Pad Grid", "darkCounterpart": "grid-dark" },
+      "ink": { "role": "neutral", "displayName": "Graphite Ink", "darkCounterpart": "ink-dark" },
+      "ink-2": { "role": "neutral", "displayName": "Graphite Secondary", "darkCounterpart": "ink-2-dark" },
+      "ink-3": { "role": "neutral", "displayName": "Graphite Caption", "darkCounterpart": "ink-3-dark" },
+      "rule": { "role": "neutral", "displayName": "Rule", "darkCounterpart": "rule-dark" },
+      "rule-strong": { "role": "neutral", "displayName": "Strong Rule", "darkCounterpart": "rule-strong-dark" },
+      "trail": { "role": "neutral", "displayName": "Light Trail (graphite on sheet, white-hot on plate)", "darkCounterpart": "trail-dark" },
+      "trail-ghost": { "role": "neutral", "displayName": "Ghost Trail", "darkCounterpart": "trail-ghost-dark" }
+    },
+    "themes": {
+      "light": "Observation sheet: :root default.",
+      "dark": "Photographic plate: prefers-color-scheme dark unless data-theme=light, or data-theme=dark. Theme persisted in localStorage.",
+      "forceDark": ".force-dark re-scopes the full dark token set; applied to the contact section and the site footer so both stay the plate in either theme."
     },
     "typographyMeta": {
-      "display": {
-        "displayName": "Display",
-        "purpose": "Hero headline only."
-      },
-      "headline": {
-        "displayName": "Headline",
-        "purpose": "Section h2."
-      },
-      "title": {
-        "displayName": "Title",
-        "purpose": "Stage, role, principle, project and cert h3."
-      },
-      "figure": {
-        "displayName": "Figure",
-        "purpose": "Metric values; lead figure 3.25rem in Pass Green."
-      },
-      "lead": {
-        "displayName": "Lead",
-        "purpose": "Hero and section intros."
-      },
-      "body": {
-        "displayName": "Body",
-        "purpose": "Running copy, 62-72ch."
-      },
-      "label": {
-        "displayName": "Label",
-        "purpose": "Mono dates, stage numbers, pipeline statuses. No eyebrows."
-      }
+      "display": { "displayName": "Display", "purpose": "Hero name only, masked line reveals.", "fontStretch": "72%" },
+      "figure": { "displayName": "Figure", "purpose": "Measured numbers: observation figures (66%), stopwatch reading (68%), DMAIC letters (70%). Tabular numerals.", "fontStretch": "66%" },
+      "headline": { "displayName": "Headline", "purpose": "Section h2 and contact h2.", "fontStretch": "78%" },
+      "thesis": { "displayName": "Thesis", "purpose": "Hero thesis line.", "fontStretch": "90%" },
+      "title": { "displayName": "Title", "purpose": "Station, principle, lap and plate h3 (82 to 85%).", "fontStretch": "85%" },
+      "body": { "displayName": "Body", "purpose": "Reading copy, 60 to 68ch." },
+      "label": { "displayName": "Label", "purpose": "Units, legends, plate locations, provenance captions." },
+      "fontSource": "Google Fonts: Archivo wdth 62..125, wght 100..900; Public Sans 400/500/600/700; display=swap."
     },
     "shadows": [
-      {
-        "name": "panel-lift",
-        "value": "0 1px 2px rgb(15 23 42 / 0.06), 0 8px 24px rgb(15 23 42 / 0.06)",
-        "purpose": "Pipeline panel and open mobile menu, light theme."
-      },
-      {
-        "name": "panel-lift-dark",
-        "value": "0 1px 2px rgb(0 0 0 / 0.4), 0 8px 24px rgb(0 0 0 / 0.25)",
-        "purpose": "Same roles, dark theme."
-      }
+      { "name": "shadow-float", "value": "0 1px 2px rgb(23 32 26 / 0.08), 0 12px 32px rgb(23 32 26 / 0.12)", "darkValue": "0 1px 2px rgb(0 0 0 / 0.5), 0 16px 40px rgb(0 0 0 / 0.45)", "purpose": "Mobile nav panel and certificate dialog image only." },
+      { "name": "trail-glow", "value": "none", "darkValue": "drop-shadow(0 0 4px rgb(255 236 196 / 0.55))", "purpose": "CSS filter on the light trail; white-hot glow on the plate only." },
+      { "name": "header-glass", "value": "background: color-mix(in srgb, var(--ground) 88%, transparent); backdrop-filter: saturate(140%) blur(10px)", "purpose": "Sticky header." }
     ],
     "motion": [
-      {
-        "name": "ease",
-        "value": "cubic-bezier(0.2, 0.8, 0.2, 1)",
-        "purpose": "All state transitions."
-      },
-      {
-        "name": "duration-state",
-        "value": "0.2s",
-        "purpose": "Color, border, background and lift changes."
-      },
-      {
-        "name": "duration-press",
-        "value": "0.15s",
-        "purpose": "Button press scale to 0.98."
-      },
-      {
-        "name": "duration-pan",
-        "value": "3s",
-        "purpose": "Project screenshot pan on hover."
-      }
+      { "name": "ease-out", "value": "cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "Plate edge trace, lap dot scale, arrow nudge." },
+      { "name": "ease", "value": "cubic-bezier(0.2, 0.8, 0.2, 1)", "purpose": "Default state transitions (0.2s colour, 0.15s press)." },
+      { "name": "shutter-wipe", "value": "650ms cubic-bezier(0.7, 0, 0.2, 1)", "purpose": "Theme switch: view transition with a circular clip-path opening from the toggle." },
+      { "name": "library", "value": "GSAP 3.13.0 + ScrollTrigger (cdnjs), native scroll", "purpose": "All choreographed motion; page is complete without it." },
+      { "name": "hero-load", "value": "expo.out timeline; hand 720deg over 1.9s; tangled draw 1.9s; taut morph 1.3s expo.inOut at 2.35s", "purpose": "Tangled manual path pulls taut." },
+      { "name": "scroll-instruments", "value": "header hand 0-360deg over page; split marks 0.7s; trace draws 0.6s; DMAIC fill 1.4s; lap rail scrub; margin page trail scrub (>=1400px)", "purpose": "Scroll-driven study instruments." },
+      { "name": "safety-net", "value": "2.5s", "purpose": "Hero reveals if GSAP has not taken over." },
+      { "name": "reduced-motion", "value": "static finished state", "purpose": "No GSAP, all transitions and animations off, smooth scroll off." },
+      { "name": "press", "value": "scale(0.97)", "purpose": "Button active state." }
     ],
     "breakpoints": [
-      {
-        "name": "xs",
-        "value": "480px"
-      },
-      {
-        "name": "sm",
-        "value": "640px"
-      },
-      {
-        "name": "md",
-        "value": "768px"
-      },
-      {
-        "name": "lg",
-        "value": "1024px"
-      }
-    ]
+      { "name": "xs", "value": "380px", "purpose": "Brand watch hides below." },
+      { "name": "sm", "value": "480px" },
+      { "name": "dmaic-stack", "value": "600px" },
+      { "name": "md", "value": "640px" },
+      { "name": "tablet", "value": "768px" },
+      { "name": "lg", "value": "1024px" },
+      { "name": "nav", "value": "1100px" },
+      { "name": "page-trail", "value": "1400px" }
+    ],
+    "layout": { "container": "1200px", "gutter": "16px / 32px from 768px", "header": "64px", "grid": "24px squares" }
   },
   "components": [
     {
-      "name": "Primary Button",
+      "name": "Signal Button",
       "kind": "button",
-      "refersTo": "button-primary",
-      "description": "Main action: Get in touch, nav Contact CTA.",
-      "html": "<a class=\"ds-btn ds-btn-primary\" href=\"#\">Get in touch</a>",
-      "css": ".ds-btn { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0 22px; border-radius: 8px; border: 1px solid transparent; font-family: 'IBM Plex Sans', system-ui, sans-serif; font-weight: 600; text-decoration: none; transition: background-color 0.2s cubic-bezier(0.2,0.8,0.2,1), border-color 0.2s cubic-bezier(0.2,0.8,0.2,1), transform 0.15s cubic-bezier(0.2,0.8,0.2,1); } .ds-btn-primary { background: var(--accent, #15803d); color: var(--on-accent, #fff); } .ds-btn-primary:hover { background: var(--accent-hover, #166534); } .ds-btn:active { transform: scale(0.98); } .ds-btn:focus-visible { outline: 2px solid var(--accent, #15803d); outline-offset: 3px; }"
+      "refersTo": "button-signal",
+      "description": "The one primary action per context (Email).",
+      "html": "<a class=\"ds-btn ds-btn-signal\" href=\"#\">Email me</a>",
+      "css": ".ds-btn { display: inline-flex; align-items: center; gap: 10px; height: 48px; padding: 0 22px; border: 1px solid transparent; border-radius: 4px; font-family: 'Public Sans', system-ui, sans-serif; font-size: 1rem; font-weight: 600; text-decoration: none; cursor: pointer; transition: background-color .2s cubic-bezier(0.2,0.8,0.2,1), border-color .2s, color .2s, transform .15s; } .ds-btn:active { transform: scale(0.97); } .ds-btn:focus-visible { outline: 2px solid var(--signal, #c42b21); outline-offset: 3px; } .ds-btn-signal { background: var(--signal, #c42b21); color: var(--on-signal, #fff); } .ds-btn-signal:hover { background: var(--signal-hover, #a11f17); }"
     },
     {
       "name": "Ghost Button",
       "kind": "button",
       "refersTo": "button-ghost",
-      "description": "Secondary action next to a primary.",
-      "html": "<a class=\"ds-btn-ghost\" href=\"#\">See the impact</a>",
-      "css": ".ds-btn-ghost { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0 22px; border-radius: 8px; border: 1px solid var(--border, #e2e8f0); color: var(--text, #0f172a); font-family: 'IBM Plex Sans', system-ui, sans-serif; font-weight: 600; text-decoration: none; transition: border-color 0.2s cubic-bezier(0.2,0.8,0.2,1), transform 0.15s; } .ds-btn-ghost:hover { border-color: var(--text-muted, #475569); } .ds-btn-ghost:active { transform: scale(0.98); } .ds-btn-ghost:focus-visible { outline: 2px solid var(--accent, #15803d); outline-offset: 3px; }"
+      "description": "Secondary actions (LinkedIn, GitHub, Copy address).",
+      "html": "<a class=\"ds-btn-ghost\" href=\"#\">LinkedIn</a>",
+      "css": ".ds-btn-ghost { display: inline-flex; align-items: center; height: 48px; padding: 0 22px; border: 1px solid var(--rule-strong, #17201a); border-radius: 4px; background: color-mix(in srgb, var(--ground, #e6ede3) 80%, transparent); color: var(--ink, #17201a); font-family: 'Public Sans', system-ui, sans-serif; font-weight: 600; text-decoration: none; transition: border-color .2s, color .2s, transform .15s; } .ds-btn-ghost:hover { border-color: var(--signal, #c42b21); color: var(--signal, #c42b21); } .ds-btn-ghost:active { transform: scale(0.97); } .ds-btn-ghost:focus-visible { outline: 2px solid var(--signal, #c42b21); outline-offset: 3px; }"
     },
     {
-      "name": "Navigation",
+      "name": "Nav Link with Key Cap",
       "kind": "nav",
       "refersTo": "nav-link",
-      "description": "Header links with active fill and green Contact CTA.",
-      "html": "<nav class=\"ds-nav\"><a href=\"#\">Impact</a><a href=\"#\" aria-current=\"true\">AI in QA</a><a href=\"#\">Experience</a><a class=\"ds-nav-cta\" href=\"#\">Contact</a></nav>",
-      "css": ".ds-nav { display: flex; align-items: center; gap: 4px; font-family: 'IBM Plex Sans', system-ui, sans-serif; } .ds-nav a { padding: 8px 12px; border-radius: 8px; color: var(--text-muted, #475569); font-size: 0.9375rem; font-weight: 500; text-decoration: none; transition: color 0.2s, background-color 0.2s; } .ds-nav a:hover, .ds-nav a[aria-current='true'] { color: var(--text, #0f172a); background: var(--surface-2, #f1f5f9); } .ds-nav .ds-nav-cta { margin-left: 8px; color: var(--on-accent, #fff); background: var(--accent, #15803d); } .ds-nav .ds-nav-cta:hover { background: var(--accent-hover, #166534); color: var(--on-accent, #fff); } .ds-nav a:focus-visible { outline: 2px solid var(--accent, #15803d); outline-offset: 3px; }"
+      "description": "Header link followed by its jump key; the current link's key turns red.",
+      "html": "<nav class=\"ds-nav\"><a href=\"#\">Impact <kbd>1</kbd></a><a href=\"#\" aria-current=\"true\">Method <kbd>3</kbd></a></nav>",
+      "css": ".ds-nav { display: flex; gap: 2px; font-family: 'Public Sans', system-ui, sans-serif; } .ds-nav a { display: inline-flex; align-items: center; gap: 8px; padding: 8px 10px; color: var(--ink-2, #435047); font-size: .9375rem; font-weight: 500; text-decoration: none; border-radius: 4px; transition: color .2s; } .ds-nav a:hover, .ds-nav a[aria-current] { color: var(--ink, #17201a); } .ds-nav a:focus-visible { outline: 2px solid var(--signal, #c42b21); outline-offset: 3px; } .ds-nav kbd { font-family: Archivo, 'Arial Narrow', sans-serif; font-size: .6875rem; font-weight: 700; font-variant-numeric: tabular-nums; display: inline-grid; place-items: center; min-width: 1.25rem; height: 1.25rem; padding: 0 4px; border: 1px solid var(--rule, #b5c4b5); border-bottom-width: 2px; border-radius: 3px; color: var(--ink-3, #56635a); line-height: 1; } .ds-nav a[aria-current] kbd { border-color: var(--signal, #c42b21); color: var(--signal, #c42b21); }"
     },
     {
-      "name": "Project Card",
+      "name": "Observation Row",
+      "kind": "custom",
+      "refersTo": "typography.figure",
+      "description": "Measured figure, claim and provenance caption, opened by an ochre split mark.",
+      "html": "<div class=\"ds-obs\"><span class=\"ds-obs-fig\">700+</span><p class=\"ds-obs-what\">Hours a year returned to the team</p><p class=\"ds-obs-src\">Two projects · 700+ hours a year</p></div>",
+      "css": ".ds-obs { position: relative; display: grid; gap: 8px; padding: 28px 0; border-top: 2px solid var(--rule-strong, #17201a); border-bottom: 1px solid var(--rule, #b5c4b5); font-family: 'Public Sans', system-ui, sans-serif; color: var(--ink, #17201a); } .ds-obs::before { content: ''; position: absolute; top: -2px; left: 0; width: 56px; height: 2px; background: var(--ochre, #855508); } .ds-obs-fig { font-family: Archivo, 'Arial Narrow', sans-serif; font-size: 4rem; font-stretch: 66%; font-weight: 800; line-height: .9; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; } .ds-obs-what { margin: 0; font-size: 1.125rem; } .ds-obs-src { margin: 0; font-size: .875rem; color: var(--ink-3, #56635a); }"
+    },
+    {
+      "name": "Therblig Station",
+      "kind": "custom",
+      "refersTo": "therblig-mental",
+      "description": "STLC station: therblig mark (blue mental, ochre physical), title and an illustrative trace.",
+      "html": "<div class=\"ds-station\"><span class=\"ds-tm is-mental\"><abbr class=\"ds-therblig\">Pn</abbr><span>Plan</span></span><h3>Requirements analysis</h3><svg viewBox=\"0 0 220 56\" width=\"220\" height=\"56\"><path class=\"ds-ghost\" d=\"M4 40 C 40 4, 70 52, 110 20 S 180 50, 216 16\"/><path class=\"ds-line\" d=\"M4 40 C 80 36, 150 28, 216 16\"/><circle class=\"ds-dot\" cx=\"216\" cy=\"16\" r=\"4\"/></svg></div>",
+      "css": ".ds-station { display: grid; grid-template-columns: 72px 1fr; gap: 12px 16px; align-items: center; padding: 28px 0; border-bottom: 1px solid var(--rule, #b5c4b5); color: var(--ink, #17201a); font-family: 'Public Sans', system-ui, sans-serif; } .ds-station h3 { margin: 0; font-family: Archivo, 'Arial Narrow', sans-serif; font-size: 1.375rem; font-stretch: 85%; font-weight: 700; } .ds-station svg { grid-column: 2; overflow: visible; } .ds-tm { grid-row: span 2; display: flex; flex-direction: column; align-items: center; gap: 6px; color: var(--ochre, #855508); font-size: .75rem; font-weight: 600; } .ds-tm.is-mental { color: var(--blue, #285381); } .ds-therblig { display: grid; place-items: center; width: 52px; height: 52px; border: 1.5px solid currentColor; border-radius: 50%; font-family: Archivo, 'Arial Narrow', sans-serif; font-stretch: 85%; font-weight: 700; font-size: 1.0625rem; text-decoration: none; } .ds-ghost { fill: none; stroke: var(--trail-ghost, rgb(23 32 26 / .42)); stroke-width: 2; stroke-linecap: round; stroke-dasharray: .1 5; } .ds-line { fill: none; stroke: var(--trail, #17201a); stroke-width: 2; stroke-linecap: round; filter: var(--trail-glow, none); } .ds-dot { fill: var(--trail, #17201a); }"
+    },
+    {
+      "name": "Study Plate",
       "kind": "card",
-      "refersTo": "project-card",
-      "description": "Published tool with screenshot, description and outbound link.",
-      "html": "<article class=\"ds-project\"><div class=\"ds-project-img\"></div><div class=\"ds-project-body\"><h3>newman-parallel</h3><p>Runs Postman collections in parallel and saves HTML and XML reports.</p><a href=\"#\">View on npm</a></div></article>",
-      "css": ".ds-project { display: flex; flex-direction: column; max-width: 340px; background: var(--surface, #fff); border: 1px solid var(--border, #e2e8f0); border-radius: 12px; overflow: hidden; font-family: 'IBM Plex Sans', system-ui, sans-serif; transition: border-color 0.2s cubic-bezier(0.2,0.8,0.2,1), transform 0.2s cubic-bezier(0.2,0.8,0.2,1); } .ds-project:hover, .ds-project:focus-within { border-color: var(--accent, #15803d); transform: translateY(-2px); } .ds-project-img { aspect-ratio: 16/10; background: var(--surface-2, #f1f5f9); border-bottom: 1px solid var(--border, #e2e8f0); } .ds-project-body { padding: 20px; } .ds-project-body h3 { margin: 0; font-size: 1.0625rem; font-weight: 600; color: var(--text, #0f172a); } .ds-project-body p { margin: 8px 0 0; color: var(--text-muted, #475569); font-size: 0.9375rem; line-height: 1.6; } .ds-project-body a { display: inline-flex; min-height: 44px; align-items: center; padding-top: 12px; color: var(--accent, #15803d); font-weight: 600; text-decoration: none; } .ds-project-body a:focus-visible { outline: 2px solid var(--accent, #15803d); outline-offset: 3px; }"
+      "refersTo": "study-plate-frame",
+      "description": "Framed tool screenshot with an edge-stamped plate number; hover traces the frame edge in red.",
+      "html": "<a class=\"ds-pl\" href=\"#\"><span class=\"ds-pl-frame\"><span class=\"ds-pl-img\"></span><span class=\"ds-pl-no\">Pl. 01</span></span><span class=\"ds-pl-title\">Test Automation ROI Calculator</span></a>",
+      "css": ".ds-pl { display: flex; flex-direction: column; width: 280px; text-decoration: none; color: var(--ink, #17201a); } .ds-pl:focus-visible { outline: none; } .ds-pl-frame { position: relative; display: block; aspect-ratio: 16/10; padding: 8px; border: 1px solid var(--rule-strong, #17201a); background: var(--sheet, #eef3ec); } .ds-pl-img { display: block; height: 100%; background: var(--plate, #dae3d6); } .ds-pl-frame::after { content: ''; position: absolute; inset: -6px; pointer-events: none; background: linear-gradient(var(--signal, #c42b21), var(--signal, #c42b21)) left top / 0 2px no-repeat, linear-gradient(var(--signal, #c42b21), var(--signal, #c42b21)) right top / 2px 0 no-repeat, linear-gradient(var(--signal, #c42b21), var(--signal, #c42b21)) right bottom / 0 2px no-repeat, linear-gradient(var(--signal, #c42b21), var(--signal, #c42b21)) left bottom / 2px 0 no-repeat; transition: background-size .5s cubic-bezier(0.16,1,0.3,1); } .ds-pl:hover .ds-pl-frame::after, .ds-pl:focus-visible .ds-pl-frame::after { background-size: 100% 2px, 2px 100%, 100% 2px, 2px 100%; } .ds-pl-no { position: absolute; z-index: 1; bottom: -12px; left: 16px; padding: 2px 8px; background: var(--ground, #e6ede3); border: 1px solid var(--rule-strong, #17201a); font-family: Archivo, 'Arial Narrow', sans-serif; font-size: .8125rem; font-stretch: 80%; font-weight: 700; color: var(--ochre, #855508); font-variant-numeric: tabular-nums; } .ds-pl-title { margin-top: 20px; font-family: Archivo, 'Arial Narrow', sans-serif; font-size: 1.375rem; font-stretch: 82%; font-weight: 700; line-height: 1.25; }"
     },
     {
-      "name": "Metric Row",
+      "name": "Career Lap",
       "kind": "custom",
-      "description": "Measured figures between hairlines; lead figure in Pass Green.",
-      "html": "<ul class=\"ds-metrics\"><li><span class=\"ds-mv ds-mv-lead\">3,500+</span><span class=\"ds-ml\">labor hours saved</span></li><li><span class=\"ds-mv\">24</span><span class=\"ds-ml\">QA analysts led</span></li><li><span class=\"ds-mv\">2×</span><span class=\"ds-ml\">faster deployments</span></li></ul>",
-      "css": ".ds-metrics { list-style: none; display: grid; grid-template-columns: 1.4fr 1fr 1fr; margin: 0; padding: 0; border-top: 1px solid var(--border, #e2e8f0); font-family: 'IBM Plex Sans', system-ui, sans-serif; } .ds-metrics li { padding: 28px 24px 28px 0; } .ds-metrics li + li { padding-left: 24px; border-left: 1px solid var(--border, #e2e8f0); } .ds-mv { display: block; font-size: 2.5rem; font-weight: 700; letter-spacing: -0.03em; line-height: 1.1; font-variant-numeric: tabular-nums; color: var(--text, #0f172a); } .ds-mv-lead { color: var(--accent, #15803d); font-size: 3.25rem; } .ds-ml { display: block; margin-top: 10px; color: var(--text-muted, #475569); font-size: 0.9375rem; }"
+      "refersTo": "colors.trail",
+      "description": "Lap on the career rail; the dot fills with the trail colour once reached.",
+      "html": "<ol class=\"ds-laps\"><li class=\"ds-lap is-lapped\"><span class=\"ds-lap-dates\">2023 – now</span><strong>Agentic QA Engineering Manager</strong></li><li class=\"ds-lap\"><span class=\"ds-lap-dates\">2019 – 2023</span><strong>QA Automation Engineer</strong></li></ol>",
+      "css": ".ds-laps { position: relative; list-style: none; margin: 0; padding: 0 0 0 36px; font-family: 'Public Sans', system-ui, sans-serif; color: var(--ink, #17201a); } .ds-laps::before { content: ''; position: absolute; left: 7px; top: 8px; bottom: 8px; width: 2px; background: var(--rule, #b5c4b5); } .ds-lap { position: relative; display: grid; gap: 4px; padding-bottom: 32px; } .ds-lap::before { content: ''; position: absolute; left: -36px; top: 4px; width: 16px; height: 16px; border-radius: 50%; border: 2px solid var(--ink-2, #435047); background: var(--ground, #e6ede3); box-sizing: border-box; transition: background-color .25s, border-color .25s; } .ds-lap.is-lapped::before { background: var(--trail, #17201a); border-color: var(--trail, #17201a); } .ds-lap-dates { font-family: Archivo, 'Arial Narrow', sans-serif; font-size: 1.25rem; font-stretch: 75%; font-weight: 700; font-variant-numeric: tabular-nums; color: var(--ochre, #855508); }"
     },
     {
-      "name": "Pipeline Panel",
+      "name": "Certification Row",
       "kind": "custom",
-      "refersTo": "pipeline-panel",
-      "description": "Signature dark run-log card of the agentic STLC.",
-      "html": "<figure class=\"ds-pipe\"><div class=\"ds-pipe-bar\">agentic-stlc</div><ul><li><span class=\"ds-st\">requirements</span><span>AI-assisted refinement</span><span class=\"ds-ok\">done</span></li><li><span class=\"ds-st\">defects</span><span>AI classification &amp; triage</span><span class=\"ds-ok\">done</span></li></ul><div class=\"ds-pipe-foot\"><span>Σ labor hours saved</span><strong>3,500+</strong></div></figure>",
-      "css": ".ds-pipe { margin: 0; max-width: 460px; background: #0f172a; color: #e2e8f0; border-radius: 12px; box-shadow: 0 1px 2px rgb(15 23 42 / 0.06), 0 8px 24px rgb(15 23 42 / 0.06); font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 0.875rem; overflow: hidden; } .ds-pipe-bar { padding: 12px 16px; color: #94a3b8; border-bottom: 1px solid rgb(148 163 184 / 0.15); } .ds-pipe ul { list-style: none; margin: 0; padding: 12px 0; } .ds-pipe li { display: grid; grid-template-columns: 7.5rem 1fr auto; gap: 12px; padding: 10px 16px; } .ds-st { color: #94a3b8; } .ds-ok { color: #4ade80; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.06em; } .ds-pipe-foot { display: flex; justify-content: space-between; align-items: baseline; padding: 14px 16px; border-top: 1px solid rgb(148 163 184 / 0.15); color: #94a3b8; } .ds-pipe-foot strong { color: #4ade80; font-size: 1.25rem; font-weight: 500; }"
-    },
-    {
-      "name": "Stack Row",
-      "kind": "custom",
-      "description": "Toolkit row: discipline, main tools, also-used, proof figure.",
-      "html": "<ul class=\"ds-stack\"><li><h3>Test automation</h3><div><p class=\"ds-main\">Playwright · K6 · Newman</p><p class=\"ds-also\">Also Cypress, WebdriverIO, JMeter</p></div><p class=\"ds-proof\">Team-wide framework built from scratch, <strong>4</strong> projects on it</p></li></ul>",
-      "css": ".ds-stack { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--border, #e2e8f0); font-family: 'IBM Plex Sans', system-ui, sans-serif; } .ds-stack li { display: grid; grid-template-columns: 11rem 1fr 15rem; gap: 6px 32px; align-items: baseline; padding: 24px 0; border-bottom: 1px solid var(--border, #e2e8f0); } .ds-stack h3 { margin: 0; font-size: 1.0625rem; font-weight: 600; color: var(--text, #0f172a); } .ds-main { margin: 0; font-weight: 600; color: var(--text, #0f172a); } .ds-also, .ds-proof { margin: 4px 0 0; color: var(--text-muted, #475569); font-size: 0.9375rem; } .ds-proof { margin: 0; } .ds-proof strong { color: var(--accent, #15803d); font-weight: 700; font-variant-numeric: tabular-nums; }"
+      "refersTo": "cert-thumb",
+      "description": "Framed zoomable thumbnail beside title and issuer.",
+      "html": "<div class=\"ds-cert\"><button class=\"ds-cert-thumb\" aria-label=\"View certificate\"></button><div><h3>Lean Six Sigma Green Belt</h3><p>Issuer · 2024</p></div></div>",
+      "css": ".ds-cert { display: grid; grid-template-columns: 88px 1fr; gap: 16px; align-items: center; padding: 16px 0; border-top: 2px solid var(--rule-strong, #17201a); border-bottom: 1px solid var(--rule, #b5c4b5); font-family: 'Public Sans', system-ui, sans-serif; } .ds-cert h3 { margin: 0; font-size: 1rem; font-weight: 600; line-height: 1.3; color: var(--ink, #17201a); } .ds-cert p { margin: 2px 0 0; font-size: .875rem; color: var(--ink-3, #56635a); } .ds-cert-thumb { width: 88px; height: 66px; padding: 4px; border: 1px solid var(--rule, #b5c4b5); background: var(--sheet, #eef3ec); cursor: zoom-in; transition: border-color .2s; } .ds-cert-thumb:hover, .ds-cert-thumb:focus-visible { border-color: var(--signal, #c42b21); outline: none; }"
     }
   ],
   "narrative": {
-    "northStar": "The Quality Report",
-    "overview": "The page behaves like a well-run quality report handed to a hiring manager: calm paper, hairline rules, figures that line up, and exactly one signal color that means \"passed\". Nothing on the page is decorative for its own sake. Hierarchy comes from type weight, measured whitespace and the green accent landing only on things that carry evidence: the headline figure, stage numbers, dates, the primary action.\n\nDensity is moderate and scan-friendly. Content sits in a single 1160px column; sections alternate between report paper and a faint ledger tint, separated by full-bleed hairlines rather than boxes. Lists are rows, not cards: metrics, STLC stages, career roles and contact lines are all divided by 1px rules so the eye reads them top to bottom like a table.\n\nComponents are engineered and confident: solid green primary buttons, crisp 8px corners, 44px+ targets, and motion that only confirms state (a 2px lift, a scale-down on press, a scroll-filled timeline rail). The one deliberate contrast is the dark pipeline panel in the hero, a terminal-style run log that shows the agentic STLC \"passing\" stage by stage.",
+    "northStar": "The Time & Motion Study",
+    "overview": "The site is the record of a Gilbreth-style time study: the manual motion observed, the agents introduced, the straightened path photographed. Two materials carry it. In light, an observation sheet: engineering-pad green paper printed with a 24px grid, graphite ink, ruled rows. In dark, a photographic plate: near-black, with the motion path burned in as a white-hot light trail. The contact section and footer are always the plate, in both themes; the study ends in the darkroom.\n\nEvery figure is measured and every measurement carries its provenance caption beside it. Numbers are set in condensed Archivo with tabular figures, the way they would be written on a stopwatch reading or a study sheet. Colour is functional, as on a real study: stopwatch red marks action and timing, ochre and blue code the therbligs. Ornament is limited to things the instruments themselves produce: dials, ticks, traces, split marks, plate numbers.\n\nDensity is moderate. Content sits in ruled rows on a 1200px sheet rather than in cards; structure comes from 1px rules and 2px strong rules, not from boxes and shadows.",
     "keyCharacteristics": [
-      "Slate neutrals plus a single Pass Green accent, in both light and dark themes.",
-      "IBM Plex Sans for everything read; IBM Plex Mono for labels, dates, stage numbers and the run log.",
-      "Hairline-ruled rows over boxed cards; cards appear only for published tools. No pills.",
-      "Tabular, heavy figures for every measured number.",
-      "Flat at rest; depth is reserved for the pipeline panel and the mobile menu."
+      "Two materials: green grid observation sheet (light) and black photographic plate (dark), with contact and footer forced to the plate.",
+      "Stopwatch red is the only action colour.",
+      "Ochre and blue code therbligs; blue means a mental motion.",
+      "Light trail plus dotted ghost trail as the recurring motion signature.",
+      "Condensed Archivo figures (66 to 90% width) with tabular numerals; Public Sans for reading.",
+      "Ruled rows, not cards; 4px corners.",
+      "Motion tells the study (tangled path pulls taut) and always resolves to a static finished state."
     ],
     "rules": [
-      {
-        "name": "The One Signal Rule",
-        "body": "Pass Green is the only hue on the page. It marks evidence, sequence and action; it never fills large surfaces. No secondary or tertiary accent exists.",
-        "section": "colors"
-      },
-      {
-        "name": "The Personal Site Rule",
-        "body": "No employer colors or logos. Verisk appears as text only.",
-        "section": "colors"
-      },
-      {
-        "name": "The Numbers Line Up Rule",
-        "body": "Every measured figure uses font-variant-numeric: tabular-nums and heavy weight. Numbers are the hero, not the adjectives around them.",
-        "section": "typography"
-      },
-      {
-        "name": "The Mono Means Metadata Rule",
-        "body": "Mono never sets prose. It labels, dates, numbers and logs.",
-        "section": "typography"
-      },
-      {
-        "name": "The Flat Report Rule",
-        "body": "Surfaces are flat at rest. Cards show state by border color and a 2px lift, not by adding shadow.",
-        "section": "elevation"
-      }
+      { "name": "The Stopwatch Rule", "body": "Red belongs to actions and timing instruments only: buttons, links, focus, the hands, the active key, the plate trace. Never use it for decoration, headings or data coding.", "section": "colors" },
+      { "name": "The Therblig Code Rule", "body": "Ochre codes physical motion, blue codes mental motion (Plan, Inspect). Do not swap them or introduce a third coding hue.", "section": "colors" },
+      { "name": "The Darkroom Rule", "body": "Contact and footer are the plate in both themes, achieved by re-scoping the dark token set (force-dark), never by hard-coded colours.", "section": "colors" },
+      { "name": "The Tabular Figure Rule", "body": "Every measured number (figures, dates, plate numbers, key caps, stack proofs) uses tabular numerals.", "section": "typography" },
+      { "name": "The Heading Stands Alone Rule", "body": "No eyebrow or kicker above any heading; the h2 is the first line of a section.", "section": "typography" },
+      { "name": "The No-Card Rule", "body": "Content sits in ruled rows on the sheet. Do not wrap rows in shadowed or filled cards.", "section": "elevation" }
     ],
     "dos": [
-      "Do keep Pass Green as the only hue and use it for evidence, sequence and action.",
-      "Do divide lists with 1px hairlines and alternate section bands with Ledger Tint.",
-      "Do set every impact number in heavy tabular figures.",
-      "Do use IBM Plex Mono for labels, dates, stage numbers and logs only.",
-      "Do define every new color for both light and dark themes, including the [data-theme] overrides.",
-      "Do keep interactive targets at 44px minimum and honor prefers-reduced-motion.",
-      "Do keep Contact reachable in one tap at every width."
+      "Do reserve `signal` for actions, links, focus and the timing instruments (hands, active key, plate edge trace).",
+      "Do code physical therbligs in ochre and mental ones (Plan, Inspect) in blue.",
+      "Do set every measured number in condensed Archivo with tabular numerals, and pair it with a provenance caption.",
+      "Do build sections as ruled rows: 2px strong rule on top, 1px rules between.",
+      "Do keep contact and footer on the dark plate via the force-dark token scope.",
+      "Do make every animation resolve to a static, complete state under reduced motion or without GSAP.",
+      "Do keep corners at 4px and circles for instruments only."
     ],
     "donts": [
-      "Don't introduce a second accent color, gradients, or Verisk brand colors/logos.",
-      "Don't box content that reads as a list; cards are for published tools only.",
-      "Don't add shadows to resting surfaces beyond the pipeline panel and mobile menu.",
-      "Don't set prose in mono or headlines in anything but Plex Sans.",
-      "Don't add motion that doesn't confirm state or progress.",
-      "Don't put eyebrow/kicker labels above headings."
+      "Don't place eyebrows or kickers above headings.",
+      "Don't use red for decoration, headings or data coding.",
+      "Don't wrap content in shadowed cards; the float shadow is for floating panels only.",
+      "Don't hard-code colours outside the token sets; the dark plate must come from the token scope.",
+      "Don't use glyph or emoji icons; icons are inline stroked SVG (18px, 2px stroke, round caps).",
+      "Don't present illustrative traces as measured data; label schematics as schematic."
     ]
   }
 }

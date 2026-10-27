@@ -1,0 +1,17 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "codex-grid-background",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-27T09:09:10.581Z",
+        "reason": "Engineering-pad grid is the approved Time & Motion Study world material (direction contract OWN-WORLD, user chose this direction)"
+      }
+    ]
+  }
+}
