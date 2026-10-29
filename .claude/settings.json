@@ -1,0 +1,133 @@
+{
+  "includeCoAuthoredBy": false,
+  "permissions": {
+    "deny": [
+      "Read(~/.ssh/id_*)",
+      "Read(~/.ssh/*.pem)",
+      "Bash(*~/.ssh/id_*)",
+      "Bash(*~/.ssh/*.pem*)",
+      "Read(~/.aws/credentials)",
+      "Read(~/.config/gcloud/**)",
+      "Read(~/.azure/**)",
+      "Bash(*.aws/credentials*)",
+      "Bash(*.config/gcloud/**)",
+      "Bash(*.azure/**)",
+      "Read(~/.local/share/keyrings/**)",
+      "Read(~/.password-store/**)",
+      "Edit(~/.claude/settings.json)",
+      "Edit(~/.claude/settings.local.json)",
+      "Edit(~/.claude/hooks/**)",
+      "Edit(~/.claude/plugins/**)",
+      "Edit(~/.claude/mods/**)",
+      "Edit(~/.claude.json)",
+      "Edit(~/.bashrc)",
+      "Edit(~/.bash_profile)",
+      "Edit(~/.profile)",
+      "Edit(~/.gitconfig)",
+      "Edit(~/.ssh/**)",
+      "Edit(**/.git/hooks/**)",
+      "Read(~/.bash_history)",
+      "Bash(*~/.zsh_history*)",
+      "Bash(*~/.bash_history*)",
+      "Read(**/.env)",
+      "Read(**/.env.*)",
+      "Read(~/.npmrc)",
+      "Read(~/.netrc)",
+      "Read(~/.docker/config.json)",
+      "Read(~/.kube/config)",
+      "Read(~/.config/gh/hosts.yml)",
+      "Bash(*| sh)",
+      "Bash(*|sh)",
+      "Bash(*| bash)",
+      "Bash(*|bash)",
+      "Bash(*| zsh)",
+      "Bash(*|zsh)",
+      "Bash(rm *)",
+      "Bash(rmdir *)",
+      "Bash(git push --force*)",
+      "Bash(git push -f*)",
+      "Bash(git reset --hard*)",
+      "Bash(git clean -fd*)",
+      "Bash(git branch -D*)",
+      "Bash(sudo*)"
+    ],
+    "ask": [
+      "Bash(pip install *)",
+      "Bash(pip3 install *)",
+      "Bash(python -m pip install *)",
+      "Bash(python3 -m pip install *)",
+      "Bash(npm install)",
+      "Bash(npm install *)",
+      "Bash(npm i)",
+      "Bash(npm i *)",
+      "Bash(npx *)",
+      "Bash(yarn add *)",
+      "Bash(yarn global add *)",
+      "Bash(pnpm add *)",
+      "Bash(pnpm install)",
+      "Bash(pnpm install *)",
+      "Bash(brew install *)",
+      "Bash(brew tap *)",
+      "Bash(brew trust *)",
+      "Bash(brew untrust *)",
+      "Bash(brew autoupdate *)",
+      "Bash(brew upgrade*)",
+      "Bash(gem install *)",
+      "Bash(cargo install *)",
+      "Bash(go install *)",
+      "Bash(uv tool *)",
+      "Bash(launchctl load *)",
+      "Bash(launchctl bootstrap *)",
+      "Bash(gh *)",
+      "Bash(git push *)",
+      "Bash(git fetch *)",
+      "Bash(git pull *)"
+    ]
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "sh .claude/hooks/statusline.sh"
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "^(Bash|run_in_terminal)$",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python .claude/hooks/sql-readonly-guard.py"
+          }
+        ]
+      },
+      {
+        "matcher": "^(Bash|Read|Edit|MultiEdit|Write|run_in_terminal)$",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python .claude/hooks/potentially-dangerous-commands.py"
+          }
+        ]
+      },
+      {
+        "matcher": "^(Bash|run_in_terminal)$",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "sh .claude/hooks/deny-guard.sh"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "^(Edit|MultiEdit|Write|replace_string_in_file|multi_replace_string_in_file|create_file)$",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python .claude/hooks/lint-generated-file.py"
+          }
+        ]
+      }
+    ]
+  }
+}
