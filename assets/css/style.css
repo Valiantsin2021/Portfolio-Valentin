@@ -641,6 +641,21 @@ kbd {
   }
 }
 
+@media (max-width: 599px) {
+  .hero-ctas {
+    flex-wrap: nowrap;
+    gap: 8px;
+  }
+
+  .hero-ctas .btn {
+    flex: 1 1 0;
+    min-width: 0;
+    gap: 6px;
+    padding: 0 8px;
+    font-size: 0.875rem;
+  }
+}
+
 /* Stopwatch */
 .watch {
   position: relative;
